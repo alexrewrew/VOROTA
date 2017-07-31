@@ -1,0 +1,112 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Опции
+                .col-md-4.col-lg-3
+                    h1 Опции
+                .offset-md-1.col-md-7.offset-lg-2
+                    h6 FAAC - идеальное решение для автоматики распашных ворот
+                    p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
+
+    section
+        .container
+            .row
+                .col-lg-3#discount-col
+                    form.filter-container
+                        .row.justify-content-between
+                            .col-md-4.col-lg-12
+                                .select-container
+                                    select.chosen-select
+                                        option Производитель
+                                        option Производитель
+                                        option Производитель
+                            .col-md-4.col-lg-12
+                                .select-container
+                                    select.chosen-select
+                                        option Производитель
+                                        option Производитель
+                                        option Производитель
+                            .col-md-4.col-lg-12
+                                .select-container
+                                    select.chosen-select
+                                        option Технологии
+                                        option Технологии
+                                        option Технологии
+                            .col-md-4.col-lg-12
+                                .select-container
+                                    select.chosen-select
+                                        option От дешевых к дорогим
+                                        option От дешевых к дорогим
+                                        option От дешевых к дорогим
+                            .col-md-4.col-lg-12
+                                button(type='submit').button.button-red ПОИСК
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .row
+                        .col-md-6.col-lg-4
+                            a(href='' title='').product
+                                .product--image-container
+                                    .product--image-container-top Топ
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Pulsar. Управление воротами
+                                p Назначение: Бизнес Для ворот массой до 3500 кг.
+                                span.button 16 000 руб
+                        .col-md-6.col-lg-4
+                            a(href='' title='').product
+                                .product--image-container
+                                    .product--image-container-top Топ
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Pulsar. Управление воротами
+                                p Назначение: Бизнес Для ворот массой до 3500 кг.
+                                span.button 16 000 руб
+                        .col-md-6.col-lg-4
+                            a(href='' title='').product
+                                .product--image-container
+                                    .product--image-container-top Топ
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Pulsar. Управление воротами
+                                p Назначение: Бизнес Для ворот массой до 3500 кг.
+                                span.button 16 000 руб
+                        .col-md-6.col-lg-4
+                            a(href='' title='').product
+                                .product--image-container
+                                    .product--image-container-top Топ
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Pulsar. Управление воротами
+                                p Назначение: Бизнес Для ворот массой до 3500 кг.
+                                span.button 16 000 руб
+
+                        .offset-lg-2.col-lg-10
+                            ul.pagination
+                                li
+                                    a(href='' title='')
+                                        img(src='img/icons/arrow-left.svg' title='' alt='' onerror='this.src="img/icons/arrow-left.png"')
+                                li
+                                    a(href='' title='').active 1
+                                li
+                                    a(href='' title='') 2
+                                li
+                                    a(href='' title='') 3
+                                li
+                                    a(href='' title='') 4
+                                li
+                                    a(href='' title='') ...
+                                li
+                                    a(href='' title='')
+                                        img(src='img/icons/arrow-right.svg' title='' alt='' onerror='this.src="img/icons/arrow-right.png"')
+

@@ -1,0 +1,51 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* LINKS */
+a
+  text-decoration none
+  transitions()
+  &:hover
+    text-decoration none
+  &:focus
+    text-decoration none
+
+.link-up
+  position fixed
+  right 15px
+  bottom 15px
+  width 30px
+  height 30px
+  display flex
+  justify-content center
+  align-items center
+  opacity 0
+
+.link-up.visible
+  opacity 1
+
+.link-home
+  padding 2px
+  display inline-block
+  margin 0 8px
+  svg g
+    fill $black
+    transitions()
+  &:hover
+    svg g
+      fill $gray-text7
+
+.link-search
+  float right
+  position relative
+  z-index 10
+  padding 2px
+  margin: 0 8px;
+  display block
+  +mobile()
+    float left
+    margin 0
+
+.link-search.active
+  svg g
+    fill $black !important

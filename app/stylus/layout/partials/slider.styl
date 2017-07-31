@@ -1,0 +1,31 @@
+.slider-discount.slick-dotted.slick-slider
+  margin-bottom: 48px;
+  +portrait()
+    margin-bottom 15px
+.slider-discount
+  max-width 263px
+  +mobile()
+    margin 0 auto 48px
+
+.slick-dots
+  bottom -28px
+  +portrait()
+    bottom 10px
+  li
+    width 8px
+    height 8px
+    margin: 0 11px;
+    button
+      width 8px
+      height 8px
+      &:before
+        content ''
+        width 8px
+        height 8px
+        background $gray-text2
+        border-radius 50%
+        opacity 1
+  li.slick-active
+    button
+      &:before
+        background $red

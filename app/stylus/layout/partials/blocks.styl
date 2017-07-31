@@ -1,0 +1,32 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* SECTIONS AND ARTICLES */
+section
+  margin-bottom 140px
+  position relative
+
+article {}
+
+aside {}
+
+main
+  background $gray-back
+  transitions()
+  +mobile()
+    position relative
+    z-index 100
+
+.container
+  +displays()
+    width 1170px
+
+.display-flex
+  display flex
+
+.spacer-50
+  height 0px
+
+.hidden-xs
+  +mobile()
+    display none

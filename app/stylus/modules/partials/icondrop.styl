@@ -1,0 +1,229 @@
+.icon-container
+  display block
+  border-left 3px solid $white
+  height: 212px
+  max-width 228px
+  padding 26px 35px 15px 30px
+  cursor pointer
+  position relative
+  margin-bottom 40px
+  transitions()
+  +mobile()
+    padding-left 20px
+    padding-right 20px
+  .icon-image
+    height 87px
+    margin-bottom 28px
+  .icon-arrow
+    transitions()
+    opacity 0
+    position absolute
+    bottom 15px
+    right 20px
+    +mobile()
+      display none
+    +portrait()
+      display none
+  .icon-dropdown
+    position absolute
+    top 212px
+    left 0
+    z-index 100
+    background $white
+    opacity 0
+    transitions()
+    visibility hidden
+    z-index 20
+    border-top 10px solid $gray-back
+    cursor default
+    padding-top 64px
+    padding-bottom 60px
+    +portrait()
+      display none
+    +mobile()
+      display none
+    .container
+      width 1140px
+      +tablet()
+        width 930px
+    p
+      line-height: 1.57;
+      color: $black-text
+      font-size .875em
+      font-weight 300
+    &--link-list
+      li
+        border-bottom 1px solid $gray-back
+        a
+          font-weight 500
+          line-height: 2.5
+          color $black-text
+          display block
+          .fa
+            font-size 20px
+            margin-left 10px
+            transitions()
+            color $trans
+          &:hover
+            color $red
+            .fa
+              color $red
+              transform translateX(11px)
+        .active
+          color $red
+          .fa
+            color $red
+            transform translateX(11px)
+    &--link-list.green-list
+      li
+        a
+          &:hover
+            color $green-back
+            .fa
+              color $green-back
+        .active
+          color $green-back
+          .fa
+            color $green-back
+    &--image
+      margin-top: 7px
+      display block
+      max-width 100%
+  &--link
+    display none
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    background $trans
+    z-index 10
+    &:focus
+      outline none
+    +mobile()
+      display block
+    +portrait()
+      display block
+
+
+.icon-dropdown-description
+  position absolute
+  top 0
+  left 15px
+  right 15px
+  background $white
+  opacity 0
+  +portrait()
+    display none
+  +mobile()
+    display none
+
+.icon-dropdown-description.active
+  opacity 1
+
+.icon-drop
+  display block
+  &:hover
+    .icon-container
+      background $white
+      .icon-arrow
+        opacity 1
+      .icon-dropdown
+        opacity 1
+        visibility visible
+        +mobile()
+          display none
+        +portrait()
+          display none
+  +displays()
+    &:nth-child(4n+1)
+      .icon-dropdown
+        left -3px
+    &:nth-child(4n+2)
+      .icon-dropdown
+        left calc((-292px * 1) - 3px)
+    &:nth-child(4n+3)
+      .icon-dropdown
+        left calc((-292px * 2) - 4px)
+    &:nth-child(4n+4)
+      .icon-dropdown
+        left calc((-292px * 3) - 4px)
+  +tablet()
+    &:nth-child(4n+1)
+      .icon-dropdown
+        left -3px
+    &:nth-child(4n+2)
+      .icon-dropdown
+        left calc((-228px * 1) - 15px)
+    &:nth-child(4n+3)
+      .icon-dropdown
+        left calc((-228px * 2) - 27px)
+    &:nth-child(4n+4)
+      .icon-dropdown
+        left calc((-228px * 3) - 39px)
+  +portrait()
+    &:nth-child(3n+1)
+      .icon-dropdown
+        left -3px
+    &:nth-child(3n+2)
+      .icon-dropdown
+        left calc((-240px * 1) - 3px)
+    &:nth-child(3n+3)
+      .icon-dropdown
+        left calc((-240px * 2) - 3px)
+  +mobile()
+    &:nth-child(2n+1)
+      .icon-dropdown
+        left -3px
+    &:nth-child(2n+2)
+      .icon-dropdown
+        left calc(-123% * 1)
+
+
+.icon-container.icon-index
+  padding-left 23px
+  height: 234px
+  +mobile()
+    padding-right 5px
+  .icon-image
+    height: 81px;
+    margin-bottom: 32px;
+  .icon-details
+    font-size .75em
+    color $red
+    position absolute
+    top 23px
+    letter-spacing: 1px;
+    right 14px
+    opacity 0
+    transitions()
+    +mobile()
+      display none
+    img
+      position absolute
+      right 40px
+      bottom -17px
+      transitions()
+  &:hover
+    .icon-details
+      opacity 1
+      img
+        transform translateX(40px)
+
+.icon-five
+  .col
+    flex 1 1 20%
+    max-width 20%
+    +tablet()
+      flex 1 1 33.33333%
+      max-width 33.3333333%
+    +portrait()
+      flex 1 1 33.33333%
+      max-width 33.3333333%
+    +mobile()
+      flex 1 1 50%
+      max-width 50%
+
+
+
+

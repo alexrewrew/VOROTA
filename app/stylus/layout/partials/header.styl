@@ -1,0 +1,91 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* HEADER */
+header
+  padding-top 30px
+  padding-bottom 19px
+  position relative
+  +displays()
+    min-height 456px
+  .header-image
+    position relative
+    left: -20px;
+    max-height 314px
+    width 100%
+    +tablet()
+      max-width 100%
+    +portrait()
+      position static
+      display block
+      margin 0 auto 30px
+    +mobile()
+      max-width 100%
+      position static
+  .header-jumbotron
+    font-size .875em
+    line-height: 1.57;
+    font-weight 300
+    color $gray-text3
+    position: relative;
+    +portrait()
+      position static
+      margin-bottom 35px
+    +mobile()
+      position static
+      margin-bottom 35px
+
+
+.header-with-video
+  height 631px
+  padding-top 0
+  overflow hidden
+  z-index: 1
+  .row
+    height 631px
+    position relative
+    z-index 10
+  &:after
+    pseudo(block, absolute)
+    top 0
+    left 0
+    right 0
+    bottom 0
+    width 100%
+    background $black-back2
+    opacity: 0.7;
+  .header-video
+    display block
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    width 100%
+    +tablet()
+      height 100%
+      width auto
+    +portrait()
+      height 100%
+      width auto
+    +mobile()
+      height 100%
+      width auto
+
+.header-regular
+  height: 294px;
+  min-height auto
+  +mobile()
+    height auto
+  h1
+    font-size 1.500em
+    font-weight 600
+    text-align left
+    color $black-text
+  .breadcrumbs
+    margin-bottom 38px
+  p
+    font-size .875em
+    font-weight 300
+    line-height: 1.57;
+

@@ -1,0 +1,30 @@
+.breadcrumbs
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  margin-bottom: 25px
+  li
+    position relative
+    margin-right 7px
+    &:after
+      pseudo(block, absolute)
+      top 0
+      right 0
+      background $gray-text
+      width 1px
+      height 100%
+      transform rotate(15deg)
+    &:last-child
+      &:after
+        display none
+    a
+      font-size .75em
+      color $gray-text
+      display block
+      letter-spacing: 1px;
+      margin-right 7px
+      //max-height 14px
+      overflow hidden
+      white-space: nowrap;
+      text-overflow: ellipsis;
+

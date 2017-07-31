@@ -1,0 +1,310 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* NAVIGATION */
+nav
+  background $white
+  transitions()
+  position fixed
+  left 0
+  right 0
+  top 0
+  z-index 200
+
+.logo
+  display: block
+  color $black-text
+  font-weight 900
+  font-size: 1.375em
+  letter-spacing: 1.8px;
+  +portrait()
+    font-size 1.125em
+  svg
+    margin 0 4px
+    display inline-block
+    position: relative;
+    top: 2px
+    g
+      fill $black-text
+      transitions()
+  &:hover
+    color $gray-text7
+    svg g
+      fill $gray-text7
+
+.nav-mobile
+  display none
+  +mobile()
+    display block
+
+.nav-top
+  position relative
+  padding 16px 0 0
+  background $white
+  z-index 90
+
+
+.nav-border-bottom
+  border-bottom 2px solid $red
+  padding-bottom 14px
+  &:before
+    pseudo(block, absolute)
+    width 15px
+    background $white
+    height 2px
+    bottom -2px
+    left 0
+  &:after
+    pseudo(block, absolute)
+    width 15px
+    background $white
+    height 2px
+    bottom -2px
+    right -2px
+
+.nav-bottom
+  padding 12px 0 9px
+  background $white
+  z-index 80
+  transitions()
+  position absolute
+  left 0
+  right 0
+  bottom -48px
+  +mobile()
+    position fixed
+    top 0
+    bottom 0
+    right 0
+    left 60px
+    width: calc(100% - 60px)
+    height: 100vh;
+    padding-top 70px
+
+.hidden
+  transform translateY(-48px)
+  +mobile()
+    transform none
+
+.menu
+  display flex
+  justify-content center
+  flex-direction row
+  flex-wrap nowrap
+  padding: 3px 0
+  +portrait()
+    flex-direction column
+    padding 0
+  +mobile()
+    padding-bottom: 28px;
+    justify-content flex-start
+    padding-top 4px
+  li
+    margin 0 20px
+    +portrait()
+      margin 0 0 5px
+    +mobile()
+      margin 0 10px 0 0
+    &:last-child
+      +portrait()
+        margin-bottom 0
+    a
+      display inline-block
+      font-size: .875em;
+      letter-spacing: 1.8px;
+      font-weight 900
+      color $black-text
+      padding-bottom 2px
+      border-bottom 2px solid $trans
+      &:hover
+        border-bottom-color $black-text
+    .active
+      border-bottom 2px solid $black-text
+
+.menu-sub
+  display flex
+  justify-content space-between
+  flex-direction row
+  flex-wrap nowrap
+  +mobile()
+    margin-bottom: 20px;
+  li
+    +mobile()
+      margin-bottom 10px
+    a
+      color $black-text
+      font-size .75em
+      letter-spacing: 1.5px;
+      display inline-block
+      border-bottom 1px solid $trans
+      &:hover
+        color $black
+        border-bottom-color $black
+    .active
+      color $black
+      border-bottom-color $black
+      +portrait()
+        font-size 0.625em
+      +mobile()
+        font-size 1em
+  +mobile()
+    flex-direction column
+
+.menu-contacts
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  justify-content flex-end
+  align-items center
+  +mobile()
+    flex-direction column
+    align-items flex-start
+    justify-content flex-start
+  li
+    font-weight 400
+    font-size: .75em
+    letter-spacing: 1px
+    color: $gray-text
+    margin: 0 6px 0 23px;
+    +tablet()
+      margin-right 0
+      margin-left 0
+      &:last-child
+        flex 1 1 40%
+        max-width 40%
+        margin-left 10px
+    +portrait()
+      margin-right 0
+      &:last-child
+        flex 1 1 40%
+        max-width 40%
+    +mobile()
+      margin 0
+      //text-align right
+      margin-bottom 10px
+    a
+      font-size 14px
+      color: $gray-text
+      &:hover
+        color $black-text
+
+
+.search-container
+  position relative
+  .search-input
+    background $gray-back5
+    border:none
+    font-size .75em
+    padding 10px 35px 11px 14px
+    position absolute
+    right 0
+    top -4px
+    max-width 229px
+    width 0
+    opacity 0
+    transitions()
+    &:focus
+      outline none
+    +mobile()
+      right auto
+      left -28px
+      position relative
+      padding-left 34px
+      max-width 200px
+  .search-input.visible
+    width 100%
+    opacity 1
+  +mobile()
+    min-height 35px
+    margin-bottom: 20px;
+
+
+
+/* BURGER ICON */
+
+.nav-icon
+  width 30px
+  height 22px
+  position relative
+  //margin 14px 0
+  cursor pointer
+  transitions()
+  transform rotate(0deg)
+  float right
+  span
+    display block
+    position absolute
+    height 3px
+    width 100%
+    background $black
+    border-radius 2px
+    opacity 1
+    left 0
+    transform rotate(0deg)
+    transitions()
+    &:nth-child(1)
+      top 0px
+    &:nth-child(2), &:nth-child(3)
+      top 9px
+    &:nth-child(4)
+      top 18px
+
+.nav-icon.open
+  span
+    &:nth-child(1)
+      top 18px
+      width 0%
+      left 50%
+    &:nth-child(2)
+      transform rotate(45deg)
+    &:nth-child(3)
+      transform rotate(-45deg)
+    &:nth-child(4)
+      top 18px
+      width 0%
+      left 50%
+
+//
+
+nav.nav-transparent
+  background $trans
+  .nav-top, .nav-bottom
+    background $trans
+  .nav-border-bottom
+    &:after
+      width 0
+    &:before
+      width 0
+  .logo
+    color $white
+    svg g
+      fill $white
+  .menu li
+    a
+      color $white
+      &:hover
+        border-bottom-color $white
+    .active
+      border-bottom-color $white
+  .menu-sub li
+    a
+      color $white
+      &:hover
+        border-bottom-color $white
+    .active
+      border-bottom-color $white
+  .link-home
+    svg g
+      fill $white
+  .link-search
+    svg g
+      fill $white
+  .nav-icon
+    span
+      background $white
+
+
+
+
+//@import "../libs/rew-downnav/downnav.styl"
+@import "../libs/rew-sidenav/sidenav.styl"

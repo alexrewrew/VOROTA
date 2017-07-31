@@ -1,0 +1,63 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* SELECTS */
+select
+  width 100%
+  border none
+  border-radius 0
+  padding 12px 30px 14px
+  display block
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:focus
+    outline none
+.select-container
+  position relative
+  margin-bottom 10px
+  &:after
+    triangle($black-text, down, 4px)
+    top calc(50% - 2px)
+    right 18px
+    transitions()
+  &:focus
+    &:after
+      transform rotate(180deg)
+
+.chosen-container
+  font-size 1em
+
+.chosen-container-single .chosen-single
+  border: none
+  background $white
+  border-radius 0
+  box-shadow none
+  height auto
+  padding: 10px 30px 11px;
+  font-size 1em
+  color $black-text
+
+.chosen-container-single .chosen-single div
+  display none
+
+.chosen-container-active.chosen-with-drop .chosen-single
+  border none
+  background $white
+  box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+
+.chosen-container .chosen-drop
+  border none
+  border-radius 0
+
+.chosen-container .chosen-results
+  margin 0
+  padding 0 0 11px 0
+
+.chosen-container .chosen-results .active-result
+  padding: 10px 30px 11px;
+  color $black-text
+  cursor pointer
+
+.chosen-container .chosen-results .active-result.highlighted
+  background none
+  color $red

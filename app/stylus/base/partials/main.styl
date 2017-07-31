@@ -1,0 +1,26 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* MAIN STYLES */
+
+html
+  overflow-x hidden
+
+body
+  overflow-x hidden
+  font(16px, $black, 400, normal)
+  padding-top 109px
+  background $gray-back
+  +mobile()
+    padding-top 57px
+
+html.open-nav
+  overflow hidden
+  height 100vh
+
+body.open-nav
+  overflow hidden
+
+body.index
+  padding-top 0
+

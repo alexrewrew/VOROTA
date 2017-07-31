@@ -1,0 +1,113 @@
+//- layouts/layout.pug
+extend layouts/_layout-index.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-with-video
+        .container
+            .row.align-items-center
+                .offset-md-1.col-lg-6.col-md-8
+                    h1.index-title Лидер в области ворот и систем автоматики
+        video.header-video(autoplay, loop, muted, plays-inline)
+            source(src='video/vorota1.mp4', type='video/mp4')
+
+
+    section
+        .choice-section
+            .container
+                .row
+                    .col-md-6.choice-block
+                        a(href='' title='').menu-choice
+                            img(src='img/illus/home-small.png' title='' alt='').menu-choice--image
+                            .menu-choice--title
+                                h3 МОЙ ДОМ
+                                span Смотреть каталог
+                                    img(src='img/icons/arrow-right-white.svg' title='' onerror="this.src='img/icons/arrow-right-white.png'")
+                    .col-md-6.choice-block
+                        a(href='' title='').menu-choice
+                            img(src='img/illus/business-small.png' title='' alt='').menu-choice--image
+                            .menu-choice--title
+                                h3 МОЙ БИЗНЕС
+                                span Смотреть каталог
+                                    img(src='img/icons/arrow-right-white.svg' title='' onerror="this.src='img/icons/arrow-right-white.png'")
+
+        .container
+            .row
+                .col-12
+                    h2 Почему выбирают Ворота.ру
+            .row.icon-five
+                .col.icon-drop
+                    a(href='' title='').icon-container.icon-index
+                        img(src='img/icons/icon2-1.svg' title='' alt='' onerror="this.src='img/icons/icon2-1.png'").icon-image
+                        h5 Изготовление и монтаж от 1 дня
+                        span.icon-details Подробнее
+                            img(src='img/icons/arrow-right.svg' title='' alt='' onerror="img/icons/arrow-down.png")
+                .col.icon-drop
+                    a(href='' title='').icon-container.icon-index
+                        img(src='img/icons/icon2-2.svg' title='' alt='' onerror="this.src='img/icons/icon2-2.png'").icon-image
+                        h5 Адаптировано к суровому климату Сибири
+                        .icon-details
+                            span Подробнее
+                            img(src='img/icons/arrow-right.svg' title='' alt='' onerror="img/icons/arrow-down.png")
+                .col.icon-drop
+                    a(href='' title='').icon-container.icon-index
+                        img(src='img/icons/icon2-3.svg' title='' alt='' onerror="this.src='img/icons/icon2-3.png'").icon-image
+                        h5 Гарантия от 3 до 5 лет
+                        span.icon-details Подробнее
+                            img(src='img/icons/arrow-right.svg' title='' alt='' onerror="img/icons/arrow-down.png")
+                .col.icon-drop
+                    a(href='' title='').icon-container.icon-index
+                        img(src='img/icons/icon2-4.svg' title='' alt='' onerror="this.src='img/icons/icon2-4.png'").icon-image
+                        h5 Круглосуточная аварийная служба
+                        span.icon-details Подробнее
+                            img(src='img/icons/arrow-right.svg' title='' alt='' onerror="img/icons/arrow-down.png")
+                .col.icon-drop
+                    a(href='' title='').icon-container.icon-index
+                        img(src='img/icons/icon2-5.svg' title='' alt='' onerror="this.src='img/icons/icon2-5.png'").icon-image
+                        h5 Системы безопасности
+                        span.icon-details Подробнее
+                            img(src='img/icons/arrow-right.svg' title='' alt='' onerror="img/icons/arrow-down.png")
+
+    section
+        .container
+            .row
+                .col-12
+                    h2 Полезные статьи
+            .row
+                .col-md-5.col-lg-3.flex-last.flex-md-first
+                    include partials/_discount-slider
+
+                .col-md-7.col-lg-9.flex-first.flex-md-last
+                    a(href='' title='').news-container
+                        .news-container--image
+                            img(src='img/illus/news1.png' title='' alt='')
+                        .news-container--description
+                            h4 Программирование брелков хороших и плохих, дешевых и прекрасных
+                            .link-more--wa
+                                .link-more--wa-text Читать больше
+                                .link-more--wa-arrow
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал […]
+                            ul.news-container--description-data
+                                li 7.06.2017
+                                li
+                                    img(src='img/icons/eye.svg' title='' alt='' onerror='this.src="img/icons/eye.png"')
+                                    | 112
+                    a(href='' title='').news-container
+                        .news-container--image
+                            img(src='img/illus/news1.png' title='' alt='')
+                        .news-container--description
+                            h4 Программирование брелков
+                            .link-more--wa
+                                .link-more--wa-text Читать больше
+                                .link-more--wa-arrow
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал […]
+                            ul.news-container--description-data
+                                li 7.06.2017
+                                li
+                                    img(src='img/icons/eye.svg' title='' alt='' onerror='this.src="img/icons/eye.png"')
+                                    | 112
+
+    include partials/_techs.pug

@@ -1,0 +1,46 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* FORMS */
+form {}
+
+/* INPUTS */
+input
+  +placeholder()
+    color $gray-text
+
+input[type='checkbox']
+  visibility hidden
+
+input[type='checkbox'] + label
+  color $black-text
+  font-size 1em
+  position relative
+  &:after
+    pseudo(block, absolute)
+    width 20px
+    height 20px
+    background $trans
+    border $gray-back3 3px solid
+    top 0
+    left -36px
+  &:before
+    pseudo(block, absolute)
+    background url('../img/icons/checked.svg') center no-repeat
+    width 16px
+    height 21px
+    background-size cover
+    z-index 2
+    left -32px
+    bottom 4px
+    opacity 0
+    transitions .1s opacity ease
+
+input[type='checkbox']:checked + label
+  &:before
+    opacity 1
+
+textarea
+  resize none
+
+label {}

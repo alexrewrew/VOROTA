@@ -1,0 +1,41 @@
+.pagination
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  padding 4px 0
+  margin-bottom 21px
+  +portrait()
+    justify-content center
+    margin-bottom 80px
+  +mobile()
+    justify-content space-between
+  li
+    margin 0 8px
+    +mobile()
+      margin 0
+    &:first-child
+      margin-left 0
+      margin-right 60px
+      +mobile()
+        margin 0
+      &:hover
+        a
+          transform translateX(-10px)
+    &:last-child
+      margin-right 0
+      margin-left 60px
+      +mobile()
+        margin 0
+      &:hover
+        a
+          transform translateX(10px)
+    a
+      color $gray-back3
+      letter-spacing: 0.7px;
+      font-size 1.125em
+      display block
+      font-weight 600
+      &:hover
+        color $red
+    .active
+      color $red

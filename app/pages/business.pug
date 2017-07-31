@@ -1,0 +1,431 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Мой бизнес
+                .col-12
+                    h1 МОЙ БИЗНЕС
+                .col-lg-6
+                    img(src='img/illus/business.png' alt='' title='').header-image
+                .col-lg-5.display-flex.align-items-center
+                    p.header-jumbotron Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+
+    section
+        .container
+            .row
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        a(href='' title='').icon-container--link
+                        img(src='img/icons/icon2-1.svg' title='' alt='' onerror="this.src='img/icons/icon2-1.png'").icon-image
+                        h5 Ворота
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                            .row.icon-dropdown-description(data-id='11')
+                                                .col-6
+                                                    img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                                .col-6
+                                                    h4 Гаражные cекционные ворота1
+                                                    p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                            .row.icon-dropdown-description(data-id='12')
+                                                .col-6
+                                                    img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                                .col-6
+                                                    h4 Гаражные cекционные ворота2
+                                                    p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                            .row.icon-dropdown-description(data-id='13')
+                                                .col-6
+                                                    img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                                .col-6
+                                                    h4 Гаражные cекционные ворота3
+                                                    p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                            .row.icon-dropdown-description(data-id='14')
+                                                .col-6
+                                                    img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                                .col-6
+                                                    h4 Гаражные cекционные ворота4
+                                                    p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+
+
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        a(href='' title='').icon-container--link
+                        img(src='img/icons/icon2-2.svg' title='' alt='' onerror="this.src='img/icons/icon2-2.png'").icon-image
+                        h5 Автоматика для ворот
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                        .row.icon-dropdown-description(data-id='11')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота1
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='12')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота2
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='13')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота3
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='14')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота4
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        a(href='' title='').icon-container--link
+                        img(src='img/icons/icon2-3.svg' title='' alt='' onerror="this.src='img/icons/icon2-3.png'").icon-image
+                        h5 Перегрузочное оборудование
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                        .row.icon-dropdown-description(data-id='11')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота1
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='12')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота2
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='13')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота3
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='14')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота4
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        a(href='' title='').icon-container--link
+                        img(src='img/icons/icon2-4.svg' title='' alt='' onerror="this.src='img/icons/icon2-4.png'").icon-image
+                        h5 Шлагбаумы
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                        .row.icon-dropdown-description(data-id='11')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота1
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='12')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота2
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='13')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота3
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='14')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота4
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        img(src='img/icons/icon2-5.svg' title='' alt='' onerror="this.src='img/icons/icon2-5.png'").icon-image
+                        h5 Автоматические двери
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                        .row.icon-dropdown-description(data-id='11')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота1
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='12')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота2
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='13')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота3
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='14')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота4
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        a(href='' title='').icon-container--link
+                        img(src='img/icons/icon2-6.svg' title='' alt='' onerror="this.src='img/icons/icon2-6.png'").icon-image
+                        h5 Модульные конструкции
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                        .row.icon-dropdown-description(data-id='11')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота1
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='12')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота2
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='13')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота3
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='14')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота4
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        a(href='' title='').icon-container--link
+                        img(src='img/icons/icon2-7.svg' title='' alt='' onerror="this.src='img/icons/icon2-7.png'").icon-image
+                        h5 Ограждения
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                        .row.icon-dropdown-description(data-id='11')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота1
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='12')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота2
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='13')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота3
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='14')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота4
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+                .col-6.col-md-4.col-lg-3.icon-drop
+                    .icon-container
+                        a(href='' title='').icon-container--link
+                        img(src='img/icons/icon2-8.svg' title='' alt='' onerror="this.src='img/icons/icon2-8.png'").icon-image
+                        h5 Опции
+                        img(src='img/icons/arrow-down.svg' title='' alt='' onerror="img/icons/arrow-down.png").icon-arrow
+                        .icon-dropdown
+                            .container
+                                .row
+                                    .offset-md-1.col-lg-4.col-md-5
+                                        h4 Типы ворот:
+                                        ul.icon-dropdown--link-list
+                                            li
+                                                a(href='' title='' data-to='11') Гаражные серционные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='12') Гаражные распашные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='13') Уличные откатные ворота
+                                                    i.fa.fa-angle-right
+                                            li
+                                                a(href='' title='' data-to='14') Уличные распашные ворота
+                                                    i.fa.fa-angle-right
+
+                                    .col-lg-7.col-xl-6
+                                        .row.icon-dropdown-description(data-id='11')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота1
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='12')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота2
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='13')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота3
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный
+                                        .row.icon-dropdown-description(data-id='14')
+                                            .col-6
+                                                img(src='img/illus/choice1.png' title='' alt='').icon-dropdown--image
+                                            .col-6
+                                                h4 Гаражные cекционные ворота4
+                                                p Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+    include partials/_popular.pug
+    include partials/_discount.pug
+    include partials/_techs.pug

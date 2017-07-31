@@ -1,0 +1,149 @@
+.news-container
+  display flex
+  background $trans
+  margin-bottom 32px
+  height 240px
+  transitions()
+  +tablet()
+    height 197px
+  +portrait()
+    flex-wrap wrap
+    height auto
+  +mobile()
+    flex-wrap wrap
+    height auto
+  &--image
+    height 240px
+    flex 1 1 43%
+    max-width 43%
+    overflow hidden
+    display flex
+    justify-content center
+    align-items center
+    +tablet()
+      height 197px
+    +portrait()
+      height 197px
+      flex 1 1 100%
+      max-width 100%
+    +mobile()
+      height 197px
+      flex 1 1 100%
+      max-width 100%
+    img
+      width 100%
+      filter grayscale(100%)
+      transitions()
+      +portrait()
+        filter none
+      +mobile()
+        filter none
+  &--description
+    padding 20px 28px
+    flex 1 1 57%
+    max-width 57%
+    position relative
+    +tablet()
+      padding 15px 28px
+    +portrait()
+      padding 15px 28px 31px
+      flex 1 1 100%
+      max-width 100%
+    +mobile()
+      padding 15px 15px 31px
+      flex 1 1 100%
+      max-width 100%
+    h4
+      margin-bottom 8px
+      max-height 48px
+      overflow hidden
+    p
+      font-size: .875em
+      line-height: 1.57;
+      color: $gray-text4
+      overflow hidden
+      max-height 105px
+      +tablet()
+        max-height 63px
+      +portrait()
+        max-height 63px
+    &-data
+      color $red
+      font-size .75em
+      display flex
+      flex-direction row
+      flex-wrap nowrap
+      position absolute
+      bottom 23px
+      left 28px
+      +tablet()
+        bottom 20px
+      +portrait()
+        bottom 20px
+      +mobile()
+        left 15px
+      li
+        margin-right 45px
+        img
+          position relative
+          top -1px
+          margin-right 10px
+    .link-more--wa
+      height 14px
+      position relative
+      margin-bottom 10px
+      &-arrow
+        transitions()
+        position absolute
+        background red
+        width: 32px;
+        height: 2px
+        top: 7px
+        left 0
+        &:before
+          pseudo(block, absolute)
+          background $red
+          bottom -1px
+          right 2px
+          width 2px
+          height 8px
+          transform rotate(-45deg)
+          opacity 0
+          transitions()
+        &:after
+          pseudo(block, absolute)
+          background $red
+          bottom -5px
+          right 2px
+          width 2px
+          height 8px
+          transform rotate(45deg)
+          opacity 0
+          transitions()
+      &-text
+        position absolute
+        right: 54px;
+        font-size: .75em
+        color $red
+        opacity 0
+        letter-spacing: 1px;
+        transitions()
+  &:hover
+    background $white
+    .news-container--description
+      .link-more--wa
+        .link-more--wa-arrow
+          transform translateX(calc(396px))
+          +tablet()
+            transform translateX(calc(300px))
+          +portrait()
+            transform translateX(calc(300px))
+          &:before
+            opacity 1
+          &:after
+            opacity 1
+        .link-more--wa-text
+            opacity 1
+    .news-container--image
+      img
+        filter grayscale(0%)

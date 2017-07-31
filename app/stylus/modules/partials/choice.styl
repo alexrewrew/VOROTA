@@ -1,0 +1,81 @@
+.menu-choice
+  height 160px
+  display block
+  position relative
+  background $white
+  &--image
+    max-height: 160px
+    position absolute
+    bottom 0
+    left 0
+    height 100%
+    filter grayscale(100%)
+    opacity .5
+    transitions()
+    +tablet()
+      max-height: 130px;
+    +portrait()
+      max-height: 90px;
+    +mobile()
+      width 100%
+  &--title
+    position absolute
+    left 54%
+    right 0
+    bottom 37%
+    +portrait()
+      left 47%
+    +mobile()
+      left 10%
+    span
+      position absolute
+      bottom 0
+      left 0
+      letter-spacing: 1px;
+      font-size .75em
+      color $trans
+      transitions()
+      img
+        margin-left 0
+        opacity 0
+        transitions()
+  h3
+    color $black-text
+    font-weight 900
+    font-size 1.500em
+    margin-bottom 7px
+    letter-spacing normal
+    transitions()
+    +portrait()
+      font-size 1.25em
+
+.choice-section
+  position relative
+  z-index 50
+  overflow visible
+  top -80px
+  margin-bottom 53px
+
+.choice-block
+  &:first-child
+    padding-right 0
+    +mobile()
+      padding-right 15px
+  &:last-child
+    padding-left 0
+    +mobile()
+      padding-left 15px
+  &:hover
+    .menu-choice
+      background $gray-back2
+      .menu-choice--image
+        opacity 1
+        filter grayscale(0%)
+      .menu-choice--title
+        span
+          color $white
+          img
+            opacity 1
+            transform translateX(14px)
+        h3
+          transform translateY(-18px)

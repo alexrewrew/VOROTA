@@ -1,0 +1,68 @@
+.product
+  cursor pointer
+  display block
+  margin-bottom 50px
+  &--image-container
+    height 220px
+    width 100%
+    display flex
+    justify-content center
+    align-items center
+    overflow hidden
+    margin-bottom 32px
+    position relative
+    &-top
+      position absolute
+      right 0
+      top 0
+      background $red
+      color $white
+      line-height: 1;
+      font-size 1.25em
+      width 68px
+      text-transform lowercase
+      text-align center
+      padding-bottom 6px
+    img
+      max-height 220px
+  p
+    color $black-text
+    font-size: .875em
+    line-height: 1.57;
+  &--tech
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    padding 9px 0
+    margin-bottom 27px
+    li
+      margin-right 16px
+      img
+        height 26px
+        filter grayscale(100%)
+        opacity .5
+        transitions()
+        +portrait()
+          filter grayscale(0%)
+          opacity 1
+  .button
+    +portrait()
+      max-width 100%
+      background $red
+    +mobile()
+      max-width 320px
+      margin 0 auto
+  &:hover
+    .product--tech
+      li
+        img
+          filter grayscale(0%)
+          opacity 1
+    .button
+      background $red
+      color $white
+
+.product-green
+  &:hover
+    .button
+      background $green-back
