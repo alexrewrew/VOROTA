@@ -1,0 +1,32 @@
+.counter
+  display flex
+  align-items center
+  margin-bottom 54px
+  &-numbers
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    li
+      font-size 1.5em
+      color $white
+      background $gray-text3
+      position relative
+      line-height: 0.92;
+      font-weight 600
+      padding 6px 0 8px
+      margin-right 7px
+      width 36px
+      text-align center
+      &:last-child
+        margin-right 27px
+      &:before
+        pseudo(block, absolute)
+        top 0
+        left 0
+        right 0
+        height 50%
+        background-image: linear-gradient(to bottom, rgba(174, 174, 174, 0.0), rgba(23, 23, 23, 0.51));
+  &-text
+    font-size 1.375em
+    color #383838
+    font-weight 500

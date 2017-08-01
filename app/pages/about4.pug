@@ -1,0 +1,62 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - О компании. Награды
+
+block content
+
+    header.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='about1.html' title='') О компании
+                        li
+                            a(href='about4.html' title='') Награды
+                .col-md-4.col-lg-3
+                    h1 О компании
+                .offset-md-1.col-md-7.offset-lg-2
+                    .header-text
+                        p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
+
+    section.tabs-section
+        .container
+            .row.justify-content-center
+                .col-lg-10.col-xl-8
+                    ul.tabs
+                        li
+                            a(href='about1.html' title='') Ключевые сотрудники
+                        li
+                            a(href='about2.html' title='') Наши работы
+                        li
+                            a(href='about3.html' title='') Партнеры
+                        li
+                            a(href='about4.html' title='').active Награды
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-md-6.col-lg-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    ul.diplomas
+                        li
+                            img(src='img/diplomas/diploma1.png' title='' alt='')
+                        li
+                            img(src='img/diplomas/diploma2.png' title='' alt='')
+                        li
+                            img(src='img/diplomas/diploma3.png' title='' alt='')
+                        li
+                            img(src='img/diplomas/diploma4.png' title='' alt='')
+                        li
+                            img(src='img/diplomas/diploma5.png' title='' alt='')
+                        li
+                            img(src='img/diplomas/diploma6.png' title='' alt='')
+                    include partials/_sendmail
+

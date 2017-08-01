@@ -2,10 +2,20 @@
   margin-bottom: 48px;
   +portrait()
     margin-bottom 15px
+
 .slider-discount
   max-width 263px
   +mobile()
     margin 0 auto 48px
+
+.slider-article
+  .slick-dots
+    +portrait()
+      bottom: -30px;
+
+.slider-article.slick-dotted.slick-slider
+  +portrait()
+    margin-bottom 55px
 
 .slick-dots
   bottom -28px

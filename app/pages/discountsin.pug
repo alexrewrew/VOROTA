@@ -1,0 +1,92 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - Акции
+
+block content
+
+    header.header-discount
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='discounts.html' title='') Акции
+                        li
+                            a(href='discountsin.html' title='') Скидка 5% на online заказы
+                .col-lg-3
+                    h1 Скидка 5% на online заказы
+                .col-lg-9
+                    .img-header
+                        img(src='img/illus/discount-head.png' title='' alt='')
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-md-5.col-lg-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .discount-description
+                        .counter
+                            ul.counter-numbers
+                                li 1
+                                li 5
+                            .counter-text
+                                | дней до окончания акции
+                        h2 Условия акции
+                        p Установите секционные гаражные, уличные откатные или распашные ворота и удостоверьтесь в качестве Ворота.ру. Если вас что-то не устроит в течении 7 дней, сервисная служба сделает демонтаж и вернет вам 100% оплаты. Ворота.ру. Если вас что-то не устроит в течении 7 дней, сервисная служба сделает демонтаж и вернет  оплаты.
+                    .spacer-115
+                    h2 Акционные товары
+                    .row.justify-content-center
+                        .col-md-6.col-lg-4
+                            a(href='' title='').product
+                                .product--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Гаражные секционные ворота
+                                p Cтворка до 2.5м. Самоблокирующийся привод.
+                                ul.product--tech
+                                    li
+                                        img(src='img/techs/small/tech1.svg' title='' alt='')
+                                    li
+                                        img(src='img/techs/small/tech2.svg' title='' alt='')
+                                    li
+                                        img(src='img/techs/small/tech3.svg' title='' alt='')
+                                span.button 16 000 руб
+                        .col-md-6.col-lg-4
+                            a(href='' title='').product
+                                .product--image-container
+                                    img(src='img/products/product1.png' title='' alt='')
+                                h3 Гаражные секционные ворота
+                                p Cтворка до 2.5м. Самоблокирующийся привод.
+                                ul.product--tech
+                                    li
+                                        img(src='img/techs/small/tech1.svg' title='' alt='')
+                                    li
+                                        img(src='img/techs/small/tech2.svg' title='' alt='')
+                                    li
+                                        img(src='img/techs/small/tech3.svg' title='' alt='')
+                                span.button 16 000 руб
+                        .col-md-6.col-lg-4
+                            a(href='' title='').product
+                                .product--image-container
+                                    img(src='img/products/product3.png' title='' alt='')
+                                h3 Гаражные секционные ворота
+                                p Cтворка до 2.5м. Самоблокирующийся привод.
+                                ul.product--tech
+                                    li
+                                        img(src='img/techs/small/tech1.svg' title='' alt='')
+                                    li
+                                        img(src='img/techs/small/tech2.svg' title='' alt='')
+                                    li
+                                        img(src='img/techs/small/tech3.svg' title='' alt='')
+                                span.button 16 000 руб
+                        .col-lg-4
+                            a(href='' title='').button.button-red.button-all Все товары
+                                img(src='img/icons/arrow-right-white.svg' onerror='this.src="img/icons/arrow-right-white.png"')
+
+

@@ -303,6 +303,35 @@ nav.nav-transparent
     span
       background $white
 
+//aside menu
+.menu-aside
+  display flex
+  flex-direction column
+  flex-wrap nowrap
+  margin-bottom 80px
+  +portrait()
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    margin-bottom 50px
+  +mobile()
+    margin-bottom 50px
+  li
+    a
+      color $black
+      display block
+      background $white
+      padding 12px 29px 14px
+      margin-bottom 10px
+      &:hover
+        background $gray-back4
+    .active
+      background $gray-text2
+      color $white
+      &:hover
+        background $gray-text2
+        color $white
+
 
 
 

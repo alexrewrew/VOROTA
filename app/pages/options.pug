@@ -2,7 +2,7 @@
 extend layouts/_layout.pug
 
 block title
-    | Главная страница
+    | ВОРОТА.РУ - Опции
 
 block content
 
@@ -12,19 +12,20 @@ block content
                 .col-12
                     ul.breadcrumbs
                         li
-                            a(href='' title='') Главная
+                            a(href='index.html' title='') Главная
                         li
-                            a(href='' title='') Опции
+                            a(href='options.html' title='') Опции
                 .col-md-4.col-lg-3
                     h1 Опции
                 .offset-md-1.col-md-7.offset-lg-2
-                    h6 FAAC - идеальное решение для автоматики распашных ворот
-                    p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
+                    .header-text
+                        h6 FAAC - идеальное решение для автоматики распашных ворот
+                        p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
 
     section
         .container
             .row
-                .col-lg-3#discount-col
+                aside.col-lg-3#discount-col
                     form.filter-container
                         .row.justify-content-between
                             .col-md-4.col-lg-12

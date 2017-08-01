@@ -77,15 +77,49 @@ header
   min-height auto
   +mobile()
     height auto
+  +portrait()
+    height auto
+    margin-bottom 31px
   h1
     font-size 1.500em
     font-weight 600
     text-align left
     color $black-text
+    +mobile()
+      margin-bottom: 25px;
   .breadcrumbs
     margin-bottom 38px
   p
     font-size .875em
     font-weight 300
     line-height: 1.57;
+
+.header-discount
+  height 343px
+  min-height auto
+  overflow hidden
+  padding-bottom 0
+  +portrait()
+    height auto
+  +mobile()
+    height auto
+  h1
+    font-size 1.500em
+    font-weight 600
+    text-align left
+    color $black-text
+    +mobile()
+      margin-bottom: 25px;
+    +portrait()
+      margin-bottom 45px
+  .breadcrumbs
+    margin-bottom 38px
+
+.header-text
+  max-height 155px
+  overflow hidden
+  +portrait()
+    max-height unset
+  +mobile()
+    max-height unset
 

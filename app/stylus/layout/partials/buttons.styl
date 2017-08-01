@@ -21,8 +21,13 @@ button {}
   &:hover
     background $red
     color $white
+    img
+      transform translateX(10px)
   &:focus
     outline none
+  img
+    margin-left 18px
+    transitions()
 
 .button-red
   background $red
@@ -32,9 +37,14 @@ button {}
   &:hover
     background $gray-back3
 
-
-
 .button-small
   font-size 1.125em
   max-width 195px
   padding-top 10px
+
+.button-all
+  +portrait()
+    margin 0 auto 80px
+  +mobile()
+    max-width unset
+    margin-bottom 0px

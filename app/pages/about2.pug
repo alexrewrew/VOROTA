@@ -1,0 +1,168 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - О компании. Наши проекты
+
+block content
+
+    header.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='about1.html' title='') О компании
+                        li
+                            a(href='about2.html' title='') Наши проекты
+                .col-md-4.col-lg-3
+                    h1 О компании
+                .offset-md-1.col-md-7.offset-lg-2
+                    .header-text
+                        p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
+
+    section.tabs-section
+        .container
+            .row.justify-content-center
+                .col-lg-10.col-xl-8
+                    ul.tabs
+                        li
+                            a(href='about1.html' title='')  Ключевые сотрудники
+                        li
+                            a(href='about2.html' title='').active Наши работы
+                        li
+                            a(href='about3.html' title='') Партнеры
+                        li
+                            a(href='about4.html' title='') Награды
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    ul.menu-aside
+                        li
+                            a(href='' title='').active Автоматические вотрота
+                        li
+                            a(href='' title='') Секционные ворота
+                        li
+                            a(href='' title='') Шлагбаумы
+                    .row#discount-row
+                        .col-md-6.col-lg-12
+                            include partials/_discount-slider
+                        .col-md-6.col-lg-12
+                            include partials/_articles-slider
+                .col-lg-9#product-col
+                    .row
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6
+                            a(href='' title='').discount-article.project
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Проект 1
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+
+
+                        .offset-lg-2.col-lg-10
+                            ul.pagination
+                                li
+                                    a(href='' title='')
+                                        img(src='img/icons/arrow-left.svg' title='' alt='' onerror='this.src="img/icons/arrow-left.png"')
+                                li
+                                    a(href='' title='').active 1
+                                li
+                                    a(href='' title='') 2
+                                li
+                                    a(href='' title='') 3
+                                li
+                                    a(href='' title='') 4
+                                li
+                                    a(href='' title='') ...
+                                li
+                                    a(href='' title='')
+                                        img(src='img/icons/arrow-right.svg' title='' alt='' onerror='this.src="img/icons/arrow-right.png"')
+

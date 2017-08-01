@@ -1,0 +1,31 @@
+.tabs-section
+  margin-bottom 0
+
+.tabs
+  display flex
+  flex-direction row
+  justify-content center
+  flex-wrap wrap
+  margin-bottom 70px
+  +mobile()
+    margin-bottom 50px
+  li
+    margin 0 5px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      margin 0
+    a
+      color $black
+      display block
+      background $white
+      padding 12px 29px 14px
+      margin-bottom 10px
+      &:hover
+        background $gray-back4
+    .active
+      background $gray-text2
+      color $white
+      &:hover
+        background $gray-text2
+        color $white

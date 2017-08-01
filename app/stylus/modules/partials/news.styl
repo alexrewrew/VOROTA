@@ -88,62 +88,17 @@
           position relative
           top -1px
           margin-right 10px
-    .link-more--wa
-      height 14px
-      position relative
-      margin-bottom 10px
-      &-arrow
-        transitions()
-        position absolute
-        background red
-        width: 32px;
-        height: 2px
-        top: 7px
-        left 0
-        &:before
-          pseudo(block, absolute)
-          background $red
-          bottom -1px
-          right 2px
-          width 2px
-          height 8px
-          transform rotate(-45deg)
-          opacity 0
-          transitions()
-        &:after
-          pseudo(block, absolute)
-          background $red
-          bottom -5px
-          right 2px
-          width 2px
-          height 8px
-          transform rotate(45deg)
-          opacity 0
-          transitions()
-      &-text
-        position absolute
-        right: 54px;
-        font-size: .75em
-        color $red
-        opacity 0
-        letter-spacing: 1px;
-        transitions()
   &:hover
     background $white
-    .news-container--description
-      .link-more--wa
-        .link-more--wa-arrow
-          transform translateX(calc(396px))
-          +tablet()
-            transform translateX(calc(300px))
-          +portrait()
-            transform translateX(calc(300px))
-          &:before
-            opacity 1
-          &:after
-            opacity 1
-        .link-more--wa-text
-            opacity 1
+    .link-more--wa
+      width 100%
+      .link-more--wa-arrow
+        &:before
+          opacity 1
+        &:after
+          opacity 1
+      .link-more--wa-text
+        opacity 1
     .news-container--image
       img
         filter grayscale(0%)

@@ -9,6 +9,7 @@ a
     text-decoration none
   &:focus
     text-decoration none
+    outline none
 
 .link-up
   position fixed
@@ -49,3 +50,48 @@ a
 .link-search.active
   svg g
     fill $black !important
+
+.link-more--wa
+  height 14px
+  position relative
+  margin-bottom 10px
+  color $red
+  width 32px
+  transitions()
+  &-text
+    position absolute
+    right: 54px;
+    font-size: .75em
+    color $red
+    opacity 0
+    letter-spacing: 1px;
+    min-width 100px
+    transitions()
+  &-arrow
+    transitions()
+    position absolute
+    background red
+    width: 32px;
+    height: 2px
+    top: 7px
+    right 0
+    &:before
+      pseudo(block, absolute)
+      background $red
+      bottom -1px
+      right 2px
+      width 2px
+      height 8px
+      transform rotate(-45deg)
+      opacity 0
+      transitions()
+    &:after
+      pseudo(block, absolute)
+      background $red
+      bottom -5px
+      right 2px
+      width 2px
+      height 8px
+      transform rotate(45deg)
+      opacity 0
+      transitions()

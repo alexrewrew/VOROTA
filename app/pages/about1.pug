@@ -1,0 +1,99 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - О компании. Ключевые сотрудники
+
+block content
+
+    header.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='about1.html' title='') О компании
+                        li
+                            a(href='about1.html' title='') Ключевые сотрудники
+                .col-md-4.col-lg-3
+                    h1 О компании
+                .offset-md-1.col-md-7.offset-lg-2
+                    .header-text
+                        p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
+
+    section.tabs-section
+        .container
+            .row.justify-content-center
+                .col-lg-10.col-xl-8
+                    ul.tabs
+                        li
+                            a(href='about1.html' title='').active   Ключевые сотрудники
+                        li
+                            a(href='about2.html' title='') Наши работы
+                        li
+                            a(href='about3.html' title='') Партнеры
+                        li
+                            a(href='about4.html' title='') Награды
+
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-md-6.col-lg-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .row
+                        .col-6.col-md-3
+                            .worker
+                                .worker--image-container
+                                    img(src='img/illus/worker.png' title='' alt='')
+                                .worker--description
+                                    h4 Директор
+                                    p Смагин Алексей
+                                    a(href='tel:(3952) 72 73 00' title='') (3952) 72 73 00
+                        .col-6.col-md-3
+                            .worker
+                                .worker--image-container
+                                    img(src='img/illus/worker.png' title='' alt='')
+                                .worker--description
+                                    h4 Гениальный бухгалтер
+                                    p Смагин Алексей
+                                    a(href='tel:(3952) 72 73 00' title='') (3952) 72 73 00
+                        .col-6.col-md-3
+                            .worker
+                                .worker--image-container
+                                    img(src='img/illus/worker.png' title='' alt='')
+                                .worker--description
+                                    h4 Директор
+                                    p Смагин Алексей
+                                    a(href='tel:(3952) 72 73 00' title='') (3952) 72 73 00
+                        .col-6.col-md-3
+                            .worker
+                                .worker--image-container
+                                    img(src='img/illus/worker.png' title='' alt='')
+                                .worker--description
+                                    h4 Директор
+                                    p Смагин Алексей
+                                    a(href='tel:(3952) 72 73 00' title='') (3952) 72 73 00
+                        .col-6.col-md-3
+                            .worker
+                                .worker--image-container
+                                    img(src='img/illus/worker.png' title='' alt='')
+                                .worker--description
+                                    h4 Директор сервисной
+                                    p Смагин Алексей
+                                    a(href='tel:(3952) 72 73 00' title='') (3952) 72 73 00
+                        .col-6.col-md-3
+                            .worker
+                                .worker--image-container
+                                    img(src='img/illus/worker.png' title='' alt='')
+                                .worker--description
+                                    h4 Директор
+                                    p Смагин Алексей
+                                    a(href='tel:(3952) 72 73 00' title='') (3952) 72 73 00
+                    include partials/_sendmail
+
