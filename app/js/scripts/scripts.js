@@ -17,6 +17,18 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
+    $('.slider-article-big').slick({
+        slide: '.img-slider-item',
+        arrows: true,
+        // autoplay:true,
+        autoplaySpeed:1500,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: "<div class='arrow arrow-left'><img src='img/icons/arrow-left.svg' title='' alt=''></div>",
+        nextArrow: "<div class='arrow arrow-right'><img src='img/icons/arrow-right.svg' title='' alt=''></div>"
+    });
+
     // menu scroll
     var tempScrollTop, currentScrollTop = 0;
     $(window).scroll(function(){
@@ -96,6 +108,28 @@ $(document).ready(function () {
             $('#discount-row').appendTo('#product-col');
         } else {
             $('#discount-row').appendTo('#discount-col');
+        }
+    });
+
+// When the window has finished loading create our google map below
+
+
+    //gallery
+    $('.img-item').magnificPopup({
+        type: 'image',
+        gallery:{
+            enabled:true,
+            tCounter: '%curr% из %total%'
+        },
+        zoom: {
+            enabled: true, // By default it's false, so don't forget to enable it
+
+            duration: 300, // duration of the effect, in milliseconds
+            easing: 'ease', // CSS transition easing function
+
+            opener: function(openerElement) {
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
         }
     });
 

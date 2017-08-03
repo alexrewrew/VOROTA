@@ -95,3 +95,39 @@ a
       transform rotate(45deg)
       opacity 0
       transitions()
+
+.link-share
+  color $red
+  font-size .75em
+  display flex
+  align-items center
+  float right
+  svg
+    margin-left 13px
+    g
+      fill $red
+      transitions()
+  &:hover
+    color $black-text
+    svg g
+      fill $black-text
+
+.link-contacts
+  color $black
+  margin-left 3px
+  &:hover
+    color $red
+
+.link-map
+  color $red
+  border-bottom 3px solid $red
+  letter-spacing: 1.2px;
+  font-size .875em
+  display inline-block
+  margin 10px 0
+  padding-bottom 6px
+  +mobile()
+    margin-bottom 40px
+  &:hover
+    color: $red
+    border-color $trans

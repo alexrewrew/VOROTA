@@ -13,3 +13,53 @@ img {}
   img
     width 100%
 
+.img-gallery
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  padding: 43px 0 36px;
+  img
+    width 100%
+  .img-item.big
+    flex 1 1 100%
+    max-width 100%
+  .img-item.small
+    flex 1 1 48%
+    max-width 48%
+    +portrait()
+      flex 1 1 100%
+      max-width 100%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+
+
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transitions()
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 1;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transitions()
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+

@@ -6,7 +6,68 @@ section
   margin-bottom 140px
   position relative
 
-article {}
+.section-projectin
+  padding-top 30px
+
+article
+  counter-reset ollist
+  p
+    margin-bottom 30px
+  h2
+    text-align left
+    margin-bottom: 25px;
+  img
+    margin-bottom 32px
+    width 100%
+  ul
+    display flex
+    flex-wrap wrap
+    flex-direction row
+    margin-bottom 30px
+    li
+      line-height: 1.57;
+      font-weight 300
+      font-size .875em
+      position relative
+      padding-left 23px
+      padding-right 10px
+      flex 1 1 100%
+      max-width 100%
+      &:before
+        pseudo(block, absolute)
+        width: 10px;
+        height: 2px;
+        top 8px
+        left 0
+        background $red
+  a
+    color $red
+    text-decoration underline
+    &:hover
+      text-decoration none
+  ol
+    display flex
+    flex-wrap wrap
+    flex-direction row
+    margin-bottom 30px
+    list-style none
+    li
+      line-height: 1.57;
+      font-weight 300
+      font-size .875em
+      position relative
+      padding-left 23px
+      padding-right 10px
+      flex 1 1 100%
+      max-width 100%
+      &:before
+        pseudo(block, absolute)
+        counter-increment: ollist;
+        content: counter(ollist) ". ";
+        top 0
+        left 0
+        color $red
+
 
 aside {}
 
@@ -27,11 +88,17 @@ main
 .hidden-xs
   +mobile()
     display none
+.hidden-md
+  +portrait()
+    display none
+
 
 .spacer-90
   height 90px
 .spacer-120
   height 120px
+.spacer-140
+  height 140px
 
 .block-center
   margin 0 auto

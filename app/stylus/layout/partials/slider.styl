@@ -39,3 +39,86 @@
     button
       &:before
         background $red
+
+.mfp-arrow-left:after
+  border none
+  background url('../img/icons/arrow-left.png') no-repeat center
+  width 33px
+  height 12px
+  background-size cover
+  opacity 1
+  transitions()
+
+.mfp-arrow-right:after
+  border none
+  background url('../img/icons/arrow-right.png') no-repeat center
+  width 33px
+  height 12px
+  background-size cover
+  opacity 1
+  transitions()
+
+.mfp-arrow-left:before,
+.mfp-arrow-right:before {
+  display none
+}
+
+button.mfp-arrow {
+  opacity 1
+}
+
+button.mfp-arrow-left
+  &:hover
+    &:after
+      transform translateX(-10px)
+
+button.mfp-arrow-right
+  &:hover
+    &:after
+      transform translateX(10px)
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close
+  opacity 1
+  color $red
+
+.mfp-counter
+  color $red
+
+
+.slider-article-big.slick-dotted.slick-slider
+  margin 11px 0 87px
+
+.slider-article-big
+  position relative
+  .img-slider-item
+    display flex
+    justify-content center
+    align-items center
+    height 350px
+    overflow hidden
+    img
+      min-height 350px
+      width auto
+      margin-bottom 28px
+  .slick-dots
+    +portrait()
+      bottom -29px
+    li
+      &:before
+        display none
+  .arrow
+    bottom -61px
+    position absolute
+    z-index 30
+    cursor pointer
+    transitions()
+  .arrow-left
+    left 0
+    &:hover
+      transform translateX(-10px)
+  .arrow-right
+    left 83px
+    +mobile()
+      left 55px
+    &:hover
+      transform translateX(10px)

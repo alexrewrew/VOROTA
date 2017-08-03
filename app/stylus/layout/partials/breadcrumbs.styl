@@ -2,10 +2,15 @@
   display flex
   flex-direction row
   flex-wrap nowrap
-  margin-bottom: 25px
+  margin-bottom: 38px
+  +mobile()
+    margin-bottom 15px
+    flex-wrap wrap
   li
     position relative
     margin-right 7px
+    +mobile()
+      margin-bottom 10px
     &:after
       pseudo(block, absolute)
       top 0

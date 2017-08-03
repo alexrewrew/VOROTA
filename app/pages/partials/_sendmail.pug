@@ -1,9 +1,16 @@
 .row
     .col-lg-11
         .spacer-90
-        h2 Обратная связь
-        form.form-send
-            input(type='text' placeholder='Ваше имя')
-            input(type='email' placeholder='E-mail')
-            textarea(placeholder='Текст сообщения')
-            button(type='submit').button.button-red.block-center Отправить
+        .send-visible
+            h2 Обратная связь
+            form.form-send
+                input(type='text' placeholder='Ваше имя')
+                input(type='email' placeholder='E-mail').error
+                textarea(placeholder='Текст сообщения')
+                button(type='submit').button.button-red.block-center Отправить
+        .send-hidden
+            h2 Обратная связь
+            .send-hidden--icon
+                img(src='img/icons/confirm.svg' title='' alt='' onerror='this.src="img/icons/confirm.png"')
+                p Сообщение отправлено
+            a(href='' title).button.button-red.block-center Хорошо

@@ -23,9 +23,6 @@ header
       max-width 100%
       position static
   .header-jumbotron
-    font-size .875em
-    line-height: 1.57;
-    font-weight 300
     color $gray-text3
     position: relative;
     +portrait()
@@ -34,7 +31,6 @@ header
     +mobile()
       position static
       margin-bottom 35px
-
 
 .header-with-video
   height 631px
@@ -72,6 +68,10 @@ header
       height 100%
       width auto
 
+
+
+
+//h4
 .header-regular
   height: 294px;
   min-height auto
@@ -80,19 +80,8 @@ header
   +portrait()
     height auto
     margin-bottom 31px
-  h1
-    font-size 1.500em
-    font-weight 600
-    text-align left
-    color $black-text
-    +mobile()
-      margin-bottom: 25px;
-  .breadcrumbs
-    margin-bottom 38px
-  p
-    font-size .875em
-    font-weight 300
-    line-height: 1.57;
+  h4
+    margin-bottom 30px
 
 .header-discount
   height 343px
@@ -103,17 +92,6 @@ header
     height auto
   +mobile()
     height auto
-  h1
-    font-size 1.500em
-    font-weight 600
-    text-align left
-    color $black-text
-    +mobile()
-      margin-bottom: 25px;
-    +portrait()
-      margin-bottom 45px
-  .breadcrumbs
-    margin-bottom 38px
 
 .header-text
   max-height 155px
@@ -123,3 +101,33 @@ header
   +mobile()
     max-height unset
 
+.header-information
+  height auto
+  &--image
+    overflow hidden
+    display flex
+    justify-content center
+    align-items center
+    height 250px
+    margin-bottom 32px
+    img
+      min-width 100%
+      +mobile()
+        min-width unset
+  &--data
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    li
+      color $red
+      font-size .75em
+      margin-right 45px
+      +mobile()
+        margin-right 15px
+      img
+        position relative
+        top -1px
+        margin-right 10px
+
+.header-contacts
+  margin-bottom 49px

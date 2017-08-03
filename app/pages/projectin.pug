@@ -1,0 +1,56 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - Проект 1
+
+block content
+
+    section.section-projectin
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='about1.html' title='') О компании
+                        li
+                            a(href='about2.html' title='') Наши проекты
+                        li
+                            a(href='projectin.html' title='') Проект 1
+                aside.col-lg-3#discount-col
+                    h1 Проект 1
+                    .spacer-140.hidden-xs.hidden-md
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    article.row.justify-content-center
+                        .col-lg-11
+                            .slider-article-big
+                                .img-slider-item
+                                    img(src='img/illus/header-photo.png' title='' alt='')
+                                .img-slider-item
+                                    img(src='img/illus/header-photo2.png' title='' alt='')
+                            h2 Описание проекта
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах
+                            .img-gallery
+                                a(href='img/news/news1.png' title='').img-item.big
+                                    img(src='img/news/news1.png' title='' alt='')
+                                a(href='img/news/news2.png' title='').img-item.small
+                                    img(src='img/news/news2.png' title='' alt='')
+                                a(href='img/news/news3.png' title='').img-item.small
+                                    img(src='img/news/news3.png' title='' alt='')
+                            h2 Заголовок 2
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах
+                            ul.pagination-project
+                                li
+                                    a(href='' title='')
+                                        img(src='img/icons/arrow-left.svg' title='' alt='')
+                                li
+                                    a(href='' title='')
+                                        | Следующий проект
+                                        img(src='img/icons/arrow-right.svg' title='' alt='')
+
+

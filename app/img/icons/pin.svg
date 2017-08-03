@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="60px" viewBox="0 0 48 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="13-Contacts" transform="translate(-771.000000, -595.000000)">
+            <g id="Pin" transform="translate(771.000000, 595.000000)">
+                <g>
+                    <polygon id="Triangle-2" fill="#F52341" points="24 59.3723824 15 46.8292683 33 46.8292683"></polygon>
+                    <rect id="Rectangle-35" fill="#F52341" x="0" y="0" width="48" height="47.6638336"></rect>
+                    <g id="Group-2" transform="translate(15.000000, 9.000000)" fill="#FFFFFF">
+                        <polygon id="Rectangle-44" points="0 7.42269227 17.6051273 -3.63797881e-12 17.6051273 5.4357556 0 12.8584479"></polygon>
+                        <polygon id="Rectangle-44-Copy" points="0 15.9592776 17.6051273 8.53658537 17.6051273 13.972341 0 21.3950332"></polygon>
+                        <polygon id="Rectangle-44-Copy-2" points="0 24.495863 17.6051273 17.0731707 17.6051273 22.5089263 0 29.9316186"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

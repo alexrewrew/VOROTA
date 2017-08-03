@@ -1,0 +1,15 @@
+include ../utilities/_mixins.pug
+
+doctype html
+
+html
+
+    include ../partials/_head.pug
+
+    body#top
+        include ../partials/_navigation.pug
+
+        main
+            block content
+
+            include ../partials/_footer-contacts.pug

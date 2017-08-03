@@ -1,0 +1,40 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - Акции
+
+block content
+
+    header.header-discount
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='tech.html' title='') Технология Nord
+                .col-lg-3
+                    h1 Технология Pro Tech
+                    img(src='img/techs/big/tech4.png' title='' alt='')
+                .col-lg-9
+                    .img-header
+                        img(src='img/illus/tech.png' title='' alt='')
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-md-5.col-lg-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .row.tech-description
+                        .col-md-6
+                            .advantage
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon1.png' title='' alt='')
+                                .advantage--text
+                                    h6 Контроль качества
+                                    p Полный контроль ОТК на стадии производства. Выборочный контроль на стадии монтажа.

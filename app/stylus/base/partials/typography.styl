@@ -4,49 +4,70 @@
 /* HEADERS */
 
 h1
-  color $black-text
+  font(1.5em, $black-text, 600, normal)
+  margin-bottom: 45px;
+  +mobile()
+    margin-bottom: 25px;
+
+h1.heading-big
   text-align center
   font-size 2.375em
-
-h1.index-title
-  font-size 2.750em
-  line-height: 1.14;
-  letter-spacing: 2px;
   font-weight 700
+
+h1.heading-index
+  letter-spacing: 2px;
   text-align left
-  color $white
+  font(2.75em, $white, 700, 1.14)
 
 h2
-  font-size: 1.750em
+  font(1.75em, $gray-text2, 600, normal)
   text-align: center
-  color: $gray-text2
-  font-weight 500
   margin-bottom 54px
   letter-spacing -.9px
+
 h3
-  color $black
-  line-height: 1.2;
+  font(1.563em, $black-text, 600, 1.2)
   letter-spacing: 1px;
-  font-size 1.563em
-  font-weight 600
   margin-bottom 15px
+
 h4
-  font-weight 600
-  font-size: 1.25em
-  color: $black-text
+  font(1.25em, $black-text, 600, normal)
+  position relative
+  letter-spacing 1.1px
   margin-bottom: 18px
 h5
-  font-weight 500
-  font-size: .875em
-  line-height: 1.65;
+  font(.875em, $black-text, 500, 1.65)
   letter-spacing: 0.8px;
-  color: $black-text
 h6
-  font-size 1em
-  font-weight 600
-  line-height 1.7
+  font(1em, $black-text, 00, 1.7)
   margin-bottom 26px
 
 /* PARAGRAPH */
 p
-  font(1em, $black, 400, normal)
+  font(.875em, $black-text, 300, 1.57)
+
+blockquote
+  position relative
+  font-weight 300
+  line-height: 1.57
+  padding 60px 100px
+  +mobile()
+    padding 30px 60px
+  &:before
+    content '"'
+    position absolute
+    display block
+    color $red
+    top 0
+    left 0
+    font-size 6em
+    font-weight 700
+  &:after
+    font-size 6em
+    font-weight 700
+    content '"'
+    position absolute
+    display block
+    color $red
+    bottom -35px
+    right 0

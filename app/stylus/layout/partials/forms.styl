@@ -19,7 +19,8 @@ input
     color $gray-text
   &:focus
     outline none
-    border-color $red
+    border-color $gray-back6
+    border-bottom-color $red
 
 input[type='checkbox']
   visibility hidden
@@ -69,7 +70,11 @@ textarea
     color $gray-text
   &:focus
     outline none
-    border-color $red
+    border-color $gray-back6
+    border-bottom-color $red
+
+textarea.error, input.error
+  border-color $red
 
 label {}
 
@@ -78,11 +83,7 @@ label {}
   justify-content space-between
   flex-direction row
   flex-wrap wrap
-  margin-bottom 30px
-  +portrait()
-    margin-bottom 60px
   +mobile()
-    margin-bottom 50px
     .button
       max-width unset
   input
@@ -91,3 +92,32 @@ label {}
     +mobile()
       flex 1 1 100%
       max-width 100%
+
+.send-visible
+  display block
+  //display none
+  margin-bottom 30px
+  +portrait()
+    margin-bottom 60px
+  +mobile()
+    margin-bottom 50px
+
+.send-hidden
+  display none
+  margin-bottom 30px
+  +portrait()
+    margin-bottom 60px
+  +mobile()
+    margin-bottom 50px
+    .button
+      max-width unset
+  &--icon
+    padding 45px 0 122px
+    text-align center
+    p
+      font-size 1.25em
+      font-weight 300
+      line-height 1.57
+      color $gray-text2
+    img
+      margin-bottom: 11px;

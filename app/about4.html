@@ -201,7 +201,7 @@
                       <div class="discount--image-container"><img src="img/illus/discount-big.png" title="" alt=""></div>
                       <div class="discount--title">
                         <p>На гаражные секционные ворота</p><span class="button button-small">Узнать больше</span>
-                      </div></a></div><a class="discount-all" href="" title="">Все акции<img src="img/icons/arrow-right.svg" title="" alt="" onerror="img/icons/arrow-down.png"></a>
+                      </div></a></div><a class="discount-all" href="" title="">Все акции<img src="img/icons/arrow-right.svg" title="" alt="" onerror="this.src='img/icons/arrow-down.png'"></a>
                 </div>
               </div>
             </aside>
@@ -217,13 +217,21 @@
               <div class="row">
                 <div class="col-lg-11">
                   <div class="spacer-90"></div>
-                  <h2>Обратная связь</h2>
-                  <form class="form-send">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="email" placeholder="E-mail">
-                    <textarea placeholder="Текст сообщения"></textarea>
-                    <button class="button button-red block-center" type="submit">Отправить</button>
-                  </form>
+                  <div class="send-visible">
+                    <h2>Обратная связь</h2>
+                    <form class="form-send">
+                      <input type="text" placeholder="Ваше имя">
+                      <input class="error" type="email" placeholder="E-mail">
+                      <textarea placeholder="Текст сообщения"></textarea>
+                      <button class="button button-red block-center" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                  <div class="send-hidden">
+                    <h2>Обратная связь</h2>
+                    <div class="send-hidden--icon"><img src="img/icons/confirm.svg" title="" alt="" onerror="this.src=&quot;img/icons/confirm.png&quot;">
+                      <p>Сообщение отправлено</p>
+                    </div><a class="button button-red block-center" href="" title>Хорошо</a>
+                  </div>
                 </div>
               </div>
             </div>

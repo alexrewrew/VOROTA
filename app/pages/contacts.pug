@@ -1,0 +1,55 @@
+//- layouts/layout.pug
+extend layouts/_layout-contacts.pug
+
+block title
+    | ВОРОТА.РУ - Контакты
+
+block content
+
+    header.header-regular.header-contacts
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='information.html' title='') Контакты
+                .col-md-4.col-lg-5
+                    h1 Контакты
+                .col-md-4.col-lg-3
+                    h4 Офис Ворота.ру
+                    p Иркутск, ул. Байкальская 244а/2
+                        br
+                        | e-mail
+                        a(href='mailto:' title='').link-contacts vorota@irk.ru
+                        br
+                        | тел.
+                        a(href='tel:' title='').link-contacts +7 (3952) 72-73-00
+                    a(href='' title='').link-map Показать на карте
+                .col-md-4.col-lg-3
+                    h4 Завод Ворота.ру
+                    p Иркутск, Челябинская 26А
+                        br
+                        | e-mail
+                        a(href='mailto:' title='').link-contacts vorota@irk.ru
+                        br
+                        | тел.
+                        a(href='tel:' title='').link-contacts +7 (3952) 72-73-00
+                    a(href='' title='').link-map Показать на карте
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    #map
+                    include partials/_sendmail
+
+
+
+
+
