@@ -136,6 +136,8 @@ nav
       letter-spacing: 1.5px;
       display inline-block
       border-bottom 1px solid $trans
+      +mobile()
+        font-size 1em
       &:hover
         color $black
         border-bottom-color $black
@@ -144,8 +146,7 @@ nav
       border-bottom-color $black
       +portrait()
         font-size 0.625em
-      +mobile()
-        font-size 1em
+
   +mobile()
     flex-direction column
 

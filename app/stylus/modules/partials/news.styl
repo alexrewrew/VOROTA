@@ -2,32 +2,24 @@
   display flex
   background $trans
   margin-bottom 32px
-  height 240px
+  height 197px
   transitions()
-  +tablet()
-    height 197px
-  +portrait()
-    flex-wrap wrap
-    height auto
+  +displays()
+    height 240px
   +mobile()
     flex-wrap wrap
     height auto
   &--image
-    height 240px
-    flex 1 1 43%
-    max-width 43%
+    height 197px
+    flex 1 1 42.6%
+    max-width 42.6%
     overflow hidden
     display flex
     justify-content center
     align-items center
-    +tablet()
-      height 197px
-    +portrait()
-      height 197px
-      flex 1 1 100%
-      max-width 100%
+    +displays()
+      height 240px
     +mobile()
-      height 197px
       flex 1 1 100%
       max-width 100%
     img
@@ -40,23 +32,24 @@
         filter none
   &--description
     padding 20px 28px
-    flex 1 1 57%
-    max-width 57%
+    flex 1 1 57.4%
+    max-width 57.4%
     position relative
     +tablet()
       padding 15px 28px
-    +portrait()
-      padding 15px 28px 31px
-      flex 1 1 100%
-      max-width 100%
     +mobile()
-      padding 15px 15px 31px
+      padding 15px 0 31px
       flex 1 1 100%
       max-width 100%
     h4
       margin-bottom 8px
       max-height 48px
       overflow hidden
+      +portrait()
+        max-height 24px
+        overflow hidden
+        text-overflow ellipsis
+        white-space: nowrap;
     p
       color: $gray-text4
       overflow hidden
@@ -79,15 +72,17 @@
       +portrait()
         bottom 20px
       +mobile()
-        left 15px
+        left 0
       li
         margin-right 45px
         img
           position relative
           top -1px
-          margin-right 10px
+          margin-right 9px
   &:hover
     background $white
+    +mobile()
+      background $trans
     .link-more--wa
       width 100%
       .link-more--wa-arrow

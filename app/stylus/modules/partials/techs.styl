@@ -1,8 +1,10 @@
 .tech
   border-left 3px solid $white
-  padding 30px 0 12px 17px
+  padding 30px 10px 12px 17px
   display block
-  margin-bottom 30px
+  margin-bottom 29px
+  +tablet()
+    min-height 188px
   +mobile()
     padding-left 15px
   img
@@ -11,6 +13,9 @@
     opacity .4
     transitions()
     +portrait()
+      opacity 1
+      filter none
+    +mobile()
       opacity 1
       filter none
   p

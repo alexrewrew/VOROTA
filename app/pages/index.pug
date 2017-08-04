@@ -77,15 +77,17 @@ block content
                 .col-12
                     h2 Полезные статьи
             .row
-                .col-md-5.col-lg-3.flex-last.flex-md-first
-                    include partials/_discount-slider
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
 
-                .col-md-7.col-lg-9.flex-first.flex-md-last
+                .col-lg-9#product-col
                     a(href='' title='').news-container
                         .news-container--image
                             img(src='img/illus/news1.png' title='' alt='')
                         .news-container--description
-                            h4 Программирование брелков хороших и плохих, дешевых и прекрасных
+                            h4 Программирование брелков программирование брелков программирование брелков
                             .link-more--wa
                                 .link-more--wa-text Читать больше
                                 .link-more--wa-arrow

@@ -54,13 +54,13 @@ a
 .link-more--wa
   height 14px
   position relative
-  margin-bottom 10px
+  margin-bottom 9px
   color $red
   width 32px
   transitions()
   &-text
     position absolute
-    right: 54px;
+    right: 50px;
     font-size: .75em
     color $red
     opacity 0
@@ -131,3 +131,25 @@ a
   &:hover
     color: $red
     border-color $trans
+
+.link-discount
+  display inline-block
+  text-align center
+  color $red
+  margin-left 33px
+  letter-spacing: 1.3px;
+  font-size 1em
+  font-weight 500
+  margin-bottom 40px
+  +mobile()
+    margin 0 auto 40px
+    display: block
+  +portrait()
+    margin-bottom 0
+  img
+    margin-left 25px
+    transitions()
+  &:hover
+    color $red
+    img
+      transform translateX(10px)

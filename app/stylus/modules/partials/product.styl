@@ -9,7 +9,7 @@
     justify-content center
     align-items center
     overflow hidden
-    margin-bottom 32px
+    margin-bottom 31px
     position relative
     &-top
       position absolute
@@ -41,6 +41,9 @@
         +portrait()
           filter grayscale(0%)
           opacity 1
+        +mobile()
+          filter grayscale(0%)
+          opacity 1
   .button
     +portrait()
       max-width 100%
@@ -48,6 +51,7 @@
     +mobile()
       max-width 320px
       margin 0 auto
+      background $red
   &:hover
     .product--tech
       li

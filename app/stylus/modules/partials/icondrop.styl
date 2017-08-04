@@ -6,11 +6,9 @@
   padding 26px 35px 15px 30px
   cursor pointer
   position relative
-  margin-bottom 40px
   transitions()
   +mobile()
-    padding-left 20px
-    padding-right 20px
+    padding: 22px 20px 15px;
   .icon-image
     height 87px
     margin-bottom 28px
@@ -116,8 +114,12 @@
 .icon-dropdown-description.active
   opacity 1
 
+.icon-drop.col
+  margin-bottom 0
+
 .icon-drop
   display block
+  margin-bottom 40px
   &:hover
     .icon-container
       background $white
@@ -176,10 +178,14 @@
 
 
 .icon-container.icon-index
-  padding-left 23px
+  padding-left 20px
   height: 234px
+  margin-bottom: 40px;
   +mobile()
-    padding-right 5px
+    padding-left 20px
+    padding-right 20px
+  +displays()
+    margin-bottom 0
   .icon-image
     height: 81px;
     margin-bottom: 32px;
@@ -187,7 +193,7 @@
     font-size .75em
     color $red
     position absolute
-    top 23px
+    top 24px
     letter-spacing: 1px;
     right 14px
     opacity 0
@@ -196,7 +202,7 @@
       display none
     img
       position absolute
-      right 40px
+      right 41px
       bottom -17px
       transitions()
   &:hover

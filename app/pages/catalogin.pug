@@ -1,0 +1,147 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - Акции
+
+block content
+
+    header.header-regular.header-catalog
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='catalogin.html' title='') Автоматический привод Faac 884 MC 3PH (400В)
+                .col-md-4
+                    h1 Автоматический привод Faac 884 MC 3PH (400В)
+                .offset-md-1.col-md-5
+                    .counter
+                        ul.counter-numbers
+                            li 6
+                            li 5
+                            li 2
+                            li 1
+                        .counter-text
+                            | Покупатели выбрали гаражные секционные ворота от Ворота.ру
+
+    section
+        .container
+            .row
+                .col-md-5
+                    .slider-article-big.slider-catalogin
+                        .img-slider-item
+                            img(src='img/illus/header-photo.png' title='' alt='')
+                        .img-slider-item
+                            img(src='img/illus/header-photo2.png' title='' alt='')
+                article.col-md-6
+                    h2 Описание
+                    p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
+                    h2 Технологии
+                    .row
+                        .col
+                            a(href='' title='').tech
+                                img(src='img/techs/big/tech1.svg' title='' alt='')
+                                p Выбор в пользу энергосбережения
+                        .col
+                            a(href='' title='').tech
+                                img(src='img/techs/big/tech2.svg' title='' alt='')
+                                p Идеальная среда вашей безопасности
+                        .col
+                            a(href='' title='').tech
+                                img(src='img/techs/big/tech3.svg' title='' alt='')
+                                p Nord. Комфортно летом, тепло зимой
+                    .catalogin-price
+                        .catalogin-price--number
+                            | 30 000 руб.
+                        .catalogin-price--button
+                            a(href='' title='').button.button-red Заказать
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    include partials/_discount-slider
+                .col-lg-9#product-col
+                    .row
+                        .col-md-6.col-lg-4
+                            a(href='' title='').discount-article
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                    .discount-article--image-container-percent
+                                        | -30%
+                                h3 Цены снижены
+                                p Сезонное снижение цен на все ворота - секционные (гаражные) , откатные, распашные.
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6.col-lg-4
+                            a(href='' title='').discount-article
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                    .discount-article--image-container-percent
+                                        | -5%
+                                h3 Скидки 5% на online заказы
+                                p Сделайте заказ прямо сейчас на сайте и получите дополнительную скидку 5%.
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6.col-lg-4
+                            a(href='' title='').discount-article
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                h3 Покупаем старые ворота
+                                p Покупаем старые гаражные ворота за 7000 р. и дарим скидку 15% на новые.
+                                    br
+                                    | • замер бесплатно
+                                    br
+                                    | • демонтаж бесплатно.
+
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6.col-lg-4
+                            a(href='' title='').discount-article
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                    .discount-article--image-container-percent
+                                        | 24/7
+                                h3 Сервис 24х7
+                                p Сезонное снижение цен на все ворота - секционные (гаражные) , откатные, распашные.
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                        .col-md-6.col-lg-4
+                            a(href='' title='').discount-article
+                                .discount-article--image-container
+                                    img(src='img/illus/business.png' title='' alt='')
+                                    .discount-article--image-container-percent
+                                        | 24/7
+                                h3 Сервис 24х7
+                                p Сезонное снижение цен на все ворота - секционные (гаражные) , откатные, распашные.
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+
+
+                        .offset-lg-2.col-lg-10
+                            ul.pagination
+                                li
+                                    a(href='' title='')
+                                        img(src='img/icons/arrow-left.svg' title='' alt='' onerror='this.src="img/icons/arrow-left.png"')
+                                li
+                                    a(href='' title='').active 1
+                                li
+                                    a(href='' title='') 2
+                                li
+                                    a(href='' title='') 3
+                                li
+                                    a(href='' title='') 4
+                                li
+                                    a(href='' title='') ...
+                                li
+                                    a(href='' title='')
+                                        img(src='img/icons/arrow-right.svg' title='' alt='' onerror='this.src="img/icons/arrow-right.png"')
+

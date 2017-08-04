@@ -24,6 +24,7 @@ input
 
 input[type='checkbox']
   visibility hidden
+  margin-bottom 0
 
 input[type='checkbox'] + label
   color $black-text
@@ -95,20 +96,10 @@ label {}
 
 .send-visible
   display block
-  //display none
-  margin-bottom 30px
-  +portrait()
-    margin-bottom 60px
-  +mobile()
-    margin-bottom 50px
 
 .send-hidden
   display none
-  margin-bottom 30px
-  +portrait()
-    margin-bottom 60px
   +mobile()
-    margin-bottom 50px
     .button
       max-width unset
   &--icon

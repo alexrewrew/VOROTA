@@ -1,0 +1,27 @@
+.catalogin-price
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  max-width 458px
+  &--number
+    flex 1 1 195px
+    max-width 195px
+    text-align center
+    font-weight 600
+    color $black-text
+    font-size 1.375em
+    border-bottom 2px solid $red
+    display flex
+    justify-content center
+    align-items center
+  &--button
+    flex 1 1 263px
+    max-width 263px
+    border-bottom 2px solid $red
+    transitions()
+    .button
+      text-decoration none
+      padding-top 12px
+      padding-bottom 13px
+    &:hover
+      border-color $gray-back3
