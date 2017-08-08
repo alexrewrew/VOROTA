@@ -35959,7 +35959,9 @@ $(document).ready(function () {
         }
     });
 
-
+	$(".link-map").click(function (e) {
+		e.preventDefault();
+	});
 });
 
 
