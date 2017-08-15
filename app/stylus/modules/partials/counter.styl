@@ -1,11 +1,18 @@
 .counter
   display flex
   align-items center
-  margin-bottom 54px
+  margin-bottom 50px
+  padding 4px 0
+  +mobile()
+    flex-wrap wrap
   &-numbers
     display flex
     flex-direction row
     flex-wrap nowrap
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      margin-bottom 20px
     li
       font-size 1.5em
       color $white
@@ -30,3 +37,6 @@
     font-size 1.375em
     color #383838
     font-weight 500
+    +mobile()
+      flex 1 1 100%
+      max-width 100%

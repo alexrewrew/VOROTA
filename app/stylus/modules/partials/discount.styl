@@ -82,6 +82,7 @@
 
 .discount-article
   display block
+  overflow hidden
   transitions()
   margin-bottom 56px
   &--image-container
@@ -117,10 +118,11 @@
           opacity 1
       .link-more--wa-text
         opacity 1
+        transform translateX(100px)
 
 .discount-description
   margin-left 50px
-  padding-top 60px
+  padding-top 56px
   padding-bottom 115px
   +portrait()
     margin-left 0

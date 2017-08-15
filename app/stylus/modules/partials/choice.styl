@@ -3,8 +3,11 @@
   display block
   position relative
   background $white
+  +mobile()
+    display flex
+    align-items center
   &--image
-    max-height: 160px
+    max-height: 149px
     position absolute
     bottom 0
     left 0
@@ -17,7 +20,8 @@
     +portrait()
       max-height: 90px;
     +mobile()
-      width 100%
+      //width 100%
+      display none
   &--title
     position absolute
     left 54%
@@ -39,6 +43,8 @@
         margin-left 0
         opacity 0
         transitions()
+        +mobile()
+          display block
   h3
     font-weight 900
     font-size 1.500em
@@ -46,6 +52,8 @@
     letter-spacing normal
     transitions()
     +portrait()
+      font-size 1.25em
+    +mobile()
       font-size 1.25em
 
 .choice-section
@@ -58,12 +66,12 @@
 .choice-block
   &:first-child
     padding-right 0
-    +mobile()
-      padding-right 15px
+    //+mobile()
+    //  padding-right 15px
   &:last-child
     padding-left 0
-    +mobile()
-      padding-left 15px
+    //+mobile()
+    //  padding-left 15px
   &:hover
     .menu-choice
       background $gray-back2
@@ -76,5 +84,9 @@
           img
             opacity 1
             transform translateX(14px)
+            +mobile()
+              transform none
         h3
           transform translateY(-18px)
+          +mobile()
+            transform translateY(-22px)

@@ -35,6 +35,7 @@
     flex 1 1 57.4%
     max-width 57.4%
     position relative
+    overflow hidden
     +tablet()
       padding 15px 28px
     +mobile()
@@ -79,6 +80,8 @@
           position relative
           top -1px
           margin-right 9px
+    .link-more--wa
+      transition .6s all ease
   &:hover
     background $white
     +mobile()
@@ -92,6 +95,7 @@
           opacity 1
       .link-more--wa-text
         opacity 1
+        transform translateX(100px)
     .news-container--image
       img
         filter grayscale(0%)
