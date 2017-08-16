@@ -33,6 +33,7 @@
     "wow": "wowjs#^1.1.2",
     "animsition": "^4.0.2",
     "modaal": "^0.3.1",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "chosen-image": "https://github.com/djgrant/chosen-image.git#^0.9.9"
   }
 }

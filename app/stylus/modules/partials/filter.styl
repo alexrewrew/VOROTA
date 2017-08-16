@@ -21,3 +21,77 @@
     +mobile()
       margin-top 0
       max-width unset
+
+
+.filter-calculator
+  .row
+    justify-content space-between
+    +portrait()
+      justify-content flex-start
+  .select-container
+    margin-bottom 35px
+  .chosen-container-single .chosen-single
+    padding: 10px 20px 11px;
+    font-weight 300
+    span
+      margin-right 15px
+  .chosen-container .chosen-results .active-result
+    padding: 10px 20px 11px;
+    font-weight 300
+  .chosenImage-container.chosen-container .chosen-results .active-result
+    padding: 10px 30px 11px 60px;
+    background-position: 20px 8px;
+  p
+    color $gray-text
+    margin-bottom 6px
+    font-size .875em
+  .small-col.left
+      padding-right 4px
+  .small-col.right
+      padding-left 4px
+  .filter-colors
+    display flex
+    justify-content space-between
+    flex-direction row
+    flex-wrap wrap
+    margin-bottom 25px
+    li
+      a
+        display block
+        width 45px
+        height 45px
+        background $red
+        margin-bottom 10px
+        opacity .8
+        +mobile()
+          width 55px
+          height 55px
+        &:hover
+          opacity 1
+      .active
+        opacity 1
+  .filter-options
+    display flex
+    justify-content space-between
+    flex-direction row
+    flex-wrap wrap
+    margin-bottom 10px
+    li
+      flex 1 1 68px
+      max-width 68px
+      a
+        margin-bottom 17px
+        display block
+        img
+          margin-bottom 5px
+          opacity .8
+          transitions()
+        p
+          font-size 12px
+          line-height: 1.17;
+        &:hover
+          img
+            opacity 1
+      .active
+        img
+          opacity 1

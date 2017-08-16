@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     //select
     $(".chosen-select").chosen({disable_search_threshold: 10});
+    $(".chosen-image").chosenImage({disable_search_threshold: 10});
 
     //discount slider
     $(".slider-discount").slick({

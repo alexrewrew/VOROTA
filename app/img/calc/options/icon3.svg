@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="60px" viewBox="0 0 68 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 17.9052 0 0 28 0 28 35.8104 14 35.8104 0 35.8104"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-Catalog-in-" transform="translate(-275.000000, -909.000000)">
+            <g id="Group-13" transform="translate(275.000000, 909.000000)">
+                <rect id="Rectangle-16-Copy-21" fill="#FFFFFF" x="0" y="0" width="68" height="60"></rect>
+                <g id="Page-1" transform="translate(20.000000, 12.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M20.72,11.9904 L7.27760684,11.9904 C5.36307692,0.228 22.6321368,0.2616 20.72,11.9904 M15.5268376,23.688 C15.5483761,25.044 15.5364103,26.2536 15.5364103,27.3336 C15.5364103,29.4912 12.2841026,29.4912 12.2841026,27.3336 C12.2841026,26.4 12.2960684,25.1064 12.3128205,23.5416 C9.8765812,22.1664 10.7309402,18.54 13.9976068,18.5016 C17.3193162,18.4608 18.1712821,22.3248 15.5268376,23.688 M24.3671795,12.0024 C26.3463248,-4.0128 1.65367521,-3.9888 3.63042735,12.0024 C1.6137094,12.0024 0,11.9904 0,11.9904 L0,35.808 C0,35.8092 0.0011965812,35.8104 0.00239316239,35.8104 L28,35.8104 L28,11.9904 C28,11.9904 26.422906,11.9904 24.3671795,12.0024" id="Fill-1" fill="#D8D8D8" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

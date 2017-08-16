@@ -29,7 +29,11 @@
 .tech-description
   margin-left 35px
   padding-top 0
-  padding-bottom 115px
+  padding-bottom 65px
+  +portrait()
+    margin-left -15px
+  +mobile()
+    margin-left -15px
 
 .advantage
   display flex
@@ -43,6 +47,9 @@
     margin-bottom 30px
     img
       max-width 50px
+    +mobile()
+      flex 1 1 22%
+      max-width 22%
   &--text
     flex 1 1 39%
     max-width 39%
@@ -50,3 +57,7 @@
     padding-right 20px
     h6
       margin-bottom 10px
+    +mobile()
+      flex 1 1 78%
+      max-width 78%
+      padding-right 0

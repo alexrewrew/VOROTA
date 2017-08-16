@@ -59,6 +59,7 @@ gulp.task("scripts", function () {
             // "app/libs/bootstrap/dist/js/bootstrap.js",
             // "app/libs/bootstrap3/dist/js/bootstrap.js",
             "app/libs/chosen/chosen.jquery.js",
+            "app/libs/chosen-image/chosenImage/chosenImage.jquery.js",
             // "app/libs/iCheck/icheck.js",
             "app/libs/slick-carousel/slick/slick.js",
             // "app/libs/owl.carousel/dist/owl.carousel.js",

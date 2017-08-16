@@ -58,7 +58,16 @@ select
   padding: 10px 30px 11px;
   color $black-text
   cursor pointer
+.chosen-container .chosen-results .active-result.result-selected
+  display none
 
 .chosen-container .chosen-results .active-result.highlighted
-  background none
+  background: none 3px center / 19px 19px no-repeat;
   color $red
+
+.chosenImage-container.chosen-container .chosen-results li, .chosenImage-container .chosen-single span {
+  padding-left: 40px;
+}
+
+.chosenImage-container.chosen-container .chosen-results .active-result
+  padding: 10px 30px 11px 50px;

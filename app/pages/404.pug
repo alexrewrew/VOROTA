@@ -1,0 +1,65 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - Информация
+
+block content
+
+    header.header-404
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='information.html' title='') 404
+                .col-12
+                    h1 Страница не найдена
+                .col-md-7.col-lg-6
+                    img(src='img/illus/404.svg' title='' alt='' onerror="this.src='img/illus/404.png'").img-responsive
+                .col-md-5.col-lg-4.display-flex.align-items-end
+                    .header-text
+                        p Возникла ошибка, страницы не существует. Перейдите на главную.
+                        a(href='' title='').button.button-comment На главную
+                            img(src='img/icons/arrow-right-white.svg' title='' alt='' onerror="this.src='img/icons/arrow-right-white.png'")
+
+    section
+        .container
+            .row
+                .col-12
+                    h2 Полезные статьи
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    a(href='' title='').news-container
+                        .news-container--image
+                            img(src='img/illus/news1.png' title='' alt='')
+                        .news-container--description
+                            h4 Программирование брелков
+                            .link-more--wa
+                                .link-more--wa-text Читать больше
+                                .link-more--wa-arrow
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал […]
+                            ul.news-container--description-data
+                                li 7.06.2017
+                                li
+                                    img(src='img/icons/eye.svg' title='' alt='' onerror='this.src="img/icons/eye.png"')
+                                    | 112
+                    a(href='' title='').news-container
+                        .news-container--image
+                            img(src='img/illus/news1.png' title='' alt='')
+                        .news-container--description
+                            h4 Программирование брелков
+                            .link-more--wa
+                                .link-more--wa-text Читать больше
+                                .link-more--wa-arrow
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал […]
+                            ul.news-container--description-data
+                                li 7.06.2017
+                                li
+                                    img(src='img/icons/eye.svg' title='' alt='' onerror='this.src="img/icons/eye.png"')
+                                    | 112

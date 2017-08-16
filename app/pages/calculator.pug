@@ -1,0 +1,176 @@
+//- layouts/layout.pug
+extend layouts/_layout-contacts.pug
+
+block title
+    | ВОРОТА.РУ - Акции
+
+block content
+
+    header.header-regular.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='calculator.html' title='') Автоматический привод
+                .col-md-4
+                    h1 Гаражные секционные ворота
+                .offset-md-1.col-lg-5.col-md-7
+                    .counter
+                        ul.counter-numbers
+                            li 6
+                            li 5
+                            li 2
+                            li 1
+                        .counter-text
+                            | Покупатели выбрали гаражные секционные ворота от Ворота.ру
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    form.filter-container.filter-calculator
+                        .row
+                            .col-6.col-md-3.col-lg-6.small-col.left
+                                p Ширина
+                                .select-container
+                                    select.chosen-select
+                                        option 2400 мм
+                                        option По дате
+                                        option По дате
+                            .col-6.col-md-3.col-lg-6.small-col.right
+                                p Высота
+                                .select-container
+                                    select.chosen-select
+                                        option 1200 мм
+                                        option Производитель
+                                        option Производитель
+                            .col-md-12.col-lg-12
+                                p Цвет
+                                ul.filter-colors
+                                    li
+                                        a(href='' title='' style='background: #fff').active
+                                    li
+                                        a(href='' title='' style='background: #4c3626')
+                                    li
+                                        a(href='' title='' style='background: #00468d')
+                                    li
+                                        a(href='' title='' style='background: #004737')
+                                    li
+                                        a(href='' title='' style='background: #61162a')
+                                    li
+                                        a(href='' title='' style='background: #c7c8ca')
+                                    li
+                                        a(href='' title='' style='background: #e1d099')
+                                    li
+                                        a(href='' title='' style='background: #9d9fa2')
+                                    li
+                                        a(href='' title='' style='background: #b00b1d')
+                                    li
+                                        a(href='' title='' style='background: #36414b')
+                            .col-md-6.col-lg-12
+                                p Тип ворот
+                                .select-container
+                                    select.chosen-select.chosen-image
+                                        option(data-img-src="img/calc/types/icon1.png") Панорама
+                                        option(data-img-src="img/calc/types/icon2.png") Филенка
+                                        option(data-img-src="img/calc/types/icon3.png") Стандарт
+                            .col-md-6.col-lg-12
+                                p Тип открывания
+                                .select-container
+                                    select.chosen-select.chosen-image
+                                        option(data-img-src="img/calc/types/icon4.png") Ручной
+                                        option(data-img-src="img/calc/types/icon5.png") Автоматический
+                            .col-md-6.col-lg-12
+                                p Опции
+                                ul.filter-options
+                                    li
+                                        a(href='' title='').active
+                                            img(src='img/calc/options/icon1.png' title='' alt='' onerror="this.src='img/calc/options/icon1.svg'")
+                                            p Окно (635 х 330 мм)
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/calc/options/icon2.png' title='' alt='' onerror="this.src='img/calc/options/icon2.svg'")
+                                            p Дверь в полотне
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/calc/options/icon3.png' title='' alt='' onerror="this.src='img/calc/options/icon3.svg'")
+                                            p Замок механика
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/calc/options/icon4.png' title='' alt='' onerror="this.src='img/calc/options/icon4.svg'")
+                                            p Монтаж
+                            .col-md-6.col-lg-12.display-flex.align-items-md-center
+                                button(type='submit').button.button-red Применить
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .row.calc-row
+                        .col
+                            .calc-image-container
+                                img(src='img/illus/calc-back.png' title='' alt='').img-responsive
+                        .col.display-flex.align-items-end
+                            .calc-result
+                                p.calc-discount 66 898 руб.
+                                p.calc-price 60 492 руб.
+                                p.calc-description С учётом скидки 15% на ворота
+                                a(href='#modal-order' title='').button.button-red.button-all.inline
+                                    | Заказать
+                    article.catalog-description
+                        .row
+                            .col-lg-10
+                                a(href='' title='').button.button-specs
+                                    img(src='img/icons/file.svg' title='' onerror='this.src="img/icons/file.png"')
+                                    | Техническая информация
+                                h2 Сервис и гарантия
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                                h2 Преимущество
+                                .row
+                                    .col.icon-drop.icon-catalog
+                                        span.icon-container.icon-index
+                                            img(src='img/icons/icon2-1.svg' title='' alt='' onerror="this.src='img/icons/icon2-1.png'").icon-image
+                                            h5 Изготовление и монтаж от 1 дня
+                                    .col.icon-drop.icon-catalog
+                                        span.icon-container.icon-index
+                                            img(src='img/icons/icon2-2.svg' title='' alt='' onerror="this.src='img/icons/icon2-2.png'").icon-image
+                                            h5 Адаптировано к суровому климату Сибири
+                                    .col.icon-drop.icon-catalog
+                                        span.icon-container.icon-index
+                                            img(src='img/icons/icon2-3.svg' title='' alt='' onerror="this.src='img/icons/icon2-3.png'").icon-image
+                                            h5 Гарантия от 3 до 5 лет
+
+                    section.row
+                        .col-lg-11
+                            h2 Отзывы владельцев
+                            .row
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-12
+                                    a(href='' title='').button.button-comment Больше отзывов
+                                        img(src='img/icons/arrow-right-white.svg' title='' alt='' onerror="this.src='img/icons/arrow-right-white.png'")
+                    .row
+                        .col-12
+                            h2 Наши ворота установлены
+                            #map
+
+
+    include partials/_order

@@ -1,0 +1,126 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - Акции
+
+block content
+
+    header.header-discount
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='discounts.html' title='') Сервис
+                .col-lg-3
+                    h1 Сервис
+                .col-lg-9
+                    .img-header
+                        img(src='img/illus/service-head.png' title='' alt='')
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-md-5.col-lg-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .service-description
+                        .service-block
+                            h2 Аварийный вызов круглосуточно
+                            .row
+                                .col-md-6
+                                    p Выезд в течении 1 часа
+                                        br
+                                        | 2 900 р. в черте города
+                                .col-md-6
+                                    a(href='tel:' title='').link-phone Тел. 72-73-00
+                            hr
+                            h2 Срочный ремонт ворот в экстренных случаях
+                            p Если ворота заклинило, наблюдаются неполадки с открытием/закрытием. Обслуживаем ворота, в том числе, и сторонних производителей. Производим диагностику, регулировку и квалифицированный ремонт автоматических ворот.
+                    .service-description
+                        .service-block.small
+                            .row.justify-content-center
+                                .col-md-6.col-lg-6.display-flex.align-items-center
+                                    h3 Не знаете какая поломка?
+                                .col-md-6.col-lg-5
+                                    a(href='' title='').button.button-red.button-all Заказать обслуживание
+                    article.service-description.last
+                        .row
+                            .col-lg-11
+                                h2 Расценки на сервисное обслуживание
+                                .row
+                                    .col-md-6
+                                        p Регулировка ворот в Иркутске 1100-2700 руб. Вызов с 09.00 до 18.00. К стоимости услуг за чертой города добавляется цена вызова специалиста:
+                                    .col-md-6.display-flex.align-items-center
+                                        a(href='tel:' title='').link-phone Тел. 72-73-00
+                                hr
+                                table
+                                    tr
+                                        th Населенный пункт
+                                        th Цена (руб)
+                                    tr
+                                        td Ангарск
+                                        td 1900
+                                    tr
+                                        td Усолье-Сибирское
+                                        td 1900
+                                    tr
+                                        td Черемхово
+                                        td 1900
+                                    tr
+                                        td Байкальский тракт
+                                        td 1900
+                                    tr
+                                        td Патроны
+                                        td 1900
+                                    tr
+                                        td Зеленый мыс
+                                        td 1900
+                                    tr
+                                        td Бурдаковка
+                                        td 1900
+                                    tr
+                                        td Большая Речка
+                                        td 1900
+                                    tr
+                                        td Листвянка
+                                        td 1900
+                                    tr
+                                        td Пивовариха
+                                        td 1900
+                                    tr
+                                        td Шелехов
+                                        td 1900
+                                    tr
+                                        td Мельничная падь
+                                        td 1900
+                                    tr
+                                        td Слюдянка
+                                        td 1900
+                                    tr
+                                        td Бохан
+                                        td 1900
+                                    tr
+                                        td Оса
+                                        td 1900
+                                    tr
+                                        td Урик, Хомутово, Западный
+                                        td 1900
+                                p Регулировка ворот в Иркутске 1100-2700 руб. Вызов с 09.00 до 18.00 К стоимости услуг за чертой города добавляется цена вызова специалиста:
+                                hr
+                                h2 В стоимости вызова включено
+                                p Программирование брелков;
+                                    br
+                                    | Настройка оборудования (с/в, р/в, о/в, а/д, шлагбаум);
+                                    br
+                                    | Оценка поломки оборудования (с/в, р/в, о/в, а/д, шлагбаум);
+                                    br
+                                    | Регулировка оборудования (с/в, р/в, о/в, а/д, шлагбаум);
+                                    br
+                                    | Смазка оборудования (с/в, о/в, р/в, шлагбаум).
+                                hr

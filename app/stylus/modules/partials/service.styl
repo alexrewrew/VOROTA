@@ -1,0 +1,42 @@
+.service-block
+  background $white
+  padding 44px 48px 73px
+  +mobile()
+    padding-left 30px
+    padding-right 30px
+  h2
+    color $red
+    font-weight 500
+  h3
+    color $red
+    font-weight 500
+    line-height normal
+    margin-bottom 0
+  hr
+    background $gray-back
+
+.service-block.small
+  padding 30px 48px
+  .button-all
+    +portrait()
+      margin-bottom 0
+  +mobile()
+    padding-left 30px
+    padding-right 30px
+    h3
+      margin-bottom 24px
+      text-align center
+
+.service-description
+  margin-left 50px
+  padding-top 56px
+  padding-bottom 94px
+  +portrait()
+    margin-left 0
+  +mobile()
+    margin-left 0
+  h2
+    text-align left
+    margin-bottom 24px
+.service-description.last
+  padding-bottom 40px
