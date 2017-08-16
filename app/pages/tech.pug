@@ -6,7 +6,7 @@ block title
 
 block content
 
-    header.header-discount
+    header.header-tech
         .container
             .row
                 .col-12
@@ -15,12 +15,9 @@ block content
                             a(href='index.html' title='') Главная
                         li
                             a(href='tech.html' title='') Технология Nord
-                .col-lg-3
+                .col-12
                     h1 Технология Pro Tech
-                    img(src='img/techs/big/tech4.png' title='' alt='')
-                .col-lg-9
-                    .img-header
-                        img(src='img/illus/tech.png' title='' alt='')
+                    img(src='img/techs/headers/tech-head.png' title='' alt='')
 
     section
         .container
@@ -30,11 +27,53 @@ block content
                         .col-md-5.col-lg-12
                             include partials/_discount-slider
                 .col-lg-9#product-col
-                    .row.tech-description
-                        .col-md-6
+                    article.row.tech-description
+                        .col-12
+                            h2 Описание технологии
+                            p Долговечность и надежность - основные критерии, которыми руководствуются покупатели при выборе автоматических ворот. Это покупка, которую хочется сделать раз в жизни. Во всех сериях ворот Ворота.ру используются только промышленные комплектующие производства итальянской компании Came и Faac.
+                            p Количество циклов у ворот - 50 000. Это значит, что при использовании их в среднем 2 раза в день они прослужат вам, как минимум, полвека.
+                        .col-lg-11
                             .advantage
                                 .advantage--icon
                                     img(src='img/techs/icons/icon1.png' title='' alt='')
                                 .advantage--text
                                     h6 Контроль качества
                                     p Полный контроль ОТК на стадии производства. Выборочный контроль на стадии монтажа.
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon2.png' title='' alt='')
+                                .advantage--text
+                                    h6 Интеллектуальное управление
+                                    p Микропроцессорное управление на всех стадиях движения увеличивает срок службы всех компонентов.
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon3.png' title='' alt='')
+                                .advantage--text
+                                    h6 Безопасность
+                                    p Система защиты ворот от падения. Фотоэлементы безопасности. Остановка ворот при столкновении с препятствием.
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon4.png' title='' alt='')
+                                .advantage--text
+                                    h6 Арктическая комплектация
+                                    p Снижение теплопотерь на 20 %.
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon5.png' title='' alt='')
+                                .advantage--text
+                                    h6 ГОСТ
+                                    p ГОСТ "Автоматические ворота" (31174-2003).Европейский стандарт "Двери и ворота промышленного назначения" (EN-13241-1).
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon1.png' title='' alt='')
+                                .advantage--text
+                                    h6 Арктическая комплектация
+                                    p Надежная промышленная автоматика производства Италии (Came и Faac) -
+                                        b 3 года гарантии.
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon1.png' title='' alt='')
+                                .advantage--text
+                                    h6 Механическая надежность
+                                    p Толщина стенок металлических профилей и направляющих не менее 2,0 мм. Торсионный механизм. 50 000 циклов. В 2,5 раза больше, чем у бытовой серии.
+                                .advantage--icon
+                                    img(src='img/techs/icons/icon1.png' title='' alt='')
+                                .advantage--text
+                                    h6 Антикоррозия
+                                    p Защитное цинковое покрытие более 12 мкм. Трехслойное полимерное покрытие полотен по стандартам компании "Хенкель".
+                            iframe(src='https://www.youtube.com/embed/5eASBNKyW74?rel=0&showinfo=0', frameborder='0', allowfullscreen='')
+    include partials/_techs

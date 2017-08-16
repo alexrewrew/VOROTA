@@ -17,7 +17,7 @@ block content
                             a(href='catalogin.html' title='') Автоматический привод Faac 884 MC 3PH (400В)
                 .col-md-4
                     h1 Автоматический привод Faac 884 MC 3PH (400В)
-                .offset-md-1.col-md-5
+                .offset-md-1.col-lg-5.col-md-7
                     .counter
                         ul.counter-numbers
                             li 6
@@ -30,13 +30,13 @@ block content
     section
         .container
             .row
-                .col-md-5
+                .col-lg-5
                     .slider-article-big.slider-catalogin
                         .img-slider-item
                             img(src='img/illus/header-photo.png' title='' alt='')
                         .img-slider-item
                             img(src='img/illus/header-photo2.png' title='' alt='')
-                article.col-md-6
+                article.col-lg-6
                     h2 Описание
                     p Широкая гамма продукции представлена моделями, разработанными с учетом высоких технических требований к оборудованию, связанных с повышенной интенсивностью его использования и с большими размерами ворот.
                     h2 Технологии
@@ -57,91 +57,95 @@ block content
                         .catalogin-price--number
                             | 30 000 руб.
                         .catalogin-price--button
-                            a(href='' title='').button.button-red Заказать
+                            a(href='#modal-order' title='').button.button-red.inline Заказать
 
     section
         .container
             .row
                 aside.col-lg-3#discount-col
-                    include partials/_discount-slider
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
                 .col-lg-9#product-col
+                    article.catalog-description
+                        .row
+                            .col-lg-10
+                                h2 Характеристики
+                                table
+                                    tr
+                                        td Производитель
+                                        td Ворота.ру
+                                    tr
+                                        td Страна
+                                        td Казахстан
+                                    tr
+                                        td Максимальный размер створки
+                                        td 3.0 (м)
+                                    tr
+                                        td Максимальный вес створки
+                                        td 400.0 (кг)
+                                h2 Технические параметры
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                                h2 Преимущество
+                        .row
+                            .col.icon-drop.icon-catalog
+                                span.icon-container.icon-index
+                                    img(src='img/icons/icon2-1.svg' title='' alt='' onerror="this.src='img/icons/icon2-1.png'").icon-image
+                                    h5 Изготовление и монтаж от 1 дня
+                            .col.icon-drop.icon-catalog
+                                span.icon-container.icon-index
+                                    img(src='img/icons/icon2-2.svg' title='' alt='' onerror="this.src='img/icons/icon2-2.png'").icon-image
+                                    h5 Адаптировано к суровому климату Сибири
+                            .col.icon-drop.icon-catalog
+                                span.icon-container.icon-index
+                                    img(src='img/icons/icon2-3.svg' title='' alt='' onerror="this.src='img/icons/icon2-3.png'").icon-image
+                                    h5 Гарантия от 3 до 5 лет
+                    section.row
+                        .col-lg-11
+                            h2 Отзывы владельцев
+                            .row
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-12
+                                    a(href='' title='').button.button-comment Больше отзывов
+                                        img(src='img/icons/arrow-right-white.svg' title='' alt='' onerror="this.src='img/icons/arrow-right-white.png'")
                     .row
-                        .col-md-6.col-lg-4
-                            a(href='' title='').discount-article
-                                .discount-article--image-container
-                                    img(src='img/illus/business.png' title='' alt='')
-                                    .discount-article--image-container-percent
-                                        | -30%
-                                h3 Цены снижены
-                                p Сезонное снижение цен на все ворота - секционные (гаражные) , откатные, распашные.
-                                .link-more--wa
-                                    .link-more--wa-text Читать больше
-                                    .link-more--wa-arrow
-                        .col-md-6.col-lg-4
-                            a(href='' title='').discount-article
-                                .discount-article--image-container
-                                    img(src='img/illus/business.png' title='' alt='')
-                                    .discount-article--image-container-percent
-                                        | -5%
-                                h3 Скидки 5% на online заказы
-                                p Сделайте заказ прямо сейчас на сайте и получите дополнительную скидку 5%.
-                                .link-more--wa
-                                    .link-more--wa-text Читать больше
-                                    .link-more--wa-arrow
-                        .col-md-6.col-lg-4
-                            a(href='' title='').discount-article
-                                .discount-article--image-container
-                                    img(src='img/illus/business.png' title='' alt='')
-                                h3 Покупаем старые ворота
-                                p Покупаем старые гаражные ворота за 7000 р. и дарим скидку 15% на новые.
-                                    br
-                                    | • замер бесплатно
-                                    br
-                                    | • демонтаж бесплатно.
-
-                                .link-more--wa
-                                    .link-more--wa-text Читать больше
-                                    .link-more--wa-arrow
-                        .col-md-6.col-lg-4
-                            a(href='' title='').discount-article
-                                .discount-article--image-container
-                                    img(src='img/illus/business.png' title='' alt='')
-                                    .discount-article--image-container-percent
-                                        | 24/7
-                                h3 Сервис 24х7
-                                p Сезонное снижение цен на все ворота - секционные (гаражные) , откатные, распашные.
-                                .link-more--wa
-                                    .link-more--wa-text Читать больше
-                                    .link-more--wa-arrow
-                        .col-md-6.col-lg-4
-                            a(href='' title='').discount-article
-                                .discount-article--image-container
-                                    img(src='img/illus/business.png' title='' alt='')
-                                    .discount-article--image-container-percent
-                                        | 24/7
-                                h3 Сервис 24х7
-                                p Сезонное снижение цен на все ворота - секционные (гаражные) , откатные, распашные.
-                                .link-more--wa
-                                    .link-more--wa-text Читать больше
-                                    .link-more--wa-arrow
+                        .col-lg-11
+                            h2 FAQ
+                            .accordion
+                                h4 Вопрос 1
+                                div
+                                    p Если ворота заклинило, наблюдаются неполадки с открытием/закрытием. Обслуживаем ворота, в том числе, и сторонних производителей. Производим диагностику, регулировку и квалифицированный ремонт автоматических ворот.
+                                h4 Вопрос 1
+                                div
+                                    p
+                                        | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                        | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                        | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                        | suscipit faucibus urna.
+                                h4 Вопрос 1
+                                div
+                                    p
+                                        | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                        | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                        | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                        | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
 
 
-                        .offset-lg-2.col-lg-10
-                            ul.pagination
-                                li
-                                    a(href='' title='')
-                                        img(src='img/icons/arrow-left.svg' title='' alt='' onerror='this.src="img/icons/arrow-left.png"')
-                                li
-                                    a(href='' title='').active 1
-                                li
-                                    a(href='' title='') 2
-                                li
-                                    a(href='' title='') 3
-                                li
-                                    a(href='' title='') 4
-                                li
-                                    a(href='' title='') ...
-                                li
-                                    a(href='' title='')
-                                        img(src='img/icons/arrow-right.svg' title='' alt='' onerror='this.src="img/icons/arrow-right.png"')
-
+    include partials/_order

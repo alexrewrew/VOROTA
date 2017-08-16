@@ -1,7 +1,8 @@
 $(document).ready(function () {
     "use strict";
 
-    // $(".inline").modaal();
+    $(".inline").modaal();
+    $('.my-link').modaal('close');
 
     //select
     $(".chosen-select").chosen({disable_search_threshold: 10});
@@ -112,26 +113,33 @@ $(document).ready(function () {
     });
 
 // When the window has finished loading create our google map below
+//     $('.accordion-tab').click(function() {
+//         $(this).toggleClass('active');
+//     });
+
+    $( function() {
+        $( ".accordion" ).accordion();
+    } );
 
 
     //gallery
-    $('.img-item').magnificPopup({
-        type: 'image',
-        gallery:{
-            enabled:true,
-            tCounter: '%curr% из %total%'
-        },
-        zoom: {
-            enabled: true, // By default it's false, so don't forget to enable it
-
-            duration: 300, // duration of the effect, in milliseconds
-            easing: 'ease', // CSS transition easing function
-
-            opener: function(openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
-    });
+    // $('.img-item').magnificPopup({
+    //     type: 'image',
+    //     gallery:{
+    //         enabled:true,
+    //         tCounter: '%curr% из %total%'
+    //     },
+    //     zoom: {
+    //         enabled: true, // By default it's false, so don't forget to enable it
+    //
+    //         duration: 300, // duration of the effect, in milliseconds
+    //         easing: 'ease', // CSS transition easing function
+    //
+    //         opener: function(openerElement) {
+    //             return openerElement.is('img') ? openerElement : openerElement.find('img');
+    //         }
+    //     }
+    // });
 
     $('.link-map').click(function (e) {
        e.preventDefault();

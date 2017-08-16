@@ -1,0 +1,64 @@
+.modaal-container
+  max-width 946px
+  position relative
+  +mobile()
+    min-height 100vh
+
+.modaal-content-container
+  padding: 5em 6.2em 8.125em;
+  +mobile()
+    padding 4.6em 1em 8em
+  h2
+    margin-bottom 63px
+  .button
+    margin 0 auto
+  .send-visible
+      display block
+      form
+        display flex
+        flex-direction row
+        justify-content space-between
+        flex-wrap wrap
+        width 100%
+        input
+          flex 1 1 48%
+          max-width 48%
+          +mobile()
+            flex 1 1 100%
+            max-width 100%
+  .send-hidden
+      text-align center
+      display none
+      img
+        margin-bottom 25px
+      h2
+        margin-bottom 5px
+      p
+        line-height: 1.38;
+        text-align: center;
+        color: #b1b1b1;
+        letter-spacing: 1.1px;
+        margin-bottom 41px
+
+.modaal-inner-wrapper
+  +mobile()
+    padding 0
+
+.modaal-close
+  position absolute
+  top 33px
+  right 32px
+  +mobile()
+    top 15px
+    right 15px
+  &:hover
+    background $trans
+
+.modaal-close:before, .modaal-close:after
+  background $black
+  border-radius 0
+  width 2px
+  transitions()
+
+.modaal-close:focus:before, .modaal-close:focus:after, .modaal-close:hover:before, .modaal-close:hover:after
+  background $red

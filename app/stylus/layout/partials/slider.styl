@@ -86,7 +86,7 @@ button.mfp-arrow-right
 
 
 .slider-article-big.slick-dotted.slick-slider
-  margin 11px 0 87px
+  margin 11px 0 69px
 
 .slider-article-big
   position relative
@@ -125,6 +125,11 @@ button.mfp-arrow-right
       transform translateX(10px)
 
 .slider-catalogin
+  +mobile()
+    .img-slider-item
+      height 300px
+      img
+        min-height 300px
   .slick-dots
     bottom -15px
   .arrow

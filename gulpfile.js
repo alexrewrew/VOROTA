@@ -64,7 +64,7 @@ gulp.task("scripts", function () {
             // "app/libs/owl.carousel/dist/owl.carousel.js",
             // "app/libs/remodal/dist/remodal.js",
             "app/libs/modaal/dist/js/modaal.js",
-            "app/libs/magnific-popup/dist/jquery.magnific-popup.js",
+            // "app/libs/magnific-popup/dist/jquery.magnific-popup.js",
             // "app/libs/wow/dist/wow.js",
             // "app/libs/animsition/dist/js/animsition.js",
             // "app/libs/rew-downnav/downnav.js",

@@ -1,0 +1,24 @@
+.accordion
+  margin-bottom 50px
+  h4
+    padding 21px 33px 24px
+    cursor pointer
+    position relative
+    margin-bottom 0
+    border-bottom 2px solid $white
+    transitions()
+    &:focus
+      outline none
+    &:after
+      triangle($black, down, 5px)
+      right 33px
+      top 32px
+      transitions()
+  div
+    cursor pointer
+    padding 0 33px 22px
+    background $white
+  .ui-state-active
+    background $white
+    &:after
+      transform rotate(-180deg)
