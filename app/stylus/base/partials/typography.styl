@@ -14,12 +14,16 @@ h1.heading-big
   font-size 2.375em
   font-weight 700
   margin-bottom 0
+  +mobile()
+    margin-bottom 30px
 
 h1.heading-index
   letter-spacing: 2px;
   text-align left
   font(2.75em, $white, 700, 1.14)
   margin-bottom 0
+  +mobile()
+    font-size 1.875em
 
 h2
   font(1.75em, $gray-text2, 600, normal)
@@ -41,6 +45,8 @@ h4
 h5
   font(.875em, $black-text, 500, 1.6)
   letter-spacing: 1px;
+  +mobile()
+    font-size .75em
 
 h6
   font(1em, $black-text, 600, 1.7)

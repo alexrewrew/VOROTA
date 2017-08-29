@@ -26,6 +26,7 @@
   flex-wrap nowrap
   padding 42px 0 0
   +mobile()
+    padding-top 60px
     flex-wrap wrap
   &:last-child
     border-bottom 2px solid $white
@@ -55,8 +56,9 @@
     +mobile()
       flex 1 1 100%
       max-width 100%
+      order -1
     img
       max-width 100%
       margin 20px 0
       +mobile()
-        margin: 20px 0 60px;
+        margin: 20px 0 40px;

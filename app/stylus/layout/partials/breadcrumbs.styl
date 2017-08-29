@@ -5,7 +5,22 @@
   margin-bottom: 38px
   +mobile()
     margin-bottom 15px
-    flex-wrap wrap
+    //flex-wrap wrap
+    overflow hidden
+    position relative
+    //&:after
+    //  display block
+    //  position absolute
+    //  content '...'
+    //  color $gray-text2
+    //  background $gray-back
+    //  right 0
+    //  top -3px
+    //  padding-left 2px
+    &:last-child
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
   li
     position relative
     margin-right 7px

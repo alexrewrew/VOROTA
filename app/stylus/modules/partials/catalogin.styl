@@ -3,6 +3,8 @@
   flex-direction row
   flex-wrap nowrap
   max-width 458px
+  +mobile()
+    flex-wrap wrap
   &--number
     flex 1 1 195px
     max-width 195px
@@ -14,15 +16,27 @@
     display flex
     justify-content center
     align-items center
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      border-bottom 0
+      margin-bottom 20px
+      font-size 1.75em
   &--button
     flex 1 1 263px
     max-width 263px
     border-bottom 2px solid $red
     transitions()
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      border-bottom 0
     .button
       text-decoration none
       padding-top 12px
       padding-bottom 13px
+      +mobile()
+        margin 0 auto
     &:hover
       border-color $gray-back3
 
@@ -32,6 +46,7 @@
   padding-bottom 115px
   +portrait()
     margin-left 0
+    padding-bottom 80px
   +mobile()
     margin-left 0
   h2

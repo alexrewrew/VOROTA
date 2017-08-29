@@ -1,0 +1,111 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - О компании. Партнеры
+
+block content
+
+    header.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='about1.html' title='') Поиск
+                .col-md-5.col-lg-3
+                    h1 Результаты поиска
+                .col-md-7
+                    form.form-search
+                        input(type='text' placeholder='Ворота')
+                        button(type='submit')
+                            svg(width='19px', height='19px', viewbox='0 0 19 19', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                g#Symbols(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                    g#Header_White(transform='translate(-1112.000000, -62.000000)', fill-rule='nonzero', fill='#000000')
+                                        g#Shape(transform='translate(1112.000000, 62.000000)')
+                                            path(d='M7.97562178,15.8794313 C4.76095252,15.8939085 1.85479693,13.9684798 0.614727675,11.0025843 C-0.625341576,8.03668877 0.0454309736,4.6157123 2.31370268,2.33771944 C4.58197438,0.0597265706 8.00005098,-0.625669757 10.9712226,0.601704412 C13.9423942,1.82907858 15.8802335,4.72697345 15.8795041,7.94167522 C15.8836786,12.3140886 12.3480131,15.864907 7.97562178,15.8794313 L7.97562178,15.8794313 Z M7.97562178,2.31674562 C5.69718706,2.30149982 3.63461055,3.66226139 2.75210703,5.76290052 C1.86960352,7.86353965 2.34151396,10.2890694 3.94722932,11.9056013 C5.55294468,13.5221332 7.97525154,14.010317 10.0817681,13.1419362 C12.1882846,12.2735554 13.5628628,10.2201609 13.5629138,7.94167522 C13.5702083,4.84677805 11.0704982,2.33022924 7.97562178,2.31674562 L7.97562178,2.31674562 Z')
+                                            polygon(points='17.0001465 18.6091511 12 13.6391146 13.6372328 12 18.6354974 16.9700365')
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-md-6.col-lg-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .row.justify-content-center
+                        .col-lg-11.col-xl-10
+                            a(href='' title='').search-result
+                                h3 Новость 1
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                                p Официальный дилер Volkswagen в г. Иркутске – ООО  ООО «Россо Моторс», открыт в 2006 году. Дилерский центр входит в состав Автохолдинга «Россо». Предоставляет весь спектр услуг, связанных
+                                ul.breadcrumbs
+                                    li Главная
+                                    li Информация
+                                    li Программирование блоков
+                            a(href='' title='').search-result
+                                h3 Новость 1
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                                p Официальный дилер Volkswagen в г. Иркутске – ООО  ООО «Россо Моторс», открыт в 2006 году. Дилерский центр входит в состав Автохолдинга «Россо». Предоставляет весь спектр услуг, связанных
+                                ul.breadcrumbs
+                                    li Главная
+                                    li Информация
+                                    li Программирование блоков
+                            a(href='' title='').search-result
+                                h3 Новость 17
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                                p Официальный дилер Volkswagen в г. Иркутске – ООО  ООО «Россо Моторс», открыт в 2006 году. Дилерский центр входит в состав Автохолдинга «Россо». Предоставляет весь спектр услуг, связанных Официальный дилер Volkswagen в г. Иркутске – ООО  ООО «Россо Моторс», открыт в 2006 году. Дилерский центр входит в состав Автохолдинга «Россо». Предоставляет весь спектр услуг, связанных
+                                ul.breadcrumbs
+                                    li Главная
+                                    li Информация
+                                    li Программирование блоков
+                            a(href='' title='').search-result
+                                h3 Новость 1
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                                p Официальный дилер Volkswagen в г. Иркутске – ООО  ООО «Россо Моторс», открыт в 2006 году. Дилерский центр входит в состав Автохолдинга «Россо». Предоставляет весь спектр услуг, связанных
+                                ul.breadcrumbs
+                                    li Главная
+                                    li Информация
+                                    li Программирование блоков
+                            a(href='' title='').search-result
+                                h3 Новость 1
+                                .link-more--wa
+                                    .link-more--wa-text Читать больше
+                                    .link-more--wa-arrow
+                                p Официальный дилер Volkswagen в г. Иркутске – ООО  ООО «Россо Моторс», открыт в 2006 году. Дилерский центр входит в состав Автохолдинга «Россо». Предоставляет весь спектр услуг, связанных
+                                ul.breadcrumbs
+                                    li Главная
+                                    li Информация
+                                    li Программирование блоков
+
+                        .col-lg-11.col-xl-10
+                            .row
+                                .offset-lg-2.col-lg-10
+                                    ul.pagination
+                                        li
+                                            a(href='' title='')
+                                                img(src='img/icons/arrow-left.svg' title='' alt='' onerror='this.src="img/icons/arrow-left.png"')
+                                        li
+                                            a(href='' title='').active 1
+                                        li
+                                            a(href='' title='') 2
+                                        li
+                                            a(href='' title='') 3
+                                        li
+                                            a(href='' title='') 4
+                                        li
+                                            a(href='' title='') ...
+                                        li
+                                            a(href='' title='')
+                                                img(src='img/icons/arrow-right.svg' title='' alt='' onerror='this.src="img/icons/arrow-right.png"')
+

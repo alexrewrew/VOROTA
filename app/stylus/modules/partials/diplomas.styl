@@ -1,12 +1,14 @@
 .diplomas
   display flex
   flex-wrap wrap
+  +mobile()
+    justify-content space-between
   li
     margin-bottom 49px
     margin-right 29px
     +mobile()
-      flex 1 1 100%
-      max-width 100%
+      flex 1 1 48%
+      max-width 48%
       margin-right 0
     img
       +mobile()

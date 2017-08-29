@@ -58,6 +58,8 @@ a
   color $red
   width 32px
   transitions()
+  +mobile()
+    margin-bottom 15px
   &-text
     position absolute
     right: 150px;
@@ -127,10 +129,17 @@ a
   margin 10px 0
   padding-bottom 6px
   +mobile()
-    margin-bottom 40px
+    margin-bottom 80px
+    font-size 1.25em
   &:hover
     color: $red
     border-color $trans
+  &:focus
+    color $gray-text2
+
+.link-map.active
+  color $gray-text2
+
 
 .link-discount
   display inline-block
@@ -142,8 +151,9 @@ a
   font-weight 500
   margin-bottom 40px
   +mobile()
-    margin 0 auto 40px
+    margin 0 auto 100px
     display: block
+    font-size 1.25em
   +portrait()
     margin-bottom 0
   img

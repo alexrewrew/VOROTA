@@ -47,8 +47,12 @@
     font-size .875em
   .small-col.left
       padding-right 4px
+      +portrait()
+        padding-right 15px
   .small-col.right
       padding-left 4px
+      +portrait()
+        padding-left 15px
   .filter-colors
     display flex
     justify-content space-between
@@ -56,6 +60,10 @@
     flex-wrap wrap
     margin-bottom 25px
     li
+      +tablet()
+        &:last-child
+          flex: 1 1 calc(100% - 55px);
+          max-width: calc(100% - 55px);
       a
         display block
         width 45px
@@ -63,35 +71,78 @@
         background $red
         margin-bottom 10px
         opacity .8
+        position relative
+        &:after
+          pseudo(block, absolute)
+          width 45px
+          height 45px
+          background $trans
+          border 3px solid $trans
+          z-index 3
+          top 0
+          left 0
+          transitions()
         +mobile()
           width 55px
           height 55px
         &:hover
           opacity 1
+          &:after
+            border-color $red
       .active
         opacity 1
+        &:after
+          border-color $red
   .filter-options
     display flex
     justify-content space-between
     flex-direction row
     flex-wrap wrap
     margin-bottom 10px
+    +portrait()
+      flex-wrap nowrap
     li
       flex 1 1 68px
       max-width 68px
+      +portrait()
+        flex 1 1 100%
+        max-width 100%
       a
         margin-bottom 17px
         display block
+        position relative
+        +portrait()
+          display flex
+          flex-direction row
+        &:after
+          pseudo(block, absolute)
+          width 68px
+          height 60px
+          background $trans
+          border 3px solid $trans
+          z-index 3
+          top 0
+          left 0
+          transitions()
         img
           margin-bottom 5px
           opacity .8
           transitions()
+          width 68px
+          height 60px
         p
           font-size 12px
           line-height: 1.17;
+          +portrait()
+            margin-right 10px
+            margin-left 10px
         &:hover
           img
             opacity 1
+          &:after
+            border-color $red
       .active
         img
           opacity 1
+        &:after
+          border-color $red

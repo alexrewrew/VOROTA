@@ -5,7 +5,7 @@
   +portrait()
     margin-bottom 40px
   +mobile()
-    margin-bottom 40px
+    margin-bottom 80px
   &--image-container
     height 220px
     display flex
@@ -60,6 +60,8 @@
 .discount.discount-big
   height 423px
   max-width 263px
+  +mobile()
+    margin-bottom 40px
   .discount--image-container
     height 400px
     img
@@ -79,6 +81,7 @@
       padding 9px 0 12px
       &:hover
         background $gray-back3
+    max-width 230px
 
 .discount-article
   display block
@@ -108,6 +111,13 @@
       font-size 4.75em
       +tablet()
         font-size 4em
+    img
+      filter grayscale(100%)
+      transitions()
+      +mobile()
+        filter grayscale(0)
+      +portrait()
+        filter grayscale(0)
   &:hover
     .link-more--wa
       width 100%
@@ -119,6 +129,9 @@
       .link-more--wa-text
         opacity 1
         transform translateX(100px)
+    .discount-article--image-container
+      img
+        filter grayscale(0)
 
 .discount-description
   margin-left 50px

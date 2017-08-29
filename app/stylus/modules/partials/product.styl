@@ -2,6 +2,8 @@
   cursor pointer
   display block
   margin-bottom 50px
+  +mobile()
+    margin-bottom 100px
   &--image-container
     height 220px
     width 100%
@@ -23,8 +25,15 @@
       text-transform lowercase
       text-align center
       padding-bottom 6px
+      z-index 10
     img
       max-height 220px
+      opacity .6
+      transitions()
+      +portrait()
+        opacity 1
+      +mobile()
+        opacity 1
   &--tech
     display flex
     flex-direction row
@@ -61,8 +70,17 @@
     .button
       background $red
       color $white
+    .product--image-container
+      img
+        opacity 1
 
 .product-green
+  +mobile()
+    .button
+      background $green-back
+  +portrait()
+    .button
+      background $green-back
   &:hover
     .button
       background $green-back

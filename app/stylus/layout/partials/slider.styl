@@ -7,8 +7,13 @@
   max-width 263px
   +mobile()
     margin 0 auto 48px
+  +portrait()
+    max-width unset
+    .slick-slide
+      margin-right 30px
 
 .slider-article
+  padding-bottom: 20px;
   .slick-dots
     +portrait()
       bottom: -30px;

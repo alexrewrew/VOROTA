@@ -3,9 +3,12 @@
   display block
   position relative
   background $white
+  +portrait()
+    height 130px
   +mobile()
     display flex
     align-items center
+    height 100px
   &--image
     max-height: 149px
     position absolute
@@ -30,7 +33,7 @@
     +portrait()
       left 47%
     +mobile()
-      left 10%
+      left 0
     span
       position absolute
       bottom 0
@@ -39,6 +42,9 @@
       font-size .75em
       color $trans
       transitions()
+      +mobile()
+        bottom -22px
+        left 10%
       img
         margin-left 0
         opacity 0
@@ -54,7 +60,8 @@
     +portrait()
       font-size 1.25em
     +mobile()
-      font-size 1.25em
+      font-size 1em
+      text-align center
 
 .choice-section
   position relative
@@ -62,16 +69,20 @@
   overflow visible
   top -80px
   margin-bottom 53px
+  +portrait()
+    top -65px
+  +mobile()
+    top -50px
 
 .choice-block
   &:first-child
     padding-right 0
-    //+mobile()
-    //  padding-right 15px
+    +mobile()
+      padding-right 2px
   &:last-child
     padding-left 0
-    //+mobile()
-    //  padding-left 15px
+    +mobile()
+      padding-left 2px
   &:hover
     .menu-choice
       background $gray-back2
@@ -89,4 +100,4 @@
         h3
           transform translateY(-18px)
           +mobile()
-            transform translateY(-22px)
+            transform translateY(-11px)

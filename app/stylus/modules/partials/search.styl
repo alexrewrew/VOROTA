@@ -1,0 +1,40 @@
+.search-result
+  display block
+  position relative
+  border-top 2px solid $white
+  padding-top 30px
+  margin-bottom 60px
+  +mobile()
+    margin-bottom 80px
+  h3
+    color $red
+    font-weight 500
+  .breadcrumbs
+    li
+      font-size .75em
+      color $gray-text
+      letter-spacing: 1px
+      margin-right 7px
+      padding-right: 7px;
+      //padding-right 34px
+      //overflow: hidden;
+      //white-space: nowrap;
+      //text-overflow: ellipsis;
+      &:last-child
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+  p
+    max-height 42px
+    overflow hidden
+  &:hover
+    .link-more--wa
+      width 100%
+      .link-more--wa-arrow
+        &:before
+          opacity 1
+        &:after
+          opacity 1
+      .link-more--wa-text
+        opacity 1
+        transform translateX(100px)

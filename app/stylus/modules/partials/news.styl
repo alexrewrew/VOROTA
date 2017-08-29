@@ -39,7 +39,7 @@
     +tablet()
       padding 15px 28px
     +mobile()
-      padding 15px 0 31px
+      padding 25px 0 61px
       flex 1 1 100%
       max-width 100%
     h4
@@ -51,6 +51,8 @@
         overflow hidden
         text-overflow ellipsis
         white-space: nowrap;
+      +mobile()
+        margin-bottom 12px
     p
       color: $gray-text4
       overflow hidden
@@ -59,6 +61,8 @@
         max-height 63px
       +portrait()
         max-height 63px
+      //+mobile()
+      //  margin-bottom 30px
     &-data
       color $red
       font-size .75em
@@ -74,6 +78,7 @@
         bottom 20px
       +mobile()
         left 0
+        bottom 33px
       li
         margin-right 45px
         img

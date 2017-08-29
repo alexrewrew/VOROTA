@@ -15,6 +15,7 @@ input
   font-size .875em
   padding 16px 30px 19px;
   background $white
+  -webkit-appearance none
   +placeholder()
     color $gray-text
   &:focus
@@ -66,6 +67,7 @@ textarea
   padding 16px 30px 19px
   background $white
   min-height 184px
+  -webkit-appearance none
   transitions()
   +placeholder()
     color $gray-text
@@ -112,3 +114,46 @@ label {}
       color $gray-text2
     img
       margin-bottom: 11px;
+
+.form-search
+  position relative
+  display flex
+  top -3px
+  margin-left 73px
+  +tablet()
+    margin-left 30px
+  +portrait()
+    margin-left 0
+    justify-content flex-end
+  +mobile()
+    margin-left 0
+  input
+    border none
+    font-size 1.500em
+    font-weight 500
+    letter-spacing .3px
+    border-bottom 2px solid $trans
+    padding 0 18px 1px
+    min-width 311px
+    &:focus
+      border-bottom-color $red
+    +mobile()
+      min-width auto
+      width 100%
+  button
+    height 40px
+    width 40px
+    color $white
+    border none
+    background $gray-back3
+    transitions()
+    font-size 20px
+    line-height 40px
+    cursor pointer
+    &:focus
+      outline: none
+    &:hover
+      background $red
+    svg g
+      transitions()
+      fill $white

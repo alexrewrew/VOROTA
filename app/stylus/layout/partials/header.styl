@@ -23,9 +23,8 @@ header
     margin-bottom: 25px;
   .header-image
     position: relative;
-    left: -20px;
     max-height: 314px;
-    top: -14px;
+    top 14px
     +tablet()
       max-width 100%
     +portrait()
@@ -35,16 +34,25 @@ header
     +mobile()
       max-width 100%
       position static
+      margin-bottom: 30px;
 
 .header-with-video
   height 631px
   padding-top 0
   overflow hidden
   z-index: 1
+  +custom-min(1600px)
+    height 785px
+  +mobile()
+    height 88vh
   .row
     height 631px
     position relative
     z-index 10
+    +custom-min(1600px)
+      height 785px
+    +mobile()
+      height 88vh
   &:after
     pseudo(block, absolute)
     top 0
@@ -54,28 +62,27 @@ header
     width 100%
     background $black-back2
     opacity: 0.7;
-  .header-video
+  video
     display block
     position absolute
     top 0
-    left 0
-    right 0
     bottom 0
     width 100%
     +tablet()
       height 100%
-      width auto
+      width: 1200px;
+      left: calc(50% - 600px);
     +portrait()
       height 100%
-      width auto
+      width: 1120px;
+      left: calc(50% - 560px);
     +mobile()
       height 100%
-      width auto
+      width: 1200px;
+      left: calc(50% - 600px)
+    +landscape()
+      height 100vh
 
-
-
-
-//h4
 .header-regular
   height: 294px;
   min-height auto
@@ -101,6 +108,8 @@ header
     font-size 2.375em
     line-height normal
     margin-bottom 48px
+    +mobile()
+      font-size 1.875em
   .button
     margin-left unset
     margin-right unset
@@ -172,7 +181,9 @@ header
 
 .header-contacts
   margin-bottom 49px
-
+  +mobile()
+    h1
+      margin-bottom 50px
 .header-catalog
   height 216px
   +mobile()

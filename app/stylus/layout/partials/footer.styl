@@ -21,6 +21,8 @@ footer
     font-size: .75em
     line-height: 1.85
     color $gray-text2
+    +mobile()
+      font-size .875em
   .menu-footer
     margin-bottom 25px
     li
@@ -28,6 +30,8 @@ footer
         font-size: .75em
         line-height: 1.83
         color $gray-text2
+        +mobile()
+          font-size .875em
         &:hover
           color $red
   .address
@@ -53,6 +57,11 @@ footer
         width: 24px;
         height: 24px;
         border-radius 50%
+        +mobile()
+          width 34px
+          height 34px
+          font-size 1.25em
+          padding-top 5px
         &:hover
           background $trans
           color $red
@@ -77,6 +86,9 @@ footer
       height 2px
       top -2px
       right 0
+    p
+      +mobile()
+        font-size .75em
 
 .copyright
   text-align right

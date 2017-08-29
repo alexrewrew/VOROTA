@@ -78,7 +78,7 @@ nav
     left 60px
     width: calc(100% - 60px)
     height: 100vh;
-    padding-top 70px
+    padding-top 15px
 
 .hidden
   transform translateY(-48px)
@@ -92,8 +92,7 @@ nav
   flex-wrap nowrap
   padding: 3px 0
   +portrait()
-    flex-direction column
-    padding 0
+    justify-content space-between
   +mobile()
     padding-bottom: 28px;
     justify-content flex-start
@@ -103,7 +102,7 @@ nav
     +portrait()
       margin 0 0 5px
     +mobile()
-      margin 0 10px 0 0
+      margin 0 15px 0 0
     &:last-child
       +portrait()
         margin-bottom 0
@@ -146,7 +145,6 @@ nav
       border-bottom-color $black
       +portrait()
         font-size 0.625em
-
   +mobile()
     flex-direction column
 
@@ -154,37 +152,56 @@ nav
   display flex
   flex-direction row
   flex-wrap nowrap
-  justify-content flex-end
+  justify-content space-between
   align-items center
   +mobile()
     flex-direction column
     align-items flex-start
     justify-content flex-start
+  +portrait()
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    display inline-flex
+    float right
   li
     font-weight 400
     font-size: .75em
     letter-spacing: 1px
     color: $gray-text
-    margin: 0 6px 0 23px;
-    +tablet()
-      margin-right 0
-      margin-left 0
-      &:last-child
-        flex 1 1 40%
-        max-width 40%
-        margin-left 10px
-    +portrait()
-      margin-right 0
-      &:last-child
-        flex 1 1 40%
-        max-width 40%
+    margin 0
+    &:first-child
+      flex 1 1 46%
+      max-width 46%
+      text-align right
+      +mobile()
+        text-align left
+        flex 1 1 100%
+        max-width 100%
+      +tablet()
+        flex 1 1 50%
+        max-width 50%
+      +portrait()
+        flex 1 1 100%
+        max-width 100%
+        text-align left
+    &:last-child
+      flex 1 1 47%
+      max-width 47%
+      +mobile()
+        flex 1 1 100%
+        max-width 100%
+      +portrait()
+        flex 1 1 100%
+        max-width 100%
     +mobile()
       margin 0
-      //text-align right
       margin-bottom 10px
     a
       font-size 14px
       color: $gray-text
+      +mobile()
+        font-size 20px
       &:hover
         color $black-text
 
@@ -198,7 +215,7 @@ nav
     padding 10px 35px 11px 14px
     position absolute
     right 0
-    top -4px
+    top -5px
     max-width 229px
     width 0
     opacity 0
@@ -314,11 +331,13 @@ nav.nav-transparent
   +portrait()
     flex-direction row
     flex-wrap wrap
-    justify-content space-between
+    justify-content center
     margin-bottom 50px
   +mobile()
     margin-bottom 50px
   li
+    +portrait()
+      margin: 0 5px;
     a
       color $black
       display block
@@ -333,9 +352,6 @@ nav.nav-transparent
       &:hover
         background $gray-text2
         color $white
-
-
-
 
 //@import "../libs/rew-downnav/downnav.styl"
 @import "../libs/rew-sidenav/sidenav.styl"
