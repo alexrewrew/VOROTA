@@ -38,7 +38,6 @@ $(document).ready(function () {
     $('.slider-article-big').slick({
         slide: '.img-slider-item',
         arrows: true,
-        // autoplay:true,
         autoplaySpeed:1500,
         dots: true,
         slidesToShow: 1,
@@ -52,7 +51,7 @@ $(document).ready(function () {
 
     $(window).scroll(function(){
 
-        currentScrollTop = $(window).scrollTop();
+        currentScrollTop = $('body').scrollTop();
 
         if (tempScrollTop < currentScrollTop) {
             $('.nav-bottom').addClass('hidden');
@@ -102,6 +101,7 @@ $(document).ready(function () {
         $("main").toggleClass("open");
         $("nav").toggleClass("open");
         $("html, body").toggleClass("open-nav");
+        $('.nav-bottom').toggleClass('open');
     });
 
     $("main").click(function () {

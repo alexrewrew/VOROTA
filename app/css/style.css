@@ -7533,12 +7533,15 @@ nav {
 		top: 0;
 		bottom: 0;
 		right: 0;
-		left: 60px;
+		left: 100vw;
 		width: -webkit-calc(100% - 60px);
 		width:         calc(100% - 60px);
 		height: 100vh;
 		padding-top: 15px;
 	}
+}
+.nav-bottom.open {
+	left: 60px;
 }
 .hidden {
 	-webkit-transform: translateY(-48px);
