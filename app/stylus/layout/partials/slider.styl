@@ -7,6 +7,7 @@
   max-width 263px
   +mobile()
     margin 0 auto 48px
+    max-width unset
   +portrait()
     max-width unset
     .slick-slide
@@ -95,12 +96,18 @@ button.mfp-arrow-right
 
 .slider-article-big
   position relative
+  +mobile()
+    .slick-track
+      margin-bottom: 10px;
   .img-slider-item
     display flex
     justify-content center
     align-items center
     height 350px
     overflow hidden
+    +mobile()
+      align-items unset
+
     img
       min-height 350px
       width auto

@@ -34461,38 +34461,26 @@ $(document).ready(function () {
     $(".slider-discount").slick({
         slide: "a",
         arrows: false,
-        // autoplay:true,
         autoplaySpeed:1500,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 1,
-        //             infinite: false,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 600,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 2
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1
-        //         }
-        //     }
-        //     // You can unslick at a given breakpoint now by adding:
-        //     // settings: "unslick"
-        //     // instead of a settings object
-        // ]
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: true,
+                    variableWidth: true
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    centerMode: true,
+                    variableWidth: true
+                }
+            }
+        ]
 
     });
 
@@ -34510,15 +34498,17 @@ $(document).ready(function () {
 
     // menu scroll
     var tempScrollTop, currentScrollTop = 0;
+
     $(window).scroll(function(){
+
         currentScrollTop = $(window).scrollTop();
 
-        if (tempScrollTop < currentScrollTop ) {
+        if (tempScrollTop < currentScrollTop) {
             $('.nav-bottom').addClass('hidden');
-
         } else if (tempScrollTop > currentScrollTop) {
             $('.nav-bottom').removeClass('hidden');
         }
+
         tempScrollTop = currentScrollTop;
 
 
@@ -34576,10 +34566,23 @@ $(document).ready(function () {
             $("#navicontacts").appendTo(".nav-bottom .container .row");
             $("#navitop").prependTo(".nav-bottom .container .row");
             $(".nav-bottom").prependTo("body");
+            $('.slider-aside').slick({
+                slide: 'li',
+                arrows: false,
+                autoplaySpeed: 1500,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                variableWidth: true
+            });
         } else {
             $("#navitop").appendTo(".nav-border-bottom .row");
             $("#navicontacts").appendTo(".nav-border-bottom .row");
             $(".nav-bottom").prependTo("nav");
+            $('.slider-aside').unslick({
+                settings: 'unslick'
+            });
         }
 
 
@@ -34590,15 +34593,9 @@ $(document).ready(function () {
         }
     });
 
-// When the window has finished loading create our google map below
-//     $('.accordion-tab').click(function() {
-//         $(this).toggleClass('active');
-//     });
-
     $( function() {
         $( ".accordion" ).accordion();
     } );
-
 
     //gallery
     // $('.img-item').magnificPopup({
