@@ -3,6 +3,25 @@
   +mobile()
     margin-bottom 20px
   .col
+    .calc-image-container
+      position relative
+      .calc-pos
+        position absolute
+        top 0
+        left 0
+      .calc-pos.replace-calc
+        z-index 1
+      .calc-pos.glass-calc
+        z-index 3
+        display none
+      .calc-pos.dops-calc
+        z-index 4
+        display none
+      .main-img-calc
+        position relative
+        top 0
+        left 0
+        z-index 2
     &:first-child
       flex 1 1 78%
       max-width 78%
@@ -21,6 +40,7 @@
       margin-bottom 0
 
 .calc-result
+  display none
   +mobile()
     width 100%
   .calc-discount

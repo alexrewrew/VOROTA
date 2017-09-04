@@ -9299,6 +9299,31 @@ button.mfp-arrow-right:hover:after {
 		margin-bottom: 20px;
 	}
 }
+.calc-row .col .calc-image-container {
+	position: relative;
+}
+.calc-row .col .calc-image-container .calc-pos {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.calc-row .col .calc-image-container .calc-pos.replace-calc {
+	z-index: 1;
+}
+.calc-row .col .calc-image-container .calc-pos.glass-calc {
+	z-index: 3;
+	display: none;
+}
+.calc-row .col .calc-image-container .calc-pos.dops-calc {
+	z-index: 4;
+	display: none;
+}
+.calc-row .col .calc-image-container .main-img-calc {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
 .calc-row .col:first-child {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 1 78%;
@@ -9336,6 +9361,9 @@ button.mfp-arrow-right:hover:after {
 	.calc-row .button {
 		margin-bottom: 0;
 	}
+}
+.calc-result {
+	display: none;
 }
 @media (max-width: 767px) {
 	.calc-result {
