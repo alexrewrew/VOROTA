@@ -6909,45 +6909,45 @@ button.mfp-arrow-right:hover:after {
 		margin: 0;
 	}
 }
-.pagination li:first-child {
+.pagination .pagination-arrow-left {
 	margin-left: 0;
 	margin-right: 60px;
 }
 @media (max-width: 767px) {
-	.pagination li:first-child {
+	.pagination .pagination-arrow-left {
 		margin: 0;
 	}
 }
-.pagination li:first-child:hover a {
+.pagination .pagination-arrow-left:hover a {
 	-webkit-transform: translateX(-10px);
 	    -ms-transform: translateX(-10px);
 	        transform: translateX(-10px);
 }
-.pagination li:last-child {
+.pagination .pagination-arrow-right {
 	margin-right: 0;
 	margin-left: 60px;
 }
 @media (max-width: 767px) {
-	.pagination li:last-child {
+	.pagination .pagination-arrow-right {
 		margin: 0;
 	}
 }
-.pagination li:last-child:hover a {
+.pagination .pagination-arrow-right:hover a {
 	-webkit-transform: translateX(10px);
 	    -ms-transform: translateX(10px);
 	        transform: translateX(10px);
 }
-.pagination li a {
+.pagination a {
 	color: #cecece;
 	letter-spacing: .7px;
 	font-size: 1.125em;
 	display: block;
 	font-weight: 600;
 }
-.pagination li a:hover {
+.pagination a:hover {
 	color: #f52341;
 }
-.pagination li .active {
+.pagination .active {
 	color: #f52341;
 }
 .pagination-project {
@@ -7954,6 +7954,9 @@ button.mfp-arrow-right:hover:after {
 .tech p {
 	font-size: .75em;
 	color: #525252;
+}
+.tech:hover {
+	background: #fff;
 }
 .tech:hover img {
 	-webkit-filter: grayscale(0%);
