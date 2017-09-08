@@ -34569,12 +34569,6 @@ $(document).ready(function () {
     });
 
     //menu trigger
-    $(".nav-icon").click(function () {
-        event.preventDefault();
-        $(this).toggleClass("open");
-        $("main, nav, .nav-bottom").toggleClass("open");
-        $("html, body").toggleClass("open-nav");
-    });
 
     $("main").click(function () {
         if ($(this).hasClass("open")) {
@@ -34585,7 +34579,12 @@ $(document).ready(function () {
         }
     });
 
-    $('#disable').click(function () {
+    $('#disable').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass("open");
+        $("main, nav, .nav-bottom").toggleClass("open");
+        $("html, body").toggleClass("open-nav");
+
         if($(this).hasClass('open')) {
             disableScroll();
         } else {
