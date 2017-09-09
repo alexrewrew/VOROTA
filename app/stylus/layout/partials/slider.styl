@@ -146,3 +146,46 @@ button.mfp-arrow-right
     bottom -15px
   .arrow
     bottom -18px
+
+
+
+.slider-article-big.slick-dotted.slick-slider.slider-catalog
+  margin 0
+  +mobile()
+    margin-bottom 30px
+  .slider-counter
+    font-size 1.625em
+    margin-bottom 26px
+    text-align center
+    color $gray-text2
+    font-weight 500
+    position absolute
+    bottom 38%
+    left auto
+    right -19.5%
+    +mobile()
+      bottom -62px
+      left 60px
+      right auto
+  .slick-dots
+    display none !important
+  .arrow
+    bottom 47%
+    +mobile()
+      bottom -30px
+  .arrow-left
+    right calc(-29% + 125px)
+    left auto
+    +tablet()
+      right calc(-29% + 105px)
+    +portrait()
+      right calc(-29% + 105px)
+    +mobile()
+      right auto
+      left 0
+  .arrow-right
+    right -29%
+    left auto
+    +mobile()
+      right auto
+      left 125px

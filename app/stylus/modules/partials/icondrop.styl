@@ -120,6 +120,15 @@
 .icon-drop
   display block
   margin-bottom 40px
+  +mobile()
+    .icon-arrow
+      display block
+      transform rotate(-90deg)
+  +portrait()
+    .icon-arrow
+      display block
+      transform rotate(-90deg)
+
   &:hover
     .icon-container
       background $white

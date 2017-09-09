@@ -34484,6 +34484,11 @@ $(document).ready(function () {
         ]
     });
 
+    $('.slider-article-big').on('init reInit afterChange', function (event, slick, currentSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.slider-counter').text(i + '/' + slick.slideCount);
+    });
+
     $('.slider-article-big').slick({
         slide: '.img-slider-item',
         arrows: true,
@@ -34516,6 +34521,10 @@ $(document).ready(function () {
             }
         ]
     });
+
+
+
+
 
     // menu scroll
     var tempScrollTop, currentScrollTop = 0;

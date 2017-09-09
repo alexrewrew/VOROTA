@@ -1,0 +1,109 @@
+//- layouts/layout.pug
+extend layouts/_layout-calc.pug
+
+block title
+    | ВОРОТА.РУ - Акции
+
+block content
+
+    header.header-regular.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='calculator.html' title='') Автоматический привод
+                .col-md-4
+                    h1 Гаражные секционные ворота
+                .offset-md-1.col-lg-5.col-md-7
+                    .counter
+                        ul.counter-numbers
+                            li 6
+                            li 5
+                            li 2
+                            li 1
+                        .counter-text
+                            | Покупатели выбрали гаражные секционные ворота от Ворота.ру
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
+                            include partials/_articles-slider
+                .col-lg-9#product-col
+                    .row.calc-row
+                        .col
+                            .slider-article-big.slider-catalog
+                                .img-slider-item
+                                    img(src='img/products/slider/slide1.png' title='' alt='')
+                                .img-slider-item
+                                    img(src='img/illus/header-photo2.png' title='' alt='')
+                                .slider-counter
+                        .col.display-flex.align-items-end
+                            .calc-result
+
+                                p.calc-description Скидка 15% на ворота
+                                a(href='#modal-order' title='').button.button-red.button-all.inline
+                                    | Заказать
+                    article.catalog-description
+                        .row
+                            .col-lg-10
+                                h2 Сервис и гарантия
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+
+                    section.row
+                        .col-lg-11
+                            h2 Отзывы владельцев
+                            .row
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-12
+                                    a(href='' title='').button.button-comment Больше отзывов
+                                        img(src='img/icons/arrow-right-white.svg' title='' alt='' onerror="this.src='img/icons/arrow-right-white.png'")
+                    .row
+                        .col-12
+                            h2 Наши ворота установлены
+                            #map
+                        .col-lg-11
+                            h2 FAQ
+                            .accordion#accord
+                                h4 Вопрос 1
+                                div
+                                    p Если ворота заклинило, наблюдаются неполадки с открытием/закрытием. Обслуживаем ворота, в том числе, и сторонних производителей. Производим диагностику, регулировку и квалифицированный ремонт автоматических ворот.
+                                h4 Вопрос 1
+                                div
+                                    p
+                                        | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                        | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                        | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                        | suscipit faucibus urna.
+                                h4 Вопрос 1
+                                div
+                                    p
+                                        | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                        | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                        | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                        | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+
+    include partials/_order
