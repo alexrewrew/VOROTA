@@ -7514,6 +7514,11 @@ button.mfp-arrow-right:hover:after {
 		left:         calc(-123% * 1);
 	}
 }
+.icon-drop.icon-drop-arrow-right .icon-arrow {
+	-webkit-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+}
 .icon-container.icon-index {
 	padding-left: 20px;
 	height: 234px;
