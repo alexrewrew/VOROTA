@@ -1,0 +1,284 @@
+//- layouts/layout.pug
+extend layouts/calc/_layout-calc-h4-ur.pug
+
+block title
+    | ВОРОТА.РУ - Акции
+
+block content
+
+    header.header-regular.header-regular
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='calculator.html' title='') Автоматический привод
+                .col-md-4
+                    h1 Гаражные секционные ворота
+                .offset-md-1.col-lg-5.col-md-7
+                    .counter
+                        ul.counter-numbers
+                            li 6
+                            li 5
+                            li 2
+                            li 1
+                        .counter-text
+                            | Покупатели выбрали гаражные секционные ворота от Ворота.ру
+
+    section
+        .container
+            .row
+                aside.col-lg-3#discount-col
+                    form.filter-container.filter-calculator
+                        .row
+                            .col-6.small-col.left
+                                p Ширина
+                                .select-container
+                                    select.chosen-select#calc-width
+                                        option(value='2400') 2400 мм
+                                        option(value='2500') 2500 мм
+                                        option(value='2600') 2600 мм
+                                        option(value='2700') 2700 мм
+                                        option(value='2800') 2800 мм
+                                        option(value='2900') 2900 мм
+                                        option(value='3000') 3000 мм
+                                        option(value='3100') 3100 мм
+                                        option(value='3200') 3200 мм
+                                        option(value='3300') 3300 мм
+                                        option(value='3400') 3400 мм
+                                        option(value='3500') 3500 мм
+                                        option(value='3600') 3600 мм
+                                        option(value='3700') 3700 мм
+                                        option(value='3800') 3800 мм
+                                        option(value='3900') 3900 мм
+                                        option(value='4000') 4000 мм
+                                        option(value='4100') 4100 мм
+                                        option(value='4200') 4200 мм
+                                        option(value='4300') 4300 мм
+                                        option(value='4400') 4400 мм
+                                        option(value='4500') 4500 мм
+                                        option(value='4600') 4600 мм
+                                        option(value='4700') 4700 мм
+                                        option(value='4800') 4800 мм
+                                        option(value='4900') 4900 мм
+                                        option(value='5000') 5000 мм
+                                        option(value='5100') 5100 мм
+                                        option(value='5200') 5200 мм
+                                        option(value='5300') 5300 мм
+                                        option(value='5400') 5400 мм
+                                        option(value='5500') 5500 мм
+                                        option(value='5600') 5600 мм
+                                        option(value='5700') 5700 мм
+                                        option(value='5800') 5800 мм
+                                        option(value='5900') 5900 мм
+                                        option(value='6000') 6000 мм
+                            .col-6.small-col.right
+                                p Высота
+                                .select-container
+                                    select.chosen-select#calc-height
+                                        option(value='2000') 2000 мм
+                                        option(value='2100') 2100 мм
+                                        option(value='2200') 2200 мм
+                                        option(value='2300') 2300 мм
+                                        option(value='2400') 2400 мм
+                                        option(value='2500') 2500 мм
+                                        option(value='2600') 2600 мм
+                                        option(value='2700') 2700 мм
+                                        option(value='2800') 2800 мм
+                                        option(value='2900') 2900 мм
+                                        option(value='3000') 3000 мм
+                                        option(value='3100') 3100 мм
+                                        option(value='3200') 3200 мм
+                                        option(value='3300') 3300 мм
+                                        option(value='3400') 3400 мм
+                                        option(value='3500') 3500 мм
+                                        option(value='3600') 3600 мм
+                                        option(value='3700') 3700 мм
+                                        option(value='3800') 3800 мм
+                                        option(value='3900') 3900 мм
+                                        option(value='4000') 4000 мм
+                                        option(value='4100') 4100 мм
+                                        option(value='4200') 4200 мм
+                                        option(value='4300') 4300 мм
+                                        option(value='4400') 4400 мм
+                                        option(value='4500') 4500 мм
+                                        option(value='4600') 4600 мм
+                                        option(value='4700') 4700 мм
+                                        option(value='4800') 4800 мм
+                                        option(value='4900') 4900 мм
+                                        option(value='5000') 5000 мм
+                                        option(value='5100') 5100 мм
+                                        option(value='5200') 5200 мм
+                                        option(value='5300') 5300 мм
+                                        option(value='5400') 5400 мм
+                                        option(value='5500') 5500 мм
+                                        option(value='5600') 5600 мм
+                                        option(value='5700') 5700 мм
+                                        option(value='5800') 5800 мм
+                                        option(value='5900') 5900 мм
+                                        option(value='6000') 6000 мм
+
+                            .col-md-12.col-lg-12
+                                p Цвет
+                                ul.filter-colors.color-options
+                                    li
+                                        a(href='' title='' style='background: #fff' data-color='Белый RAL9003' data-to-image='ral9003').active
+                                    li
+                                        a(href='' title='' style='background: #4c3626' data-color='Коричневый RAL8014' data-to-image='ral8014')
+                                    li
+                                        a(href='' title='' style='background: #00468d' data-color='Синий RAL5005' data-to-image='ral5005')
+                                    li
+                                        a(href='' title='' style='background: #004737' data-color='Зеленый мох RAL6005' data-to-image='ral6005')
+                                    li
+                                        a(href='' title='' style='background: #61162a' data-color='Бордовый RAL3005' data-to-image='ral3005')
+                                    li
+                                        a(href='' title='' style='background: #c7c8ca' data-color='Серебристый RAL9006' data-to-image='ral9006')
+                                    li
+                                        a(href='' title='' style='background: #e1d099' data-color='Бежевый RAL1014' data-to-image='ral1014')
+                                    li
+                                        a(href='' title='' style='background: #9d9fa2' data-color='Серый RAL7004' data-to-image='ral7004')
+                                    li
+                                        a(href='' title='' style='background: #b00b1d' data-color='Красный RAL3000' data-to-image='ral3000')
+                                    li
+                                        a(href='' title='' style='background: #36414b' data-color='Антрацит RAL7016' data-to-image='ral7016')
+                                    li
+                                        a(href='' title='' style='background: url(img/calc/img-calc/mahagon.jpg)' data-color='Махагон' data-to-image='mahagon')
+                                    li
+                                        a(href='' title='' style='background: url(img/calc/img-calc/oreh.jpg)' data-color='Лесной орех' data-to-image='oreh')
+                                    li
+                                        a(href='' title='' style='background: url(img/calc/img-calc/venge.jpg)' data-color='Венге' data-to-image='venge')
+                                    li
+                                        a(href='' title='' style='background: url(img/calc/img-calc/dub.jpg)' data-color='Золотой дуб' data-to-image='dub')
+                                    li
+                                        a(href='' title='' style='background: url(img/calc/img-calc/olha.jpg)' data-color='Ольха' data-to-image='olha')
+                                    li
+                                        a(href='' title='' style='background: url(img/calc/img-calc/zebra.jpg)' data-color='Зебра' data-to-image='zebra')
+                            .col-md-6.col-lg-12
+                                p Тип ворот
+                                .select-container
+                                    select.chosen-select.chosen-image#calc-type-gate
+                                        option(data-img-src="img/calc/types/icon3.png" value="Стандарт") Стандарт
+                                        option(data-img-src="img/calc/types/icon2.png" value="Филенка") Филенка
+                                        option(data-img-src="img/calc/types/icon1.png" value="Панорама") Панорама
+                            .col-md-6.col-lg-12
+                                p Тип открывания
+                                .select-container
+                                    select.chosen-select.chosen-image#calc-open-gate
+                                        option(data-img-src="img/calc/types/icon4.png" value="Ручное") Ручной
+                                        option(data-img-src="img/calc/types/icon5.png" value="Автоматика") Автоматический
+                            .col-12
+                                p Опции
+                                ul.filter-options.dops-calc
+                                    li.calc-window-dop
+                                        a(href='' title='' data-dop='window')
+                                            img(src='img/calc/options/icon1.png' title='' alt='' onerror="this.src='img/calc/options/icon1.svg'")
+                                            p Окно (635 х 330 мм)
+                                    li.calc-door-dop
+                                        a(href='' title='' data-dop='door')
+                                            img(src='img/calc/options/icon2.png' title='' alt='' onerror="this.src='img/calc/options/icon2.svg'")
+                                            p Дверь в полотне
+                                    li.calc-mech-dop
+                                        a(href='' title='')
+                                            img(src='img/calc/options/icon3.png' title='' alt='' onerror="this.src='img/calc/options/icon3.svg'")
+                                            p Замок механика
+                                    li.calc-mount-dop
+                                        a(href='' title='')
+                                            img(src='img/calc/options/icon4.png' title='' alt='' onerror="this.src='img/calc/options/icon4.svg'")
+                                            p Монтаж
+                            //.col-12.display-flex.align-items-md-center.justify-content-md-center
+                                button(type='submit').button.button-red Применить
+                    .row#discount-row
+                        .col-12
+                            include partials/_discount-slider
+                .col-lg-9#product-col
+                    .row.calc-row
+                        .col
+                            .calc-image-container
+                                img(src='img/calc/img-calc/vorota-img/garage.png' title='' alt='').img-responsive.main-img-calc
+                                img(src='img/calc/img-calc/vorota-img/ral9003.png' title='' alt='').img-responsive.calc-pos.replace-calc
+                                img(src='img/calc/img-calc/vorota-img/glass.png' title='' alt='').img-responsive.calc-pos.glass-calc
+                                img(src='img/calc/img-calc/vorota-img/glass-single.png' title='' alt='').img-responsive.calc-pos.dops-calc.glass-single
+                                img(src='img/calc/img-calc/vorota-img/door.png' title='' alt='').img-responsive.calc-pos.dops-calc.door-calc
+                        .col.display-flex.align-items-end
+                            .calc-result
+                                p.calc-discount 0 руб.
+                                p.calc-price 0 руб.
+                                p.calc-description С учётом скидки на ворота
+                                a(href='#modal-order' title='').button.button-red.button-all.inline
+                                    | Заказать
+                    article.catalog-description
+                        .row
+                            .col-lg-10
+                                a(href='' title='').button.button-specs
+                                    img(src='img/icons/file.svg' title='' onerror='this.src="img/icons/file.png"')
+                                    | Техническая информация
+                                h2 Сервис и гарантия
+                                p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                                h2 Преимущество
+                                .row
+                                    .col.icon-drop.icon-catalog
+                                        span.icon-container.icon-index
+                                            img(src='img/icons/icon2-1.svg' title='' alt='' onerror="this.src='img/icons/icon2-1.png'").icon-image
+                                            h5 Изготовление и монтаж от 1 дня
+                                    .col.icon-drop.icon-catalog
+                                        span.icon-container.icon-index
+                                            img(src='img/icons/icon2-2.svg' title='' alt='' onerror="this.src='img/icons/icon2-2.png'").icon-image
+                                            h5 Адаптировано к суровому климату Сибири
+                                    .col.icon-drop.icon-catalog
+                                        span.icon-container.icon-index
+                                            img(src='img/icons/icon2-3.svg' title='' alt='' onerror="this.src='img/icons/icon2-3.png'").icon-image
+                                            h5 Гарантия от 3 до 5 лет
+
+                    section.row
+                        .col-lg-11
+                            h2 Отзывы владельцев
+                            .row
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-md-6
+                                    a(href='' title='').discount-article.project
+                                        .discount-article--image-container
+                                            img(src='img/illus/business.png' title='' alt='')
+                                        h4 Анатолий Иванов
+                                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов [...]
+                                        .link-more--wa
+                                            .link-more--wa-text Читать больше
+                                            .link-more--wa-arrow
+                                .col-12
+                                    a(href='' title='').button.button-comment Больше отзывов
+                                        img(src='img/icons/arrow-right-white.svg' title='' alt='' onerror="this.src='img/icons/arrow-right-white.png'")
+                    .row
+                        .col-12
+                            h2 Наши ворота установлены
+                            #map
+                        .col-lg-11
+                            h2 FAQ
+                            .accordion#accord
+                                h4 Вопрос 1
+                                div
+                                    p Если ворота заклинило, наблюдаются неполадки с открытием/закрытием. Обслуживаем ворота, в том числе, и сторонних производителей. Производим диагностику, регулировку и квалифицированный ремонт автоматических ворот.
+                                h4 Вопрос 1
+                                div
+                                    p
+                                        | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                        | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                        | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                        | suscipit faucibus urna.
+                                h4 Вопрос 1
+                                div
+                                    p
+                                        | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                        | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                        | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                        | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+
+    include partials/_order

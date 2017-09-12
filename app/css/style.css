@@ -7372,7 +7372,6 @@ button.mfp-arrow-right:hover:after {
 	max-width: 100%;
 }
 .icon-container--link {
-	display: none;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -7383,16 +7382,6 @@ button.mfp-arrow-right:hover:after {
 }
 .icon-container--link:focus {
 	outline: none;
-}
-@media (max-width: 767px) {
-	.icon-container--link {
-		display: block;
-	}
-}
-@media (min-width: 768px) and (max-width: 991px) {
-	.icon-container--link {
-		display: block;
-	}
 }
 .icon-dropdown-description {
 	position: absolute;
@@ -7620,6 +7609,40 @@ button.mfp-arrow-right:hover:after {
 }
 .icon-catalog .icon-container.icon-index:hover {
 	background: transparent;
+}
+.intermediate-list li {
+	border-bottom: 1px solid #fff;
+}
+.intermediate-list li a {
+	font-weight: 500;
+	line-height: 2.5;
+	color: #2f2f2f;
+	display: block;
+	padding: 5px 20px 6px;
+	position: relative;
+}
+.intermediate-list li a .fa {
+	font-size: 20px;
+	margin-left: 10px;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
+	color: transparent;
+	position: absolute;
+	top: 15px;
+	right: 50%;
+}
+@media (max-width: 767px) {
+	.intermediate-list li a .fa {
+		right: 20%;
+	}
+}
+.intermediate-list li a:hover {
+	color: #f52341;
+	background: #fff;
+}
+.intermediate-list li a:hover .fa {
+	color: #f52341;
+	right: 20px;
 }
 .product {
 	cursor: pointer;
@@ -9524,4 +9547,64 @@ button.mfp-arrow-right:hover:after {
 	-webkit-transform: translateX(100px);
 	    -ms-transform: translateX(100px);
 	        transform: translateX(100px);
+}
+body.green .button:hover {
+	background: #33be30;
+}
+body.green .product:hover .button {
+	background: #33be30;
+}
+body.green .discount .button-small {
+	background: #33be30;
+}
+body.green .icon-container .icon-dropdown--link-list li .active {
+	color: #33be30;
+}
+body.green .icon-container .icon-dropdown--link-list li .active .fa {
+	color: #33be30;
+}
+body.green .icon-container .icon-dropdown--link-list li a:hover {
+	color: #33be30;
+}
+body.green .icon-container .icon-dropdown--link-list li a:hover .fa {
+	color: #33be30;
+}
+body.green .discount.discount-big .discount--title .button-small {
+	background: #f52341;
+}
+body.green .button-red {
+	background: #33be30;
+}
+body.green .button-red:hover {
+	background: #cecece;
+}
+body.green .product--image-container-top {
+	background: #33be30;
+}
+body.green .intermediate-list li a:hover {
+	color: #33be30;
+}
+body.green .intermediate-list li a:hover .fa {
+	color: #33be30;
+}
+body.green .filter-calculator .filter-colors li .active:after {
+	border-color: #33be30;
+}
+body.green .filter-calculator .filter-colors li a:hover:after {
+	border-color: #33be30;
+}
+body.green .filter-calculator .filter-options li a:hover:after {
+	border-color: #33be30;
+}
+body.green .filter-calculator .filter-options li .active:after {
+	border-color: #33be30;
+}
+body.green .catalogin-price--number {
+	border-color: #33be30;
+}
+body.green .catalogin-price--button {
+	border-color: #33be30;
+}
+body.green input:focus {
+	border-bottom-color: #33be30;
 }

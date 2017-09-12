@@ -1,0 +1,17 @@
+include ../../utilities/_mixins.pug
+
+doctype html
+
+html
+
+    include ../../partials/_head.pug
+
+    body
+        include ../../partials/_navigation.pug
+
+        main
+            block content
+
+            include ../../partials/calc/_footer-calc-base.pug
+
+            script(type="text/javascript" src="js/calc/calc-b1-gs.js")

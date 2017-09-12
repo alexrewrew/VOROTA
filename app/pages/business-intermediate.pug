@@ -1,0 +1,47 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | ВОРОТА.РУ - Мой дом
+
+block content
+
+    header.header-business
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='index.html' title='') Главная
+                        li
+                            a(href='home.html' title='') Мой дом
+                .col-12
+                    h1.heading-big МОЙ ДОМ
+                .col-lg-6
+                    img(src='img/illus/home.png' alt='' title='').header-image
+                .col-lg-5.display-flex.align-items-center
+                    p.header-jumbotron Гаражные ворота помимо внешнего вида отличаются стойкостью ко взломам. Ворота.ру уделяет особое значение надежности при изготовлении и установке продукции. Гаражные ворота - это надежный защитник вашего имущества.
+
+    section
+        .container
+            .row.justify-content-center
+                .col-md-8.col-lg-6
+                    h2 Типы ворот
+                    ul.intermediate-list
+                        li
+                            a(href='' title='' data-to='11') Гаражные серционные ворота
+                                i.fa.fa-angle-right
+                        li
+                            a(href='' title='' data-to='12') Гаражные распашные ворота
+                                i.fa.fa-angle-right
+                        li
+                            a(href='' title='' data-to='13') Уличные откатные ворота
+                                i.fa.fa-angle-right
+                        li
+                            a(href='' title='' data-to='14') Уличные распашные ворота
+                                i.fa.fa-angle-right
+
+
+    include partials/_popular.pug
+    include partials/_discount.pug
+    include partials/_techs.pug

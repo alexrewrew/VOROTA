@@ -76,6 +76,11 @@ gulp.task("scripts", function () {
         .pipe(gulp.dest("app/js"));
 });
 
+gulp.task("calculator", function () {
+    return gulp.src(['app/js/calc/*'])
+        .pipe(gulp.dest("dist/js/calc"));
+});
+
 //--------BUILD
 
 //clean dest
@@ -135,7 +140,7 @@ gulp.task("audio", function () {
 });
 
 //build
-gulp.task("develope", ["fonts", "video", "imagemin", "minify-css", "compress", "minify-html"], function () {
+gulp.task("develope", ["fonts", "video", "imagemin", "minify-css", "compress", "minify-html", 'calculator'], function () {
 });
 
 gulp.task("build", function(callback) {
@@ -149,6 +154,7 @@ gulp.task("watch", ["scripts", "pug", "browserSync", "stylus"], function () { //
     gulp.watch("app/stylus/**/*.styl", ["stylus"]); //пошук scss файлів
     gulp.watch("app/pages/**/*.pug", ["pug"]); //пошук html файлів
     gulp.watch(["app/js/scripts/scripts.js"], ["scripts"]); //пошук html файлів
+    gulp.watch("app/js/calc/*", browserSync.reload); //пошук html файлів
     gulp.watch("app/*.html", browserSync.reload); //пошук html файлів
     gulp.watch("app/js/*.js", browserSync.reload); //пошук js файлів
 });

@@ -1,0 +1,26 @@
+.intermediate-list
+  li
+    border-bottom 1px solid $white
+    a
+      font-weight 500
+      line-height: 2.5
+      color $black-text
+      display block
+      padding 5px 20px 6px
+      position relative
+      .fa
+        font-size 20px
+        margin-left 10px
+        transitions()
+        color $trans
+        position absolute
+        top 15px
+        right 50%
+        +mobile()
+          right 20%
+      &:hover
+        color $red
+        background $white
+        .fa
+          color $red
+          right 20px
