@@ -83,7 +83,6 @@
       display block
       max-width 100%
   &--link
-    //display none
     position absolute
     left 0
     right 0
@@ -93,10 +92,6 @@
     z-index 10
     &:focus
       outline none
-    //+mobile()
-    //  display block
-    //+portrait()
-    //  display block
 
 
 .icon-dropdown-description
@@ -117,6 +112,7 @@
 .icon-drop.col
   margin-bottom 0
 
+
 .icon-drop
   display block
   margin-bottom 40px
@@ -128,6 +124,8 @@
     .icon-arrow
       display block
       transform rotate(-90deg)
+  &:focus
+    outline none
   &:hover
     .icon-container
       background $white

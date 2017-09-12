@@ -5271,7 +5271,7 @@ nav {
 	z-index: 200;
 }
 .logo {
-	display: block;
+	display: inline-block;
 	color: #2f2f2f;
 	font-weight: 900;
 	font-size: 1.375em;
@@ -5799,6 +5799,9 @@ nav.nav-transparent .link-search svg g {
 }
 nav.nav-transparent .nav-icon span {
 	background: #fff;
+}
+nav.nav-transparent .menu-contacts li a:hover {
+	color: #fff;
 }
 .menu-aside {
 	display: -webkit-box;
@@ -7427,6 +7430,9 @@ button.mfp-arrow-right:hover:after {
 		        transform: rotate(-90deg);
 	}
 }
+.icon-drop:focus {
+	outline: none;
+}
 .icon-drop:hover .icon-container {
 	background: #fff;
 }
@@ -8276,6 +8282,9 @@ button.mfp-arrow-right:hover:after {
 	.choice-section {
 		top: -50px;
 	}
+}
+.choice-block:focus {
+	outline: none;
 }
 .choice-block:first-child {
 	padding-right: 0;

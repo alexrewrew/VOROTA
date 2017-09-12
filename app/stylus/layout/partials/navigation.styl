@@ -12,7 +12,7 @@ nav
   z-index 200
 
 .logo
-  display: block
+  display: inline-block
   color $black-text
   font-weight 900
   font-size: 1.375em
@@ -305,6 +305,7 @@ nav.nav-transparent
     a
       color $white
       &:hover
+
         border-bottom-color $white
     .active
       border-bottom-color $white
@@ -324,6 +325,11 @@ nav.nav-transparent
   .nav-icon
     span
       background $white
+  .menu-contacts
+    li
+      a
+        &:hover
+          color $white
 
 //aside menu
 .menu-aside
