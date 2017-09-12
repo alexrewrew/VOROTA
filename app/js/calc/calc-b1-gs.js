@@ -167,5 +167,4 @@ $(document).ready(function () {
 
         change();
     });
-
-})
+});
