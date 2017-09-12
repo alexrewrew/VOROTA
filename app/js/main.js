@@ -34647,24 +34647,6 @@ $(document).ready(function () {
         heightStyle: "content"
     });
 
-    $(window).on("load resize", function () {
-        if (window.matchMedia("(max-width: 767px)").matches) {
-            $("#navicontacts").appendTo(".nav-bottom .container .row");
-            $("#navitop").prependTo(".nav-bottom .container .row");
-            $(".nav-bottom").prependTo("body");
-        } else {
-            $("#navitop").appendTo(".nav-border-bottom .row");
-            $("#navicontacts").appendTo(".nav-border-bottom .row");
-            $(".nav-bottom").prependTo("nav");
-        }
-
-        if (window.matchMedia("(max-width: 1023px)").matches) {
-            $('#discount-row').appendTo('#product-col');
-        } else {
-            $('#discount-row').appendTo('#discount-col');
-        }
-    });
-
     //gallery
     // $('.img-item').magnificPopup({
     //     type: 'image',
@@ -34686,4 +34668,20 @@ $(document).ready(function () {
 
 });
 
+$(window).on("load resize", function () {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        $("#navicontacts").appendTo(".nav-bottom .container .row");
+        $("#navitop").prependTo(".nav-bottom .container .row");
+        $(".nav-bottom").prependTo("body");
+    } else {
+        $("#navitop").appendTo(".nav-border-bottom .row");
+        $("#navicontacts").appendTo(".nav-border-bottom .row");
+        $(".nav-bottom").prependTo("nav");
+    }
 
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+        $('#discount-row').appendTo('#product-col');
+    } else {
+        $('#discount-row').appendTo('#discount-col');
+    }
+});
