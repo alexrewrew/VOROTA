@@ -46,6 +46,8 @@ nav
 .nav-border-bottom
   border-bottom 2px solid $red
   padding-bottom 14px
+  +mobile()
+    width: 100%;
   &:before
     pseudo(block, absolute)
     width 15px
@@ -129,9 +131,16 @@ nav
   flex-wrap nowrap
   +mobile()
     margin-bottom: 20px;
+  flex-direction column
+  +landscape()
+    flex-direction row
+    flex-wrap wrap
   li
     +mobile()
       margin-bottom 10px
+    +landscape()
+      flex 1 1 50%
+      max-width 50%
     a
       color $black-text
       font-size .75em
@@ -148,8 +157,7 @@ nav
       border-bottom-color $black
       +portrait()
         font-size 0.625em
-  +mobile()
-    flex-direction column
+
 
 .menu-contacts
   display flex

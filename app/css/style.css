@@ -5317,6 +5317,11 @@ nav {
 	border-bottom: 2px solid #f52341;
 	padding-bottom: 14px;
 }
+@media (max-width: 767px) {
+	.nav-border-bottom {
+		width: 100%;
+	}
+}
 .nav-border-bottom:before {
 	content: '';
 	display: block;
@@ -5465,15 +5470,39 @@ nav {
 	-webkit-flex-wrap: nowrap;
 	    -ms-flex-wrap: nowrap;
 	        flex-wrap: nowrap;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 @media (max-width: 767px) {
 	.menu-sub {
 		margin-bottom: 20px;
 	}
 }
+@media (max-device-width: 767px) and (orientation: landscape) {
+	.menu-sub {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+}
 @media (max-width: 767px) {
 	.menu-sub li {
 		margin-bottom: 10px;
+	}
+}
+@media (max-device-width: 767px) and (orientation: landscape) {
+	.menu-sub li {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 50%;
+		    -ms-flex: 1 1 50%;
+		        flex: 1 1 50%;
+		max-width: 50%;
 	}
 }
 .menu-sub li a {
@@ -5499,15 +5528,6 @@ nav {
 @media (min-width: 768px) and (max-width: 991px) {
 	.menu-sub li .active {
 		font-size: .625em;
-	}
-}
-@media (max-width: 767px) {
-	.menu-sub {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
 	}
 }
 .menu-contacts {
@@ -9350,7 +9370,7 @@ button.mfp-arrow-right:hover:after {
 }
 .service-block {
 	background: #fff;
-	padding: 44px 48px 73px;
+	padding: 44px 48px 48px;
 }
 @media (max-width: 767px) {
 	.service-block {
@@ -9363,13 +9383,16 @@ button.mfp-arrow-right:hover:after {
 	font-weight: 500;
 }
 .service-block h3 {
-	color: #f52341;
+	color: #b1b1b1;
 	font-weight: 500;
 	line-height: normal;
 	margin-bottom: 0;
 }
 .service-block hr {
 	background: #f1f1f1;
+}
+.service-block p {
+	margin-bottom: 25px;
 }
 .service-block.small {
 	padding: 30px 48px;
