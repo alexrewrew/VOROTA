@@ -6,8 +6,8 @@ $(document).ready(function () {
     $('.my-link').modaal('close');
 
     //select plugin
-    $(".chosen-select").chosen({disable_search_threshold: 10});
-    $(".chosen-image").chosenImage({disable_search_threshold: 10});
+    $(".chosen-select").chosen({disable_search_threshold: 100});
+    $(".chosen-image").chosenImage({disable_search_threshold: 100});
 
     //sliders
     $(".slider-discount").slick({
