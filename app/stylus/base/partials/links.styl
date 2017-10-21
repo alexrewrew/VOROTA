@@ -104,15 +104,57 @@ a
   display flex
   align-items center
   float right
+  position relative
+  z-index 15
+  transition none
+  cursor pointer
   svg
     margin-left 13px
     g
       fill $red
-      transitions()
   &:hover
     color $black-text
+    .link-share--panel
+      transform none
+      opacity 1
     svg g
       fill $black-text
+  &--panel
+    position absolute
+    right -5px
+    top 19px
+    z-index 10
+    transform translateY(-33px)
+    opacity 0
+    transitions()
+    +tablet()
+      transform none
+      opacity 1
+    +portrait()
+      transform none
+      opacity 1
+    +mobile()
+      transform none
+      opacity 1
+    ul
+      display flex
+      flex-direction row
+      justify-content center
+      align-items center
+      padding 8px 0
+      li
+        margin-left 6px
+        a
+          padding 0 5px
+          display block
+          color $red
+          font-size 22px
+          &:hover
+            color $black-text
+
++mobile()
+  .header-information
+    padding-bottom: 50px;
 
 .link-contacts
   color $black

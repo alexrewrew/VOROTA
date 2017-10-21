@@ -47,3 +47,9 @@
 .fa-facebook-official:before {
   content: "\f230";
 }
+.fa-odnoklassniki:before {
+  content: "\f263";
+}
+.fa-vk:before {
+  content: "\f189";
+}
