@@ -99,58 +99,50 @@ a
       transitions()
 
 .link-share
-  color $red
-  font-size .75em
-  display flex
-  align-items center
   float right
-  position relative
-  z-index 15
-  transition none
-  cursor pointer
-  svg
-    margin-left 13px
-    g
-      fill $red
-  &:hover
-    color $black-text
-    .link-share--panel
-      transform none
-      opacity 1
-    svg g
-      fill $black-text
-  &--panel
-    position absolute
-    right -5px
-    top 19px
-    z-index 10
-    transform translateY(-33px)
-    opacity 0
+  width 196px
+  transitions()
+  &--top
+    width 98px
+    height 20x
+    float left
     transitions()
-    +tablet()
-      transform none
-      opacity 1
-    +portrait()
-      transform none
-      opacity 1
-    +mobile()
-      transform none
-      opacity 1
+    opacity 0
     ul
       display flex
       flex-direction row
-      justify-content center
-      align-items center
-      padding 8px 0
+      justify-content space-between
       li
-        margin-left 6px
         a
-          padding 0 5px
-          display block
-          color $red
-          font-size 22px
+          svg
+            g
+              fill $red
+              transitions()
           &:hover
-            color $black-text
+            svg
+              g
+                fill $black-text
+  &--bottom
+    width 98px
+    height 20x
+    font-size .75em
+    color $red
+    display flex
+    align-items center
+    float left
+    transitions()
+    svg
+      margin-left 13px
+      g
+        color $red
+  &:hover
+    .link-share--bottom
+      transform translateX(98px)
+      opacity 0
+    .link-share--top
+      transform translateX(98px)
+      opacity 1
+
 
 +mobile()
   .header-information
@@ -181,7 +173,6 @@ a
 
 .link-map.active
   color $gray-text2
-
 
 .link-discount
   display inline-block
