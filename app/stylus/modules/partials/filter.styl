@@ -22,8 +22,23 @@
       margin-top 0
       max-width unset
 
+.filter-calculator.active
+  &:after
+    opacity 0
+    height 0
 
 .filter-calculator
+  position relative
+  &:after
+    pseudo(block, absolute)
+    top 0
+    right 0
+    left 0
+    height 100%
+    background $gray-back
+    z-index 100
+    opacity .7
+    transitions()
   .row
     justify-content space-between
     +portrait()

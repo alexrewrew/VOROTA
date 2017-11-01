@@ -8667,6 +8667,27 @@ button.mfp-arrow-right:hover:after {
 		max-width: unset;
 	}
 }
+.filter-calculator.active:after {
+	opacity: 0;
+	height: 0;
+}
+.filter-calculator {
+	position: relative;
+}
+.filter-calculator:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	background: #f1f1f1;
+	z-index: 100;
+	opacity: .7;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
+}
 .filter-calculator .row {
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
