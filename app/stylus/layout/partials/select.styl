@@ -28,6 +28,7 @@ select
 .chosen-container
   font-size 1em
 
+.chosen-container-multi .chosen-choices,
 .chosen-container-single .chosen-single
   border: none
   background $white
@@ -71,3 +72,34 @@ select
 
 .chosenImage-container.chosen-container .chosen-results .active-result
   padding: 10px 30px 11px 50px;
+
+.chosen-container-multi .chosen-choices li.search-choice
+  border 0
+  background none
+  box-shadow none
+  padding-left 0
+  padding-top 5px
+  padding-bottom 6px
+  margin 0
+
+.chosen-container-multi .chosen-drop .result-selected
+  padding: 10px 30px 11px;
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close
+  background none !important
+  top 6px
+  &:hover
+    &:before, &:after
+      background $red
+  &:before
+    transform rotate(45deg)
+  &:after
+    transform rotate(-45deg)
+  &:before, &:after
+    pseudo(block, absolute)
+    width 2px
+    height 14px
+    background $black
+    top -1px
+    left 5px
+    transitions()
