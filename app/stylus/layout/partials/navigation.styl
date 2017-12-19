@@ -4,12 +4,13 @@
 /* NAVIGATION */
 nav
   background $white
-  transitions()
   position fixed
   left 0
   right 0
   top 0
   z-index 200
+  transitions()
+
 
 .logo
   display: inline-block
@@ -82,8 +83,7 @@ nav
     height: 100vh;
     padding-top 15px
 
-.nav-bottom.open
-  transform translateX(calc(-100vw + 60px))
+
 
 .hidden
   transform translateY(-48px)
@@ -279,20 +279,7 @@ nav
     &:nth-child(4)
       top 18px
 
-.nav-icon.open
-  span
-    &:nth-child(1)
-      top 18px
-      width 0%
-      left 50%
-    &:nth-child(2)
-      transform rotate(45deg)
-    &:nth-child(3)
-      transform rotate(-45deg)
-    &:nth-child(4)
-      top 18px
-      width 0%
-      left 50%
+
 
 //
 
@@ -380,5 +367,31 @@ nav.nav-transparent
     margin-bottom 50px
 
 
-//@import "../libs/rew-downnav/downnav.styl"
-@import "../libs/rew-sidenav/sidenav.styl"
++mobile()
+  .nav-panel
+    display block
+    position fixed
+    top 0
+    left 60px
+    right 0
+    bottom 0
+    z-index 100
+
+body.open
+  main, nav, .nav-bottom
+    transform translateX(calc(-100vw + 60px))
+
+  .nav-icon
+    span
+      &:nth-child(1)
+        top 18px
+        width 0%
+        left 50%
+      &:nth-child(2)
+        transform rotate(45deg)
+      &:nth-child(3)
+        transform rotate(-45deg)
+      &:nth-child(4)
+        top 18px
+        width 0%
+        left 50%

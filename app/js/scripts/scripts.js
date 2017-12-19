@@ -1,5 +1,67 @@
 $(document).ready(function () {
     "use strict";
+    //menu trigger
+
+    $("main").click(function () {
+        if ($('body').hasClass("open")) {
+            $('body').toggleClass("open");
+            enableScroll();
+        }
+    });
+
+
+    $('#disable').click(function (e) {
+        e.preventDefault();
+        $('body').toggleClass("open");
+        if($('body').hasClass('open')) {
+            disableScroll();
+        } else {
+            enableScroll();
+        }
+    });
+
+    //
+    var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+    function preventDefault(e) {
+        e = e || window.event;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+        e.returnValue = false;
+    }
+
+    function preventDefaultForScrollKeys(e) {
+        if (keys[e.keyCode]) {
+            preventDefault(e);
+            return false;
+        }
+    }
+
+    function disableScroll() {
+        if (window.addEventListener) { // older FF
+            window.addEventListener('DOMMouseScroll', preventDefault, false);
+        }
+        window.onwheel = preventDefault; // modern standard
+        window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+        window.ontouchmove  = preventDefault; // mobile
+        document.onkeydown  = preventDefaultForScrollKeys;
+    }
+
+    function enableScroll() {
+        if (window.removeEventListener) {
+            window.removeEventListener('DOMMouseScroll', preventDefault, false);
+        }
+        window.onmousewheel = document.onmousewheel = null;
+        window.onwheel = null;
+        window.ontouchmove = null;
+        document.onkeydown = null;
+    }
+
+
+    //
+
+
 
     //modal plugin
     $(".inline").modaal();
@@ -128,70 +190,7 @@ $(document).ready(function () {
         $('.icon-dropdown-description:first-child').addClass('active');
     });
 
-    //menu trigger
 
-    $("main").click(function () {
-        if ($(this).hasClass("open")) {
-            $(this).toggleClass("open");
-            $(".nav-icon, nav, .nav-bottom").toggleClass("open");
-            $("html,body").toggleClass("open-nav");
-            enableScroll();
-        }
-    });
-
-    $('#disable').click(function (e) {
-        e.preventDefault();
-        $(this).toggleClass("open");
-        $("main, nav, .nav-bottom").toggleClass("open");
-        $("html, body").toggleClass("open-nav");
-
-        if($(this).hasClass('open')) {
-            disableScroll();
-        } else {
-            enableScroll();
-        }
-    });
-
-    //
-    var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-    function preventDefault(e) {
-        e = e || window.event;
-        if (e.preventDefault) {
-            e.preventDefault();
-        }
-        e.returnValue = false;
-    }
-
-    function preventDefaultForScrollKeys(e) {
-        if (keys[e.keyCode]) {
-            preventDefault(e);
-            return false;
-        }
-    }
-
-    function disableScroll() {
-        if (window.addEventListener) { // older FF
-            window.addEventListener('DOMMouseScroll', preventDefault, false);
-        }
-        window.onwheel = preventDefault; // modern standard
-        window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-        window.ontouchmove  = preventDefault; // mobile
-        document.onkeydown  = preventDefaultForScrollKeys;
-    }
-
-    function enableScroll() {
-        if (window.removeEventListener) {
-            window.removeEventListener('DOMMouseScroll', preventDefault, false);
-        }
-        window.onmousewheel = document.onmousewheel = null;
-        window.onwheel = null;
-        window.ontouchmove = null;
-        document.onkeydown = null;
-    }
-
-
-    //
 
     //accordion
     $("#accord").accordion({
@@ -203,6 +202,7 @@ $(document).ready(function () {
 });
 
 $(window).on("load resize", function () {
+    "use strict";
     if (window.matchMedia("(max-width: 767px)").matches) {
         $("#navicontacts").appendTo(".nav-bottom .container .row");
         $("#navitop").prependTo(".nav-bottom .container .row");

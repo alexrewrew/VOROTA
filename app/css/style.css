@@ -5353,13 +5353,13 @@ header .header-jumbotron {
 }
 nav {
 	background: #fff;
-	-webkit-transition: all .4s ease;
-	        transition: all .4s ease;
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	z-index: 200;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
 }
 .logo {
 	display: inline-block;
@@ -5456,11 +5456,6 @@ nav {
 		height: 100vh;
 		padding-top: 15px;
 	}
-}
-.nav-bottom.open {
-	-webkit-transform: translateX(-webkit-calc(-100vw + 60px));
-	    -ms-transform: translateX(calc(-100vw + 60px));
-	        transform: translateX(calc(-100vw + 60px));
 }
 .hidden {
 	-webkit-transform: translateY(-48px);
@@ -5848,26 +5843,6 @@ nav {
 .nav-icon span:nth-child(4) {
 	top: 18px;
 }
-.nav-icon.open span:nth-child(1) {
-	top: 18px;
-	width: 0;
-	left: 50%;
-}
-.nav-icon.open span:nth-child(2) {
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
-}
-.nav-icon.open span:nth-child(3) {
-	-webkit-transform: rotate(-45deg);
-	    -ms-transform: rotate(-45deg);
-	        transform: rotate(-45deg);
-}
-.nav-icon.open span:nth-child(4) {
-	top: 18px;
-	width: 0;
-	left: 50%;
-}
 nav.nav-transparent {
 	background: transparent;
 }
@@ -5992,16 +5967,6 @@ nav.nav-transparent .menu-contacts li a:hover {
 		margin-bottom: 50px;
 	}
 }
-main.open {
-	-webkit-transform: translateX(-webkit-calc(-100% + 60px));
-	    -ms-transform: translateX(calc(-100% + 60px));
-	        transform: translateX(calc(-100% + 60px));
-}
-nav.open {
-	-webkit-transform: translateX(-webkit-calc(-100% + 60px));
-	    -ms-transform: translateX(calc(-100% + 60px));
-	        transform: translateX(calc(-100% + 60px));
-}
 @media (max-width: 767px) {
 	.nav-panel {
 		display: block;
@@ -6012,6 +5977,31 @@ nav.open {
 		bottom: 0;
 		z-index: 100;
 	}
+}
+body.open main, body.open nav, body.open .nav-bottom {
+	-webkit-transform: translateX(-webkit-calc(-100vw + 60px));
+	    -ms-transform: translateX(calc(-100vw + 60px));
+	        transform: translateX(calc(-100vw + 60px));
+}
+body.open .nav-icon span:nth-child(1) {
+	top: 18px;
+	width: 0;
+	left: 50%;
+}
+body.open .nav-icon span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+body.open .nav-icon span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+body.open .nav-icon span:nth-child(4) {
+	top: 18px;
+	width: 0;
+	left: 50%;
 }
 footer {
 	background: #202321;
