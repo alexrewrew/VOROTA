@@ -31,7 +31,54 @@ block content
         .container
             .row
                 aside.col-lg-3#discount-col
-                    form.filter-container.filter-calculator
+                    .row#discount-row
+                        .col-md-6.col-lg-12
+                            include partials/_discount-slider
+                        .col-md-6.col-lg-12
+                            include partials/_articles-slider
+                .col-lg-9#product-col
+                    article.row.justify-content-center
+                        .col-lg-11
+                            h2 Преимущество
+                            .row
+                                .col.icon-drop.icon-catalog
+                                    span.icon-container.icon-index
+                                        img(src='/Users/alexrewrew/Documents/htdocs/VOROTA/app/img/techs/huge/tech1h.png' title='' alt='' onerror="this.src='img/icons/icon2-1.png'").icon-image
+                                        h5 Изготовление и монтаж от 1 дня
+                                .col.icon-drop.icon-catalog
+                                    span.icon-container.icon-index
+                                        img(src='img/icons/icon2-2.svg' title='' alt='' onerror="this.src='img/icons/icon2-2.png'").icon-image
+                                        h5 Адаптировано к суровому климату Сибири
+                                .col.icon-drop.icon-catalog
+                                    span.icon-container.icon-index
+                                        img(src='img/icons/icon2-3.svg' title='' alt='' onerror="this.src='img/icons/icon2-3.png'").icon-image
+                                        h5 Гарантия от 3 до 5 лет
+                            .slider-article-big
+                                .img-slider-item
+                                    img(src='img/illus/header-photo.png' title='' alt='')
+                                .img-slider-item
+                                    img(src='img/illus/header-photo2.png' title='' alt='')
+                            h2 Описание проекта
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах
+
+                            .spacer-120
+
+                        include partials/_techs-big
+
+
+
+
+    section
+        .container
+            .row.justify-content-end
+                .col-lg-9
+                    article.catalog-description.catalog-description-heading
+                        .row
+                            .col-lg-10
+                                h2 Рассчитать цену
+            .row
+                aside.col-lg-3
+                    form.filter-container.filter-calculator#filter
                         .row
                             .col-6.small-col.left
                                 p Ширина
@@ -155,6 +202,9 @@ block content
                                         a(href='' title='' style='background: url(img/calc/img-calc/olha.jpg)' data-color='Ольха' data-to-image='olha')
                                     li
                                         a(href='' title='' style='background: url(img/calc/img-calc/zebra.jpg)' data-color='Зебра' data-to-image='zebra')
+                                    li
+                                        a(href='' title='' style='background: url(img/calc/img-calc/ral.jpg)' data-color='Ral' data-to-image='ral')
+
                             .col-md-6.col-lg-12
                                 p Тип ворот
                                 .select-container
@@ -187,12 +237,8 @@ block content
                                         a(href='' title='')
                                             img(src='img/calc/options/icon4.png' title='' alt='' onerror="this.src='img/calc/options/icon4.svg'")
                                             p Монтаж
-                            //.col-12.display-flex.align-items-md-center.justify-content-md-center
-                                button(type='submit').button.button-red Применить
-                    .row#discount-row
-                        .col-12
-                            include partials/_discount-slider
-                .col-lg-9#product-col
+
+                .col-lg-9
                     .row.calc-row
                         .col
                             .calc-image-container
@@ -216,20 +262,7 @@ block content
                                     | Техническая информация
                                 h2 Сервис и гарантия
                                 p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
-                                h2 Преимущество
-                                .row
-                                    .col.icon-drop.icon-catalog
-                                        span.icon-container.icon-index
-                                            img(src='img/icons/icon2-1.svg' title='' alt='' onerror="this.src='img/icons/icon2-1.png'").icon-image
-                                            h5 Изготовление и монтаж от 1 дня
-                                    .col.icon-drop.icon-catalog
-                                        span.icon-container.icon-index
-                                            img(src='img/icons/icon2-2.svg' title='' alt='' onerror="this.src='img/icons/icon2-2.png'").icon-image
-                                            h5 Адаптировано к суровому климату Сибири
-                                    .col.icon-drop.icon-catalog
-                                        span.icon-container.icon-index
-                                            img(src='img/icons/icon2-3.svg' title='' alt='' onerror="this.src='img/icons/icon2-3.png'").icon-image
-                                            h5 Гарантия от 3 до 5 лет
+
 
                     section.row
                         .col-lg-11
@@ -256,29 +289,33 @@ block content
                                 .col-12
                                     a(href='' title='').button.button-comment Больше отзывов
                                         img(src='img/icons/arrow-right-white.svg' title='' alt='' onerror="this.src='img/icons/arrow-right-white.png'")
-                    .row
-                        .col-12
-                            h2 Наши ворота установлены
-                            #map
-                        .col-lg-11
-                            h2 FAQ
-                            .accordion#accord
-                                h4 Вопрос 1
-                                div
-                                    p Если ворота заклинило, наблюдаются неполадки с открытием/закрытием. Обслуживаем ворота, в том числе, и сторонних производителей. Производим диагностику, регулировку и квалифицированный ремонт автоматических ворот.
-                                h4 Вопрос 1
-                                div
-                                    p
-                                        | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                                        | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                                        | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                                        | suscipit faucibus urna.
-                                h4 Вопрос 1
-                                div
-                                    p
-                                        | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                                        | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                                        | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                                        | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+
+    section
+        .container
+            .row
+                .col-12
+                    h2 Наши ворота установлены
+                    #map
+            .row.justify-content-center
+                .col-lg-10
+                    h2 FAQ
+                    .accordion#accord
+                        h4 Вопрос 1
+                        div
+                            p Если ворота заклинило, наблюдаются неполадки с открытием/закрытием. Обслуживаем ворота, в том числе, и сторонних производителей. Производим диагностику, регулировку и квалифицированный ремонт автоматических ворот.
+                        h4 Вопрос 1
+                        div
+                            p
+                                | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                | suscipit faucibus urna.
+                        h4 Вопрос 1
+                        div
+                            p
+                                | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
 
     include partials/_order

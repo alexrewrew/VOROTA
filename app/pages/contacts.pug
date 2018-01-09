@@ -15,28 +15,29 @@ block content
                             a(href='index.html' title='') Главная
                         li
                             a(href='information.html' title='') Контакты
-                .col-md-4.col-lg-5
+                .col-md-4.col-lg-3
                     h1 Контакты
-                .col-md-4.col-lg-3
-                    h4 Офис Ворота.ру
-                    p Иркутск, ул. Байкальская 244а/2
-                        br
-                        | e-mail
-                        a(href='mailto:' title='').link-contacts vorota@irk.ru
-                        br
-                        | тел.
-                        a(href='tel:' title='').link-contacts +7 (3952) 72-73-00
-                    a(href='' title='' onclick='replace("52.2551003", "104.3322375", "Офис Ворота.ру")').link-map Показать на карте
-                .col-md-4.col-lg-3
-                    h4 Завод Ворота.ру
-                    p Иркутск, Челябинская 26А
-                        br
-                        | e-mail
-                        a(href='mailto:' title='').link-contacts vorota@irk.ru
-                        br
-                        | тел.
-                        a(href='tel:' title='').link-contacts +7 (3952) 72-73-00
-                    a(href='' title='' onclick='replace("52.3217404", "104.2950556", "Завод Ворота.ру")').link-map.active Показать на карте
+                .col-6.col-md-4.col-lg-3
+                    a(href='' title='' onclick='replace("52.2551003", "104.3322375", "Офис Ворота.ру")').link-map-big.active
+                        h4 Офис Ворота.ру
+                        img(src='img/illus/office1.png')
+                        p Иркутск, ул. Байкальская 244а/2
+                            br
+                            | e-mail vorota@irk.ru
+                            br
+                            | тел. +7 (3952) 72-73-00
+                        span.link-map Показать на карте
+
+                .col-6.col-md-4.col-lg-3
+                    a(href='' title='' onclick='replace("52.3217404", "104.2950556", "Завод Ворота.ру")').link-map-big
+                        h4 Завод Ворота.ру
+                        img(src='img/illus/office1.png')
+                        p Иркутск, Челябинская 26А
+                            br
+                            | e-mail vorota@irk.ru
+                            br
+                            | тел. +7 (3952) 72-73-00
+                        span.link-map Показать на карте
 
     section
         .container

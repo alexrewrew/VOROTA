@@ -70,6 +70,7 @@ gulp.task("scripts", function () {
             // "app/libs/animsition/dist/js/animsition.js",
             // "app/libs/rew-downnav/downnav.js",
             // "app/libs/rew-sidenav/sidenav.js",
+            "app/libs/sticky-kit/jquery.sticky-kit.js",
             "app/js/scripts/scripts.js"
         ])
         .pipe(concat("main.js"))

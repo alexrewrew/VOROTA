@@ -39,6 +39,10 @@
     z-index 100
     opacity .7
     transitions()
+    //
+    display none
+    //
+
   .row
     justify-content space-between
     +portrait()
@@ -123,12 +127,16 @@
     margin-bottom 10px
     +portrait()
       flex-wrap nowrap
+    +mobile()
+      justify-content flex-start
     li
       flex 1 1 68px
       max-width 68px
       +portrait()
         flex 1 1 100%
         max-width 100%
+      +mobile()
+        margin-right: 14px;
       a
         margin-bottom 17px
         display block
@@ -158,6 +166,8 @@
           +portrait()
             margin-right 10px
             margin-left 10px
+          +mobile()
+            word-wrap: break-word;
         &:hover
           border-color: transparent;
           img

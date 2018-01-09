@@ -143,7 +143,6 @@ a
       transform translateX(98px)
       opacity 1
 
-
 +mobile()
   .header-information
     padding-bottom: 50px;
@@ -162,17 +161,15 @@ a
   display inline-block
   margin 10px 0
   padding-bottom 6px
+  transitions()
   +mobile()
     margin-bottom 80px
-    font-size 1.25em
+    font-size: .75em;
   &:hover
     color: $red
     border-color $trans
   &:focus
     color $gray-text2
-
-.link-map.active
-  color $gray-text2
 
 .link-discount
   display inline-block
@@ -206,8 +203,31 @@ a
   letter-spacing: .1px;
   text-decoration none
   padding 0 10px
+  float right
   +mobile()
     padding 0
+    float left
+
   &:hover
     color $red
+
+.link-map-big
+  display block
+  color $black
+  img
+    margin-bottom 24px
+    filter grayscale(100%)
+    transitions()
+    width 100%
+  .link-map
+    color #b1b1b1
+  &:hover
+    img
+      filter grayscale(0)
+
+.link-map-big.active
+  .link-map
+    color $red
+  img
+    filter grayscale(0)
 

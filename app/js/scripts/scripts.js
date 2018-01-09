@@ -1,5 +1,34 @@
 $(document).ready(function () {
     "use strict";
+
+    //NEW
+    $(function () {
+        $("#tab-popular").tabs();
+    });
+
+    //affix
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        $(function () {
+            $("#discount-row").stick_in_parent({
+                offset_top: 92
+            });
+        });
+        $(function () {
+            $("#filter").stick_in_parent({
+                offset_top: 92
+            });
+        });
+    }
+
+    //service accordion
+    $('.service-accordion').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.service-accordion--panel').slideToggle();
+    });
+
+    //END NEW
+
     //menu trigger
 
     $("main").click(function () {
@@ -13,7 +42,7 @@ $(document).ready(function () {
     $('#disable').click(function (e) {
         e.preventDefault();
         $('body').toggleClass("open");
-        if($('body').hasClass('open')) {
+        if ($('body').hasClass('open')) {
             disableScroll();
         } else {
             enableScroll();
@@ -44,8 +73,8 @@ $(document).ready(function () {
         }
         window.onwheel = preventDefault; // modern standard
         window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-        window.ontouchmove  = preventDefault; // mobile
-        document.onkeydown  = preventDefaultForScrollKeys;
+        window.ontouchmove = preventDefault; // mobile
+        document.onkeydown = preventDefaultForScrollKeys;
     }
 
     function enableScroll() {
@@ -60,7 +89,6 @@ $(document).ready(function () {
 
 
     //
-
 
 
     //modal plugin
@@ -136,9 +164,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
     // menu scroll
     var tempScrollTop, currentScrollTop = 0;
 
@@ -191,12 +216,10 @@ $(document).ready(function () {
     });
 
 
-
     //accordion
     $("#accord").accordion({
         heightStyle: "content"
     });
-
 
 
 });

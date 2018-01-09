@@ -1,0 +1,33 @@
+.popular-with-tab
+  h2
+    text-align left
+    +mobile()
+      text-align center
+
+.popular-tab
+  display flex
+  flex-direction row
+  max-width 302px
+  justify-content space-between
+  margin 0 auto
+  position relative
+  top -4px
+  +mobile()
+    margin-bottom 100px
+  li
+    max-width 146px
+    width 100%
+    +tablet()
+      max-width 140px
+    a
+      background $white
+      text-align center
+      color $black
+      font-weight 600
+      display block
+      padding 12px 0 14px
+      &:hover
+        background #e1e1e1
+  .ui-tabs-active
+    a
+      background #e1e1e1
