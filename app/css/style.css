@@ -6597,6 +6597,9 @@ select:focus {
 	-webkit-transition: all .4s ease;
 	        transition: all .4s ease;
 }
+button {
+	font-family: 'MuseoSans', sans-serif;
+}
 .button {
 	max-width: 263px;
 	width: 100%;

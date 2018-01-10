@@ -34707,6 +34707,11 @@ $(document).ready(function () {
         $("#tab-popular").tabs();
     });
 
+
+    $('.link-map-big').click(function (t) {
+        t.preventDefault();
+    });
+
     //affix
     if (window.matchMedia("(min-width: 992px)").matches) {
         $(function () {
@@ -34722,7 +34727,7 @@ $(document).ready(function () {
     }
 
     //service accordion
-    $('.service-accordion').click(function(e){
+    $('.service-accordion').click(function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
         $('.service-accordion--panel').slideToggle();
