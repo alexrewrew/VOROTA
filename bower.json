@@ -26,12 +26,8 @@
     "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
-    "remodal": "^1.1.1",
     "bootstrap": "v4.0.0-alpha.6",
-    "magnific-popup": "^1.1.0",
     "animate.css": "^3.5.2",
-    "wow": "wowjs#^1.1.2",
-    "animsition": "^4.0.2",
     "modaal": "^0.3.1",
     "jquery-ui": "^1.12.1",
     "chosen-image": "https://github.com/djgrant/chosen-image.git#^0.9.9",

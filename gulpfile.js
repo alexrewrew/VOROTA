@@ -60,16 +60,8 @@ gulp.task("scripts", function () {
             // "app/libs/bootstrap3/dist/js/bootstrap.js",
             "app/libs/chosen/chosen.jquery.js",
             "app/libs/chosen-image/chosenImage/chosenImage.jquery.js",
-            // "app/libs/iCheck/icheck.js",
             "app/libs/slick-carousel/slick/slick.js",
-            // "app/libs/owl.carousel/dist/owl.carousel.js",
-            // "app/libs/remodal/dist/remodal.js",
             "app/libs/modaal/dist/js/modaal.js",
-            // "app/libs/magnific-popup/dist/jquery.magnific-popup.js",
-            // "app/libs/wow/dist/wow.js",
-            // "app/libs/animsition/dist/js/animsition.js",
-            // "app/libs/rew-downnav/downnav.js",
-            // "app/libs/rew-sidenav/sidenav.js",
             "app/libs/sticky-kit/jquery.sticky-kit.js",
             "app/js/scripts/scripts.js"
         ])
