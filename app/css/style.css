@@ -6486,20 +6486,22 @@ select:focus {
 	position: relative;
 	margin-bottom: 10px;
 }
-.select-container:after {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-left: 4px solid transparent;
-	border-right: 4px solid transparent;
-	border-top: 4px solid #2f2f2f;
-	top: -webkit-calc(50% - 2px);
-	top:         calc(50% - 2px);
-	right: 18px;
-	-webkit-transition: all .4s ease;
-	        transition: all .4s ease;
+@media (max-width: 767px) {
+	.select-container:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 4px solid #2f2f2f;
+		top: -webkit-calc(50% - 2px);
+		top:         calc(50% - 2px);
+		right: 18px;
+		-webkit-transition: all .4s ease;
+		        transition: all .4s ease;
+	}
 }
 .select-container:focus:after {
 	-webkit-transform: rotate(180deg);
@@ -6508,6 +6510,7 @@ select:focus {
 }
 .chosen-container {
 	font-size: 1em;
+	position: relative;
 }
 .chosen-container-multi .chosen-choices, .chosen-container-single .chosen-single {
 	border: none;
@@ -7725,6 +7728,7 @@ button.mfp-arrow-right:hover:after {
 	padding-left: 20px;
 	height: 234px;
 	margin-bottom: 40px;
+	cursor: default;
 }
 @media (max-width: 767px) {
 	.icon-container.icon-index {
@@ -8845,9 +8849,30 @@ button.mfp-arrow-right:hover:after {
 .filter-calculator .select-container {
 	margin-bottom: 35px;
 }
+.filter-calculator .chosen-container-single.chosen-container-active.chosen-with-drop .chosen-single:after {
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
 .filter-calculator .chosen-container-single .chosen-single {
 	padding: 10px 20px 11px;
 	font-weight: 300;
+	position: relative;
+}
+.filter-calculator .chosen-container-single .chosen-single:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #2f2f2f;
+	top: -webkit-calc(50% - 2px);
+	top:         calc(50% - 2px);
+	right: 18px;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
 }
 .filter-calculator .chosen-container-single .chosen-single span {
 	margin-right: 15px;
@@ -8886,10 +8911,12 @@ button.mfp-arrow-right:hover:after {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display:         flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	        justify-content: space-between;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	        justify-content: flex-start;
+	width: -webkit-calc(100% + 15px);
+	width:         calc(100% + 15px);
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
@@ -8900,13 +8927,19 @@ button.mfp-arrow-right:hover:after {
 	        flex-wrap: wrap;
 	margin-bottom: 25px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+	.filter-calculator .filter-colors {
+		width: 100%;
+	}
+}
 @media (max-width: 767px) {
 	.filter-calculator .filter-colors {
-		-webkit-box-pack: start;
-		-webkit-justify-content: flex-start;
-		-ms-flex-pack: start;
-		        justify-content: flex-start;
+		width: 100%;
 	}
+}
+.filter-calculator .filter-colors li {
+	margin-bottom: 10px;
+	margin-right: 10px;
 }
 @media (max-width: 767px) {
 	.filter-calculator .filter-colors li {
@@ -8928,7 +8961,6 @@ button.mfp-arrow-right:hover:after {
 	width: 45px;
 	height: 45px;
 	background: #f52341;
-	margin-bottom: 10px;
 	opacity: .8;
 	position: relative;
 }
@@ -8975,10 +9007,10 @@ button.mfp-arrow-right:hover:after {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display:         flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	        justify-content: space-between;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	        justify-content: flex-start;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
@@ -8988,20 +9020,20 @@ button.mfp-arrow-right:hover:after {
 	    -ms-flex-wrap: wrap;
 	        flex-wrap: wrap;
 	margin-bottom: 10px;
+	width: -webkit-calc(100% + 35px);
+	width:         calc(100% + 35px);
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.filter-calculator .filter-options {
 		-webkit-flex-wrap: nowrap;
 		    -ms-flex-wrap: nowrap;
 		        flex-wrap: nowrap;
+		width: 100%;
 	}
 }
 @media (max-width: 767px) {
 	.filter-calculator .filter-options {
-		-webkit-box-pack: start;
-		-webkit-justify-content: flex-start;
-		-ms-flex-pack: start;
-		        justify-content: flex-start;
+		width: 100%;
 	}
 }
 .filter-calculator .filter-options li {
@@ -9010,6 +9042,7 @@ button.mfp-arrow-right:hover:after {
 	    -ms-flex: 1 1 68px;
 	        flex: 1 1 68px;
 	max-width: 68px;
+	margin-right: 30px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.filter-calculator .filter-options li {
@@ -9022,7 +9055,7 @@ button.mfp-arrow-right:hover:after {
 }
 @media (max-width: 767px) {
 	.filter-calculator .filter-options li {
-		margin-right: 14px;
+		margin-right: 25px;
 	}
 }
 .filter-calculator .filter-options li a {
@@ -9068,6 +9101,7 @@ button.mfp-arrow-right:hover:after {
 .filter-calculator .filter-options li a p {
 	font-size: 12px;
 	line-height: 1.17;
+	word-wrap: break-word;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.filter-calculator .filter-options li a p {
@@ -9890,6 +9924,11 @@ button.mfp-arrow-right:hover:after {
 	color: #a9a9a9;
 	font-size: .875em;
 	margin-bottom: 32px;
+}
+.calc-result .button {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1em;
 }
 .search-result {
 	display: block;

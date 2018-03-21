@@ -13,20 +13,23 @@ select
   -moz-appearance: none;
   &:focus
     outline none
+
 .select-container
   position relative
   margin-bottom 10px
-  &:after
-    triangle($black-text, down, 4px)
-    top calc(50% - 2px)
-    right 18px
-    transitions()
+  +mobile()
+    &:after
+      triangle($black-text, down, 4px)
+      top calc(50% - 2px)
+      right 18px
+      transitions()
   &:focus
     &:after
       transform rotate(180deg)
 
 .chosen-container
   font-size 1em
+  position relative
 
 .chosen-container-multi .chosen-choices,
 .chosen-container-single .chosen-single
